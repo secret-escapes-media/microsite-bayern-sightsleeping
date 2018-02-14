@@ -1,0 +1,132 @@
+.modal {
+  $icon-size: 3em;
+  position: relative;
+  margin-top: ($icon-size*1.5);
+  margin-bottom: ($icon-size*1.5);
+  margin-left: ($icon-size / 2.5);
+  margin-right: ($icon-size / 2.5);
+  cursor: auto;
+  &.is-open   { display: block; }
+  &.is-closed { display: none; }
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    margin-bottom: ($icon-size * 6);
+  }
+  &__bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $z-overlay;
+    background-color: rgba($grey-darker,.9);
+    cursor: pointer;
+    overflow: auto;
+    // smooth scrolling ios
+    -webkit-overflow-scrolling: touch;
+    &.is-open { display: block; }
+    &.is-closed { display: none; }
+  }
+  &__content {
+    background-color: $white;
+    padding: $s2 $s3;
+  }
+  &__close {
+    position: absolute;
+    right: 0;
+    top: -$icon-size;
+    height: $icon-size;
+    width: $icon-size;
+    background-color: rgba($black,.5);
+    background-image: url('../img/icons/close.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: ($icon-size/3);
+    cursor: pointer;
+    z-index: $z-overlay-upper;
+    transition: background-color $transition-time ease;
+    &:hover{ background-color: $black; }
+  }
+  &__nav {
+    position: fixed;
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: $icon-size;
+    background-color: rgba($black, .8);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: .75em;
+    cursor: pointer;
+    transition: background-color $transition-time ease;
+    &--next {
+      right: 0;
+      background-image: url('../img/icons/arrow-right.svg');
+      border-left: 1px solid rgba($white,.5);
+    }
+    &--previous {
+      left: 0;
+      background-image: url('../img/icons/arrow-left.svg');
+    }
+    @include bp($md) {
+      position: absolute;
+      z-index: $z-overlay-upper;
+      top: 50%;
+      width: $icon-size;
+      height: ($icon-size*2);
+      margin-top: -($icon-size);
+      background-color: rgba($black, .5);
+      background-size: 1em;
+      &--previous { left: -($icon-size); }
+      &--next {
+        right: -($icon-size);
+        border-left: 0;
+      }
+      &:hover     { background-color: $black; }
+    }
+  }
+  &--standard { max-width: $xl; }
+  &--series   { max-width: $xl; }
+  &--image    { max-width: $xxl; }
+  &--youtube  {
+    width: 100%;
+    max-width: $xxxl;
+    .video__wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 0;
+      width: 100%;
+      padding-bottom: 56.25%;
+      background-color: #000;
+    }
+    .video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  @include bp($md) {
+
+    margin-left: $icon-size;
+    margin-right: $icon-size;
+    &__wrap { margin-bottom: 0; }
+  }
+  @include bp($lg){
+    &__content {
+      padding: $s4 $s6;
+    }
+  };
+}
+
+.disable-scroll { overflow: hidden; }

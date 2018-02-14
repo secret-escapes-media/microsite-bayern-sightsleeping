@@ -1,0 +1,100 @@
+#####################################
+#
+#  OPTIONS
+#
+#    pages:
+#      - id: overview         # (shows on specific page)
+#      - id: all              # (shows on all pages)
+#      - layout: group-page   # (shows on specific layout)
+#
+#   # if option is not set, defaul is standard html content
+#   type:
+#     youtube     # loads in a different thing
+#     series      # this is a parent container that has contents
+#
+#   # when included, an extra html is used for a full width image
+#   image: 'example-image-name.jpg'
+#
+#
+#
+#####################################
+
+
+- id: video
+  type: youtube
+  pages:
+    - id: all
+  youtube-id: Os6R4G4dimY
+
+- id: another
+  pages:
+    - id: all
+  content: >
+    <div class="title title--lg">Another Modal</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maxime est soluta expedita inventore corrupti ipsam illo, eligendi sit id accusamus iure dicta qui suscipit culpa fugiat possimus consequatur totam iste perspiciatis delectus nesciunt deleniti, cumque nemo labore? Nesciunt explicabo velit iure, et voluptatibus beatae vitae laboriosam. Magni suscipit, facere eum culpa ab ullam, accusantium tempora, ut similique vero odit placeat sit tenetur quas, consectetur eaque. Praesentium distinctio, quae mollitia amet! Libero debitis minima cumque, eaque ipsam rerum porro, quo.</p>
+    <p>Quos non sit omnis cum facilis, laborum culpa natus totam quae animi magnam minima aspernatur, harum dolorem nostrum maxime distinctio! Facilis hic exercitationem, blanditiis, saepe iusto minus libero unde amet molestiae, nemo id! Dolores aperiam commodi dolore neque ipsum rerum error, eum. Ratione rem maxime incidunt quam nostrum, voluptas alias soluta accusamus magni quibusdam, tempore numquam! Unde nemo a optio dolore sunt ex repellat molestiae quisquam quas. Fugiat, eligendi ullam. Exercitationem sapiente neque debitis omnis commodi cumque illo magni quam.</p>
+
+- id: image-credits
+  image: img.jpg
+  pages:
+    - id: all
+  content: >
+    <div class="core-title core-title--md">Image Credits</div>
+    <ol>
+      <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non tenetur dolorem quod, perspiciatis explicabo harum doloremque aut eveniet reprehenderit voluptatibus.</li>
+      <li>Cupiditate fugiat voluptatibus molestias soluta perspiciatis deserunt eum officia autem laboriosam, fugit provident harum architecto delectus iure dolores quis corrupti.</li>
+      <li>Adipisci eligendi, ut. Voluptas optio a rerum perferendis eligendi esse minus voluptate consequatur, ullam cupiditate distinctio ad, est, vitae beatae!</li>
+      <li>Odit alias, expedita quis. Quibusdam soluta odit architecto labore. Vel quaerat dignissimos minus accusamus deserunt et, fugit a odit provident!</li>
+      <li>Inventore voluptate, quis quibusdam consectetur excepturi officia ipsum fugit, itaque sapiente, rem, saepe sunt libero ducimus reiciendis officiis nobis et?</li>
+      <li>Minima aperiam fuga voluptate cupiditate commodi sed enim! Dolore qui, accusamus accusantium iste asperiores quidem molestias officiis quia necessitatibus minus.</li>
+      <li>Id illum non atque perspiciatis alias natus, laboriosam nihil dolorum voluptatum libero cum vel ex commodi deserunt debitis maxime sed.</li>
+      <li>Ab cum voluptas hic asperiores accusantium et voluptatem, architecto a saepe modi culpa laudantium, unde eveniet fugiat nobis excepturi molestias?</li>
+    </ol>
+
+
+#################################################
+#   academy-gallery
+#################################################
+
+- id: gallery
+  type: series
+  pages:
+    - id: all
+
+  contents:
+
+    - id: whisky-drinks
+      image: img.jpg
+      content: >
+        <div class="title title--lg">He drinks the Whisky drinks</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maxime est soluta expedita inventore corrupti ipsam illo, eligendi sit id accusamus iure dicta qui suscipit culpa fugiat possimus consequatur totam iste perspiciatis delectus nesciunt deleniti, cumque nemo labore? Nesciunt explicabo velit iure, et voluptatibus beatae vitae laboriosam. Magni suscipit, facere eum culpa ab ullam, accusantium tempora, ut similique vero odit placeat sit tenetur quas, consectetur eaque. Praesentium distinctio, quae mollitia amet! Libero debitis minima cumque, eaque ipsam rerum porro, quo.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maxime est soluta expedita inventore corrupti ipsam illo, eligendi sit id accusamus iure dicta qui suscipit culpa fugiat possimus consequatur totam iste perspiciatis delectus nesciunt deleniti, cumque nemo labore? Nesciunt explicabo velit iure, et voluptatibus beatae vitae laboriosam. Magni suscipit, facere eum culpa ab ullam, accusantium tempora, ut similique vero odit placeat sit tenetur quas, consectetur eaque. Praesentium distinctio, quae mollitia amet! Libero debitis minima cumque, eaque ipsam rerum porro, quo.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maxime est soluta expedita inventore corrupti ipsam illo, eligendi sit id accusamus iure dicta qui suscipit culpa fugiat possimus consequatur totam iste perspiciatis delectus nesciunt deleniti, cumque nemo labore? Nesciunt explicabo velit iure, et voluptatibus beatae vitae laboriosam. Magni suscipit, facere eum culpa ab ullam, accusantium tempora, ut similique vero odit placeat sit tenetur quas, consectetur eaque. Praesentium distinctio, quae mollitia amet! Libero debitis minima cumque, eaque ipsam rerum porro, quo.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maxime est soluta expedita inventore corrupti ipsam illo, eligendi sit id accusamus iure dicta qui suscipit culpa fugiat possimus consequatur totam iste perspiciatis delectus nesciunt deleniti, cumque nemo labore? Nesciunt explicabo velit iure, et voluptatibus beatae vitae laboriosam. Magni suscipit, facere eum culpa ab ullam, accusantium tempora, ut similique vero odit placeat sit tenetur quas, consectetur eaque. Praesentium distinctio, quae mollitia amet! Libero debitis minima cumque, eaque ipsam rerum porro, quo.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maxime est soluta expedita inventore corrupti ipsam illo, eligendi sit id accusamus iure dicta qui suscipit culpa fugiat possimus consequatur totam iste perspiciatis delectus nesciunt deleniti, cumque nemo labore? Nesciunt explicabo velit iure, et voluptatibus beatae vitae laboriosam. Magni suscipit, facere eum culpa ab ullam, accusantium tempora, ut similique vero odit placeat sit tenetur quas, consectetur eaque. Praesentium distinctio, quae mollitia amet! Libero debitis minima cumque, eaque ipsam rerum porro, quo.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maxime est soluta expedita inventore corrupti ipsam illo, eligendi sit id accusamus iure dicta qui suscipit culpa fugiat possimus consequatur totam iste perspiciatis delectus nesciunt deleniti, cumque nemo labore? Nesciunt explicabo velit iure, et voluptatibus beatae vitae laboriosam. Magni suscipit, facere eum culpa ab ullam, accusantium tempora, ut similique vero odit placeat sit tenetur quas, consectetur eaque. Praesentium distinctio, quae mollitia amet! Libero debitis minima cumque, eaque ipsam rerum porro, quo.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maxime est soluta expedita inventore corrupti ipsam illo, eligendi sit id accusamus iure dicta qui suscipit culpa fugiat possimus consequatur totam iste perspiciatis delectus nesciunt deleniti, cumque nemo labore? Nesciunt explicabo velit iure, et voluptatibus beatae vitae laboriosam. Magni suscipit, facere eum culpa ab ullam, accusantium tempora, ut similique vero odit placeat sit tenetur quas, consectetur eaque. Praesentium distinctio, quae mollitia amet! Libero debitis minima cumque, eaque ipsam rerum porro, quo.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maxime est soluta expedita inventore corrupti ipsam illo, eligendi sit id accusamus iure dicta qui suscipit culpa fugiat possimus consequatur totam iste perspiciatis delectus nesciunt deleniti, cumque nemo labore? Nesciunt explicabo velit iure, et voluptatibus beatae vitae laboriosam. Magni suscipit, facere eum culpa ab ullam, accusantium tempora, ut similique vero odit placeat sit tenetur quas, consectetur eaque. Praesentium distinctio, quae mollitia amet! Libero debitis minima cumque, eaque ipsam rerum porro, quo.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maxime est soluta expedita inventore corrupti ipsam illo, eligendi sit id accusamus iure dicta qui suscipit culpa fugiat possimus consequatur totam iste perspiciatis delectus nesciunt deleniti, cumque nemo labore? Nesciunt explicabo velit iure, et voluptatibus beatae vitae laboriosam. Magni suscipit, facere eum culpa ab ullam, accusantium tempora, ut similique vero odit placeat sit tenetur quas, consectetur eaque. Praesentium distinctio, quae mollitia amet! Libero debitis minima cumque, eaque ipsam rerum porro, quo.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maxime est soluta expedita inventore corrupti ipsam illo, eligendi sit id accusamus iure dicta qui suscipit culpa fugiat possimus consequatur totam iste perspiciatis delectus nesciunt deleniti, cumque nemo labore? Nesciunt explicabo velit iure, et voluptatibus beatae vitae laboriosam. Magni suscipit, facere eum culpa ab ullam, accusantium tempora, ut similique vero odit placeat sit tenetur quas, consectetur eaque. Praesentium distinctio, quae mollitia amet! Libero debitis minima cumque, eaque ipsam rerum porro, quo.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maxime est soluta expedita inventore corrupti ipsam illo, eligendi sit id accusamus iure dicta qui suscipit culpa fugiat possimus consequatur totam iste perspiciatis delectus nesciunt deleniti, cumque nemo labore? Nesciunt explicabo velit iure, et voluptatibus beatae vitae laboriosam. Magni suscipit, facere eum culpa ab ullam, accusantium tempora, ut similique vero odit placeat sit tenetur quas, consectetur eaque. Praesentium distinctio, quae mollitia amet! Libero debitis minima cumque, eaque ipsam rerum porro, quo.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maxime est soluta expedita inventore corrupti ipsam illo, eligendi sit id accusamus iure dicta qui suscipit culpa fugiat possimus consequatur totam iste perspiciatis delectus nesciunt deleniti, cumque nemo labore? Nesciunt explicabo velit iure, et voluptatibus beatae vitae laboriosam. Magni suscipit, facere eum culpa ab ullam, accusantium tempora, ut similique vero odit placeat sit tenetur quas, consectetur eaque. Praesentium distinctio, quae mollitia amet! Libero debitis minima cumque, eaque ipsam rerum porro, quo.</p>
+
+
+    - id: vodka-drinks
+      image: img.jpg
+      content: >
+        <div class="title title--lg">He drinks the Vodka drinks</div>
+        <p>Voluptatem, inventore culpa nobis esse officiis praesentium fugiat illo deserunt? Inventore perspiciatis accusantium ad quaerat voluptas nostrum, illum magni, quas. Temporibus rerum eveniet quas esse modi veritatis, sequi eaque hic unde consequuntur, nisi maiores officiis odit eligendi nulla non eius cupiditate id tenetur nam. Dicta, excepturi, odio! Rem optio modi, deleniti eligendi, praesentium harum ipsam minus unde, voluptates commodi voluptatem voluptas eveniet reiciendis qui alias. Aut, earum, temporibus. Ut minus atque nemo deleniti possimus vitae rem, ad voluptatibus modi dolorum?</p>
+
+    - id: larger-drinks
+      image: img.jpg
+      content: >
+        <div class="title title--lg">He drinks the Larger drinks</div>
+        <p>Hic, ratione consequuntur tempora error dicta quis minus cumque vero? Repellat facere nam blanditiis nostrum praesentium in tenetur. Sapiente dicta nostrum facilis, repudiandae natus doloribus voluptatibus delectus a distinctio asperiores, quidem quisquam in, officiis aut non tempore incidunt nihil expedita ea! Quibusdam et, eligendi. Aperiam omnis nobis beatae, rem minus, dicta eligendi sequi nisi, quam at expedita mollitia accusamus nostrum quo quisquam ratione, architecto unde eaque assumenda ab maxime minima nemo! Sunt odit qui distinctio voluptatibus. Repellat placeat vitae commodi.</p>
+
+    - id: cider-drinks
+      image: img.jpg
+      content: >
+        <div class="title title--lg">He drinks the Cider drinks</div>
+        <p>Ipsam harum numquam corporis at fugit necessitatibus porro possimus laboriosam odit dolores quaerat nemo veritatis incidunt, totam perspiciatis eaque magnam debitis delectus? Harum fuga quia animi, ipsa in consectetur, quae nostrum dolores sint molestiae sit consequatur odit enim ex optio nisi eveniet expedita accusantium iure commodi illum quidem cum unde dolorem! Expedita aliquam neque, reprehenderit voluptatum perspiciatis facere quod ab laboriosam aperiam. Delectus molestias atque, cumque quae labore nisi eveniet odit! Dolorem, ex hic nisi quam deleniti, et deserunt sapiente!</p>

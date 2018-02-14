@@ -1,0 +1,38 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: $s2 $s5;
+  color: $white;
+  font-weight: 600;
+  font-size: $s-1;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .25em;
+  line-height: 1.33;
+  border-radius: 3px;
+  cursor: pointer;
+  @include transition;
+  &--sm { padding: $s1 $s4; font-size: $s-2; }
+  &--lg { padding: $s4 $s8; font-size: $s-1; }
+  &--orange { background-color: $orange;
+    &:hover { background-color: $orange-dark; }
+  }
+  &--orange-outline {
+    color: inherit;
+    &:before {
+      // button border within original padding
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border: 1px solid $orange;
+      border-radius: inherit;
+    }
+    &:hover {
+      color: $white;
+      background-color: $orange;
+    }
+  }
+}

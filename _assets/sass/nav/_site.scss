@@ -1,0 +1,100 @@
+// styles for the microsite nav
+
+$site-nav-height:    56px;
+$site-nav-height-sm: 44px;
+$nav-width-bp:       640px;
+$nav-color:          $orange-dark;
+
+
+// global site nav height
+@mixin site-nav-height {
+  height: $site-nav-height-sm;
+  min-height: $site-nav-height-sm;
+  @include bp($md){
+    height: $site-nav-height;
+    min-height: $site-nav-height;
+  }
+}
+
+.site-nav {
+  position: relative;
+  background-color: rgba($nav-color,.8);
+  text-align: center;
+
+  // NEEDS EXPLAINING LIKE THE CORE NAV OFFSET
+  &__offset:before {
+    // corrects header overlapping content
+    content: '';
+    display: block;
+    @include site-nav-height;
+  }
+
+
+  &:before {
+    // arrow icon prompt for horizontal scroll
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $z-nav-upper;
+    width: $site-nav-height-sm;
+    background-image: url("../img/icons/nav-arrow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: $site-nav-height-sm auto;
+    @include site-nav-height;
+    @include bp($md){
+      width: $site-nav-height;
+      background-size: $site-nav-height auto;
+    }
+    // remove arrow icon when no overflow
+    @include bp($nav-width-bp){ display: none; }
+  }
+
+  &__scroll-wrap {
+    overflow-x: auto;
+    overflow-y: hidden;
+    @include bp($nav-width-bp){ overflow: visible; }
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    max-width: $xxxl;
+    margin-left: auto;
+    margin-right: auto;
+    @include site-nav-height;
+    &:after {
+      // additional spacing for end of list so content can scroll past the overlaid arrow icon
+      content: '';
+      min-width: $site-nav-height-sm;
+      @include bp($md){ min-width: $site-nav-height; }
+      @include bp($nav-width-bp){ display: none; }
+    }
+  }
+  &__item {
+    display: flex;
+    flex: 1 0 auto;
+    border-right: 1px solid rgba($white,.15);
+    &:last-child { border-right: 0; }
+  }
+  &__link {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    padding-left: $s0;
+    padding-right: $s0;
+    font-family: $font-core;
+    font-weight: 600;
+    font-size: $s-1;
+    letter-spacing: .143em;
+    text-transform: uppercase;
+    color: $white;
+    transition: background-color $transition-time ease;
+    white-space: nowrap;
+    &.is-current { background-color: rgba($nav-color,.66); }
+    &:hover      { background-color: rgba($nav-color,1); }
+  }
+}

@@ -1,0 +1,200 @@
+// site header and navigation styles
+
+$core-nav-height:     70px;
+$core-nav-height-sm:  54px;
+$core-nav-padding:    1.44rem;
+$core-nav-padding-sm: 1rem;
+
+// global core nav height with breakpoint
+@mixin core-nav-height {
+  height: $core-nav-height-sm;
+  min-height: $core-nav-height-sm;
+  @include bp($md){
+    height: $core-nav-height;
+    min-height: $core-nav-height;
+  }
+}
+
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: $z-nav-upper;
+  @include core-nav-height;
+
+  // Need to come back to this, once I decide the best way. Either always in the layout file for the page
+  // I do like the way this works on capital region, each section has the nav padding, works really well
+  &__offset:before {
+    // corrects header overlapping content
+    content: '';
+    display: block;
+    @include core-nav-height;
+  }
+
+}
+
+
+// ---------- NAV FOR CORE SE SITE ----------
+
+// the breakpoint for the core nav list to appear as the mobile nav
+$nav-list-bp: 870px;
+// the breakpoint for the logo to appear at the bottom of the mobile nav
+$logo-bp: 600px;
+
+.core-nav {
+  height: 100%;
+  padding-left: $core-nav-padding-sm;
+  padding-right: $core-nav-padding-sm;
+  font-family: $font-core;
+  color: $grey-lighter;
+  text-align: center;
+  background-color: rgba($black,.75);
+
+  // spacing for double logos in core nav
+  .logo + .logo { margin-left: $s0; }
+
+  @include bp(md){
+    padding-left: $core-nav-padding;
+    padding-right: $core-nav-padding;
+  }
+  &__wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    max-width: $xxxl;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__left {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    min-width: $core-nav-height-sm;
+    @include bp($nav-list-bp) { display: none; }
+  }
+  &__center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    @include bp($logo-bp) { flex-grow: 3; }
+    @include bp($nav-list-bp) {
+      width: 66.66%;
+      justify-content: flex-start;
+    }
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 25%;
+    min-width: $core-nav-height-sm;
+    visibility: hidden;
+    @include bp($logo-bp) {
+      visibility: visible;
+    }
+    @include bp($nav-list-bp) {
+      width: 33.33%;
+    }
+  }
+  &__list {
+    display: none;
+    margin-left: $s-1;
+    line-height: 0;
+    @include bp($nav-list-bp) {
+      display: block;
+    }
+    &-link {
+      display: inline-block;
+      padding: $s-1 $s-4;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: $s-1;
+      line-height: 0;
+      @include transition;
+      &:hover,
+      &.is-current {
+        color: $orange;
+      }
+    }
+  }
+}
+
+
+// ---------- MOBILE NAV OFF CANVAS ----------
+
+$mobile-nav-width: 75%;
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: $z-overlay;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: $mobile-nav-width;
+  font-family: $font-core;
+  color: $grey-lighter;
+  overflow-y: auto;
+  background-color: rgba($grey-darker,.9);
+  @include transition;
+
+  // spacing for logos in mobile core nav
+  .logo { margin: $s-2; }
+
+  &.is-closed {
+    left: -$mobile-nav-width;
+    visibility: hidden;
+    opacity: 0;
+  }
+  &.is-open {
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+  }
+  &__wrap {
+    padding-left: $core-nav-padding-sm;
+    padding-right: $core-nav-padding-sm;
+    @include bp(md){
+      padding-left: $core-nav-padding;
+      padding-right: $core-nav-padding;
+    }
+  }
+  &__top {
+    display: flex;
+    align-items: center;
+    @include core-nav-height;
+  }
+  &__middle {
+    flex-grow: 1;
+  }
+  &__bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: ($core-nav-height + 30);
+    padding: $s0;
+    margin-top: $s2;
+    background: rgba($grey-darker,.85);
+    @include bp($logo-bp){
+      display: none;
+    }
+  }
+  &__list-link {
+    & + & { border-top: 1px solid rgba($black,.33); }
+    @include transition;
+    display: block;
+    padding-top: $s0;
+    padding-bottom: $s0;
+    font-size: $s0;
+    font-weight: 600;
+    text-transform: uppercase;
+    &.is-current { color: $orange; }
+  }
+  @include bp($nav-list-bp){ display: none; }
+}

@@ -1,0 +1,47 @@
+<!-- #####################################################  jekyll variables -->
+
+  <!-- page meta data -->
+  {% if page.intro %}
+    {% assign meta-description = page.intro | strip_html | strip_newlines | truncate: 155 %}
+  {% else %}
+    {% assign meta-description = site.description | truncate: 155 %}
+  {% endif %}
+
+  <!-- page meta title -->
+  {% assign meta-title = page.title | append: ' | ' | append: site.title %}
+
+  <!-- social image -->
+  {% assign social-image-url = site.url | append: img-path | append: '/thumbnail/social.jpg' %}
+
+<!-- ####################################################################### -->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{meta-title}}</title>
+  <meta name="description" content="{{meta-description}}">
+  <!-- START Social Data -->
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="{{meta-title}}">
+    <meta itemprop="description" content="{{meta-description}}">
+    <meta itemprop="image" content="{{social-image-url}}">
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="{{site.url}}{{site.baseurl}}{{page.url}}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{meta-title}}">
+    <meta property="og:description" content="{{meta-description}}">
+    <meta property="og:image" content="{{social-image-url}}">
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@secret_escapes">
+    <meta name="twitter:title" content="{{meta-title}}">
+    <meta name="twitter:description" content="{{meta-description}}">
+    <meta name="twitter:image" content="{{social-image-url}}">
+  <!-- END Social Data -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:200,300,400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="{{site.css}}/main.css">
+  {% if page.extra-css %}<link rel="stylesheet" href="{{site.css}}/{{page.id}}.css">{% endif %}
+  <script src="{{site.js}}/main.js"></script>
+  {% if page.extra-js %}<script src="{{site.js}}/{{page.id}}.js"></script>{% endif %}
+</head>

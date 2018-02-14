@@ -1,0 +1,51 @@
+.bob {
+
+  // bob breakpoint
+  $bp: $xxl;
+
+  // default styles
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include bp($bp) {
+    flex-direction: row;
+    &--swap { flex-direction: row-reverse; }
+  }
+
+  // gutter sizes
+  $mobile-gutter:  $s2;
+  $desktop-gutter: $s4;
+
+  // gutter sizes
+  margin-top:  -$mobile-gutter;
+  margin-left: -$mobile-gutter;
+  & > &__img,
+  & > &__text {
+    padding-top: $mobile-gutter;
+    padding-left: $mobile-gutter;
+  }
+  @include bp($bp) {
+    margin-top: -$desktop-gutter;
+    margin-left: -$desktop-gutter;
+    & > &__img,
+    & > &__text {
+      padding-top: $desktop-gutter;
+      padding-left: $desktop-gutter;
+    }
+  }
+
+  // element styles
+  &__text,
+  &__img {
+    width: 100%;
+    max-width: $lg;
+    @include bp($bp) {
+      width: 60%;
+      max-width: none;
+    }
+  }
+  &__text {
+    @include bp($bp) { width: 40%; }
+  }
+
+}

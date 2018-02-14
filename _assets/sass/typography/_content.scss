@@ -1,0 +1,30 @@
+// element styles for written content
+
+em      { font-style: italic; }
+strong  { font-weight: 700; }
+sup {
+  font-size: $s-1;
+  line-height: 0;
+  vertical-align: super;
+}
+
+// standard inline link style
+a[href]:not([class]) {
+  color: $orange;
+  @include transition;
+  &:hover { color: $orange-darker; }
+}
+
+li {
+  list-style-position:
+  outside; margin-left: $s1;
+}
+ul li   { list-style-type: disc; }
+ol li   { list-style-type: decimal; }
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: $grey-lightest;
+  margin: $s1 0;
+}

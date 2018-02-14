@@ -1,0 +1,48 @@
+// generic units of measurements to be used for type, spacing, etc
+// 20 above and below the base value of 1rem
+
+$s0:  1rem;
+
+$larger: 1.2;
+$s1:  $s0 * $larger;  // = 1.2
+$s2:  $s1 * $larger;  // = 1.44
+$s3:  $s2 * $larger;  // = 1.728
+$s4:  $s3 * $larger;  // = 2.0736
+$s5:  $s4 * $larger;  // = 2.48832
+$s6:  $s5 * $larger;  // = 2.98598
+$s7:  $s6 * $larger;  // = 3.58318
+$s8:  $s7 * $larger;  // = 4.29982
+$s9:  $s8 * $larger;  // = 5.15978
+$s10: $s9 * $larger;  // = 6.19174
+$s11: $s10 * $larger; // = 7.43008
+$s12: $s11 * $larger; // = 8.9161
+$s13: $s12 * $larger; // = 10.69932
+$s14: $s13 * $larger; // = 12.83918
+$s15: $s14 * $larger; // = 15.40702
+$s16: $s15 * $larger; // = 18.48843
+$s17: $s16 * $larger; // = 22.18611
+$s18: $s17 * $larger; // = 26.62333
+$s19: $s18 * $larger; // = 31.948
+$s20: $s19 * $larger; // = 38.3376
+
+$smaller: .8;
+$s-1:  $s0 * $smaller;   // = .8
+$s-2:  $s-1 * $smaller;  // = .64
+$s-3:  $s-2 * $smaller;  // = .512
+$s-4:  $s-3 * $smaller;  // = .4096
+$s-5:  $s-4 * $smaller;  // = .32768
+$s-6:  $s-5 * $smaller;  // = .26214
+$s-7:  $s-6 * $smaller;  // = .20972
+$s-8:  $s-7 * $smaller;  // = .16777
+$s-9:  $s-8 * $smaller;  // = .13422
+$s-10: $s-9 * $smaller;  // = .10737
+$s-11: $s-10 * $smaller; // = .0859
+$s-12: $s-11 * $smaller; // = .06872
+$s-13: $s-12 * $smaller; // = .05498
+$s-14: $s-13 * $smaller; // = .04398
+$s-15: $s-14 * $smaller; // = .03518
+$s-16: $s-15 * $smaller; // = .02815
+$s-17: $s-16 * $smaller; // = .02252
+$s-18: $s-17 * $smaller; // = .01801
+$s-19: $s-18 * $smaller; // = .01441
+$s-20: $s-19 * $smaller; // = .01153

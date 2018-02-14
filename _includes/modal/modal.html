@@ -1,0 +1,28 @@
+<div class="js-modal modal__bg is-closed">
+  <div class="modal__wrap">
+
+    <!-- find all modals for current page -->
+    {% assign modals = site.data.modals %}
+    {% for modal in modals %}
+      {% if modal.pages %}
+        {% for modal-page in modal.pages %}
+          {% if modal-page.id == page.id or modal-page.id == 'all' or modal-page.layout == page.layout %}
+
+            <!-- Load modal content depending on type -->
+            {% if modal.type == 'series' %}
+              {% include modal/content-series.html %}
+            {% elsif modal.type == 'youtube' %}
+              {% include modal/content-youtube.html %}
+            {% elsif modal.image %}
+              {% include modal/content-image.html %}
+            {% else %}
+              {% include modal/content.html %}
+            {% endif %}
+
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+
+  </div>
+</div>

@@ -1,0 +1,1 @@
+(function ($, root, undefined) {$(function () {'use strict'; // on ready start

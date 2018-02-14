@@ -1,0 +1,10 @@
+<!-- offer variables just to make the loops more readable -->
+
+<!-- all offers -->
+{% assign offers = site.data.offers %}
+
+<!-- offers by saving -->
+{% assign offers-by-saving = offers | sort: 'saved' | reverse %}
+
+<!-- offers by price -->
+{% assign offers-by-price = offers | sort: 'price' %}

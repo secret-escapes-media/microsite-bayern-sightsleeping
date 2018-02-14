@@ -1,0 +1,148 @@
+// Offer block styles
+
+$circle-height: 3.4rem; // height for arrow and saved number
+$offer-max-width: 600px;
+
+.offer {
+  position: relative;
+  width: 100%;
+  max-width: $offer-max-width;
+  margin-left: auto;
+  margin-right: auto;
+  &__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $z-content-upper;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    background-color: transparent;
+    color: transparent;
+    @include transition;
+    &:hover {
+      opacity: 1;
+      background-color: rgba($grey-darkest,.33);
+      color: $white;
+      .touch & { opacity: 0; }
+    }
+  }
+  &__content {
+    padding: $s2;
+    border-left: 1px solid $grey-lighter;
+    border-right: 1px solid $grey-lighter;
+    border-bottom: 1px solid $grey-lighter;
+    background-color: $white;
+  }
+  &__location {
+    margin-top: .9em;
+    margin-left: 1.5em;
+    margin-bottom: 1.15em;
+    text-indent: -1.5em;
+    font-size: 0.75em;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    &:before {
+      content: "";
+      display: inline-block;
+      height: 1.5em;
+      width: 1.05em;
+      margin-right: .5em;
+      margin-bottom: .2em;
+      vertical-align: middle;
+      background-image: url( "../img/icons/map-pin.svg" );
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-size: contain;
+    }
+  }
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: $s2;
+    &-right {
+      margin-left: auto;
+      align-self: flex-end;
+    }
+    &-left  {
+      display: flex;
+      align-items: center;
+      width: 100%; // needed for ie11
+      max-width: $offer-max-width; // needed for ie11
+      margin-right: auto;
+    }
+  }
+  &__arrow {
+    display: none;
+    width: $circle-height;
+    height: $circle-height;
+    min-width: $circle-height;
+    min-height: $circle-height;
+    margin-left: $s-3;
+    border: 1px solid $orange;
+    border-radius: $circle-height;
+    background-repeat: no-repeat;
+    background-image: url('../img/icons/arrow-right-orange.svg');
+    background-size: auto ($circle-height/2.25);
+    background-position: 52% center;
+  }
+  &__saved {
+    display: inline-block;
+    text-align: center;
+    &-percent {
+      display: inline-block;
+      width: $circle-height;
+      height: $circle-height;
+      margin-left: $s-6;
+      text-align: center;
+      color: #fff;
+      font-weight: 400;
+      line-height: $circle-height;
+      background-color: $orange;
+      border-radius: $circle-height;
+    }
+  }
+  &__details {
+    display: inline-block;
+  }
+  &__separator {
+    display: inline-block;
+    align-self: stretch;
+    width: 1px;
+    max-width: 1px;
+    margin-left: $s0;
+    margin-right: $s0;
+    background-color: $grey-lighter;
+  }
+  &__price {
+    color: $orange;
+    font-size: $s2;
+    font-weight: 400;
+    line-height: 1;
+  }
+  @include bp($sm) {
+    &__arrow { display: block; }
+  }
+  @include bp($md) {
+    &__bottom-right { align-self: center; }
+    &__saved        { min-width: 130px; } // bit of a magic number, basically keeps the saved label & percent on the same line
+    &__saved-label  { display: inline-block; }
+  }
+
+  // dark offer card styles
+   &#{&}--dark &__content {
+     border-left: 0;
+     border-right: 0;
+     border-bottom: 0;
+     background-color: lighten($grey-darkest,4);
+   }
+   &#{&}--dark &__separator { background-color: $grey-dark; }
+
+}

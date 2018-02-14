@@ -1,0 +1,9 @@
+<!-- finds all pages in current group and orders -->
+{% assign group-id = include.group-id %}
+{% assign group-pages = site.html_pages | where: 'group-parent', group-id | sort: 'group-order' %}
+
+<div class="group-nav">
+  {% for group-page in group-pages %}<span class="group-nav__item" style="background-image: url('{{site.img}}/bg/{{group-page.id}}-nav.jpg');">
+    <a class="group-nav__link{% if group-page.id == page.id %} is-current{% endif %}" href="{{site.baseurl}}{{group-page.url}}">{{group-page.title}}</a>
+  </span>{% endfor %}
+</div>

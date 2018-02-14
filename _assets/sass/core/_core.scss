@@ -1,0 +1,61 @@
+// standard classes for easy development
+
+
+// enable 100% height
+body, html { height: 100%; }
+
+// accessible hide element
+.hidden { display: none; visibility: hidden; height: 0 !important; overflow: hidden; }
+
+// global box-sizing & font smoothing
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+// stop touch highlight color on mobile
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+// responsive images
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+// general transisition
+$transition-time: .25s;
+@mixin transition() { transition: all $transition-time ease; }
+
+// general shadow
+@mixin shadow() { box-shadow: 0px 8px 44px 0px rgba($black, .2); }
+// .shadow { @include shadow; }
+
+// standard bg position, repeat, etc
+@mixin background-attributes {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// remove deafult link style & keep cursor if no href
+a {
+  color: inherit;
+  text-decoration:none;
+  cursor: pointer;
+}
+
+// annoying snippet to get proper thin font weights in chrome
+@mixin font-smoothing {
+  -webkit-font-smoothing: antialiased;
+     -moz-font-smoothing: antialiased;
+          font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}

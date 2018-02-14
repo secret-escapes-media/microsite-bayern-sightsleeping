@@ -1,0 +1,154 @@
+// core grid styles with most of the config
+
+.container {
+
+  // default style
+  width: 100%;
+  max-width: $xxxl;
+  margin-left: auto;
+  margin-right: auto;
+  @include page-padding;
+
+  // widths
+  &--100 { max-width: 100%; }
+  &--xxl { max-width: $xxl; }
+  &--xl  { max-width: $xl; }
+  &--lg  { max-width: $lg; }
+  &--md  { max-width: $md; }
+  &--sm  { max-width: $sm; }
+
+  // alignment
+  &--left  { margin-left: 0; margin-right: auto; }
+  &--right { margin-left: auto; margin-right: 0; }
+
+  &--no-padding { padding-left: 0; padding-right: 0; }
+
+}
+
+.row {
+  /////////////////////////////////////////////////////////////// default values
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+
+  // default column value - due to inheritance this needs to be high up
+  .col { flex: 1 1 100%; }
+
+
+  //////////////////////////////////////////////////////////////// row modifiers
+
+  // margins and padding
+  // pretty sure I can get rid of these
+  // &--padding { @include page-padding; }
+  // &--margin { @include page-margin; }
+
+  // I think I dont need this as an option, I think its cool to have as a default
+  // &--center        { justify-content: center; }
+
+  // align all columns within row
+  &--justify       { justify-content: space-between; }
+  &--valign-bottom { align-items: flex-end; }
+  &--valign-center { align-items: center; }
+
+
+  ////////////////////////////////////////////// row column widths & breakpoints
+
+  // equal column sizes for all columns in row
+  @mixin row-column-widths() {
+    &6-6 > .col     { flex: 0 0 50%; max-width: 50%; }
+    &4-4-4 > .col   { flex: 0 0 33.33%; max-width: 33.33%; }
+    &3-3-3-3 > .col { flex: 0 0 25%; max-width: 25%; }
+  }
+
+  // default breakpoint for all columns - saves in always writing breakpoint in classes
+  @include bp($lg) { &-- { @include row-column-widths; } }
+
+  // constant columns (no breakpoint)
+  &--constant- { @include row-column-widths; }
+
+  // columns starting at other breakpoints
+  @include bp($sm) { &--sm- { @include row-column-widths; } }
+  @include bp($md) { &--md- { @include row-column-widths; } }
+  @include bp($lg) { &--lg- { @include row-column-widths; } }  // default bp used but can reference directly
+  @include bp($xl) { &--xl- { @include row-column-widths; } }
+  @include bp($xxl) { &--xxl- { @include row-column-widths; } }
+  @include bp($xxxl) { &--xxxl- { @include row-column-widths; } }
+
+
+  ////////////////////////////////////////////////////////////////////// gutters
+
+  // mixin for annoying gutter styling
+  @mixin gutter-sizes($mobile-gutter-size, $desktop-gutter-size, $breakpoint: null) {
+    margin-top: -$mobile-gutter-size;
+    margin-left: -$mobile-gutter-size;
+    & > .col {
+      padding-top: $mobile-gutter-size;
+      padding-left: $mobile-gutter-size;
+    }
+    @if $breakpoint {
+      @include bp($breakpoint) {
+        margin-top: -$desktop-gutter-size;
+        margin-left: -$desktop-gutter-size;
+        & > .col {
+          padding-top: $desktop-gutter-size;
+          padding-left: $desktop-gutter-size;
+        }
+      }
+   }
+  }
+
+  // default gutters
+  @include gutter-sizes($s2, $s4, $lg);
+  &--gutters {
+    // small gutters
+    &-sm { @include gutter-sizes($s0, $s2, $lg); }
+    // large gutters
+    &-lg { @include gutter-sizes($s4, $s6, $lg); }
+    // extra large gutters
+    &-xl { @include gutter-sizes($s6, $s8, $lg); }
+  }
+
+  // removes gutters between elements
+  &--no-gutters { @include gutter-sizes(0, 0); }
+
+
+  /////////////////////////////////////// column modifiers, widths & breakpoints
+
+  .col {
+    // align single column
+    &--top    { align-self: flex-start; }
+    &--middle { align-self: center; }
+    &--bottom { align-self: flex-end; }
+
+
+    // left & right
+
+    // auto size
+    &--auto { flex: 1 1 auto; }
+
+    // equal column sizes for all columns in row
+    @mixin column-widths() {
+      &3  { flex: 0 0 25%; max-width: 25%; }
+      &4  { flex: 0 0 33.33%; max-width: 33.33%; }
+      &5  { flex: 0 0 40%; max-width: 40%; }
+      &6  { flex: 0 0 50%; max-width: 50%; }
+      &7  { flex: 0 0 60%; max-width: 60%; }
+      &8  { flex: 0 0 66.66%; max-width: 66.66%; }
+      &9  { flex: 0 0 75%; max-width: 75%; }
+      &12 { flex: 0 0 100%; max-width: 100%; }
+    }
+
+    // default breakpoint for individual columns - saves in always writing breakpoint in classes
+    @include bp($lg) { &-- { @include column-widths; } }
+
+    // columns starting at other breakpoints
+    @include bp($sm) { &--sm- { @include column-widths; } }
+    @include bp($md) { &--md- { @include column-widths; } }
+    @include bp($lg) { &--lg- { @include column-widths; } } // default bp used but can reference directly
+    @include bp($xl) { &--xl- { @include column-widths; } }
+    @include bp($xxl) { &--xxl- { @include column-widths; } }
+    @include bp($xxxl) { &--xxxl- { @include column-widths; } }
+  }
+
+}

@@ -1,0 +1,11 @@
+{% assign group-id = modal.id %}
+{% for modal in modal.contents %}
+  <div class="modal modal--series is-closed" data-modal-id="{{modal.id}}" data-modal-group="{{group-id}}">
+    <div class="js-close-modal modal__close"></div>
+    <div class="js-modal-nav modal__nav modal__nav--next" data-nav-direction="next"></div>
+    <div class="js-modal-nav modal__nav modal__nav--previous" data-nav-direction="previous"></div>
+    <div class="modal__content">
+      {{modal.content}}
+    </div>
+  </div>
+{% endfor %}

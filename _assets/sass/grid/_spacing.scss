@@ -1,0 +1,91 @@
+// options for vertical spacing and padding
+
+// default horizontal padding for the whole site
+// Gets set a lot of times so mixin needed to keep track and allow global edit
+@mixin page-padding {
+  padding-left: $s2;
+  padding-right: $s2;
+  @include bp($md){
+    padding-left: $s4;
+    padding-right: $s4;
+  }
+}
+
+// equal vertical padding for large elements
+.vpad {
+  &--xxxxl { padding-top: $s10; padding-bottom: $s10; }
+  &--xxxl  { padding-top: $s8; padding-bottom: $s8; }
+  &--xxl   { padding-top: $s6; padding-bottom: $s6; }
+  &--xl    { padding-top: $s4; padding-bottom: $s4; }
+  &--lg    { padding-top: $s2; padding-bottom: $s2; }
+  &--md    { padding-top: $s0; padding-bottom: $s0; }
+  &--sm    { padding-top: $s-2; padding-bottom: $s-2; }
+  &--xs    { padding-top: $s-4; padding-bottom: $s-4; }
+  &--xxs   { padding-top: $s-6; padding-bottom: $s-6; }
+  @include bp($lg) {
+    &--xxxxl { padding-top: $s14; padding-bottom: $s14; }
+    &--xxxl  { padding-top: $s12; padding-bottom: $s12; }
+    &--xxl   { padding-top: $s10; padding-bottom: $s10; }
+    &--xl    { padding-top: $s8; padding-bottom: $s8; }
+    &--lg    { padding-top: $s6; padding-bottom: $s6; }
+    &--md    { padding-top: $s4; padding-bottom: $s4; }
+    &--sm    { padding-top: $s2; padding-bottom: $s2; }
+    &--xs    { padding-top: $s0; padding-bottom: $s0; }
+    &--xxs   { padding-top: $s-2; padding-bottom: $s-2; }
+  }
+}
+
+// add in the occasional space for internal content
+// these are padding top instead of height
+.space {
+  &--xxxxl { padding-top: $s10; }
+  &--xxxl  { padding-top: $s8; }
+  &--xxl   { padding-top: $s6; }
+  &--xl    { padding-top: $s4; }
+  &--lg    { padding-top: $s2; }
+  &--md    { padding-top: $s0; }
+  &--sm    { padding-top: $s-2; }
+  &--xs    { padding-top: $s-4; }
+  &--xxs   { padding-top: $s-6; }
+  @include bp($lg) {
+    &--xxxxl { padding-top: $s12; }
+    &--xxxl  { padding-top: $s10; }
+    &--xxl   { padding-top: $s8; }
+    &--xl    { padding-top: $s6; }
+    &--lg    { padding-top: $s4; }
+    &--md    { padding-top: $s2; }
+    &--sm    { padding-top: $s0; }
+    &--xs    { padding-top: $s-2; }
+    &--xxs   { padding-top: $s-4; }
+  }
+}
+
+// box padding for inner page elements like offer cards
+.boxpad {
+  &--xxxxl { padding: $s8; }
+  &--xxxl  { padding: $s6; }
+  &--xxl   { padding: $s4; }
+  &--xl    { padding: $s2; }
+  &--lg    { padding: $s0; }
+  &--md    { padding: $s-2; }
+  &--sm    { padding: $s-4; }
+  &--xs    { padding: $s-6; }
+  &--xxs   { padding: $s-8; }
+  @include bp($lg) {
+    &--xxxxl { padding: $s10; }
+    &--xxxl  { padding: $s8; }
+    &--xxl   { padding: $s6; }
+    &--xl    { padding: $s4; }
+    &--lg    { padding: $s2; }
+    &--md    { padding: $s0; }
+    &--sm    { padding: $s-2; }
+    &--xs    { padding: $s-4; }
+    &--xxs   { padding: $s-6; }
+  }
+}
+
+// spacing for the main content blocks on the site
+.section-spacing {
+  .bob + .bob { padding-top: $s6; }
+  .container + .container { padding-top: $s8; }
+}

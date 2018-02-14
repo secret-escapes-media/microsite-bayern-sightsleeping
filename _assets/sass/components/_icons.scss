@@ -1,0 +1,21 @@
+// general icon styles
+
+$mobile-icon-size: 18px;
+$desktop-icon-size: 24px;
+
+.icon {
+  display: inline-block;
+  height: $mobile-icon-size;
+  width: $mobile-icon-size;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: $mobile-icon-size;
+  &--menu { background-image: url("../img/icons/menu.svg"); }
+  &--close { background-image: url("../img/icons/close.svg"); }
+  @include bp($md){
+    height: $desktop-icon-size;
+    width: $desktop-icon-size;
+    background-size: $desktop-icon-size;
+  }
+}

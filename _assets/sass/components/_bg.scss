@@ -1,0 +1,7 @@
+// background styles
+
+.bg {
+  &--white { background-color: $white; }
+  &--light { background-color: $grey-lightest; }
+  &--dark  { background-color: $grey-dark; }
+}
