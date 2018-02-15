@@ -13,6 +13,10 @@
       {{ content }}
     </div>
 
+    {% unless page.id == 'offers' or page.id == 'competition' %}
+      {% include page/promo-comp.html %}
+    {% endunless %}
+
     {% include page/footer.html %}
 
     {% include modal/modal.html %}

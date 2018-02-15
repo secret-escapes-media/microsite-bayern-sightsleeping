@@ -2,7 +2,55 @@
 layout: default
 ---
 
-<div class="container vpad--xxl text--center">
-  <h1 class="title title--lg">{{page.title}}</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint odit aliquam reprehenderit magni eius, esse quisquam minima inventore, adipisci excepturi. Quibusdam sequi eum labore vitae recusandae aliquam commodi, consectetur itaque.</p>
+<div class="container container--xl text--center text--lg space--xxxxl">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore illum saepe velit assumenda praesentium quo dolores dolorem maiores ducimus, aperiam laborum, eveniet nostrum quia? Deleniti nobis, quasi adipisci cumque quia ullam voluptatibus consectetur mollitia neque ea eius, accusamus dignissimos debitis maxime dolore culpa facilis reprehenderit totam fugiat necessitatibus? Velit, dolorem.</p>
 </div>
+
+<div class="container">
+  <div class="bob">
+    <div class="bob__img">
+      <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/img.jpg');"></div>
+    </div>
+    <div class="bob__text">
+      <div class="title title--md">Lorem ipsum dolor sit amet, consectetur.</div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad quam minus facere, sunt sed quaerat voluptatum fuga natus amet tempora, nesciunt dolorem fugit ipsam suscipit voluptate cupiditate obcaecati asperiores ipsum, animi dolores soluta recusandae fugiat veritatis! Adipisci numquam, corrupti temporibus!</p>
+    </div>
+  </div>
+  <div class="bob bob--swap">
+    <div class="bob__img">
+      <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/img.jpg');"></div>
+    </div>
+    <div class="bob__text">
+      <div class="title title--md">Nobis maxime sequi qui voluptas dolorum!</div>
+      <p>Quia, debitis, itaque. Quas, voluptates, dolore. Placeat sint culpa, delectus quidem. Earum excepturi repellat adipisci fugiat animi quibusdam iure ea rem asperiores odio aliquid vero expedita inventore accusamus dolor exercitationem, non magni eveniet! Velit possimus culpa perferendis beatae facere praesentium.</p>
+    </div>
+  </div>
+  <div class="bob">
+    <div class="bob__img">
+      <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/img.jpg');"></div>
+    </div>
+    <div class="bob__text">
+      <div class="title title--md">Beatae officiis facilis doloremque animi illum.</div>
+      <p>Nesciunt consectetur maxime possimus accusamus est, eius earum deserunt omnis modi distinctio? Facere dolorum, deserunt quidem tempore dolore ad, labore qui praesentium et nihil, neque quasi! Voluptatum magnam sapiente earum aut officiis, atque iusto, totam. Necessitatibus iste eius obcaecati perspiciatis.</p>
+    </div>
+  </div>
+</div>
+
+<div class="space--xxxxl"></div>
+
+{% assign other-group-pages = site.html_pages | where: 'group-parent', page.group-parent | sort: 'group-order' %}
+{% for group-page in other-group-pages %}
+  {% unless group-page.id == page.id %}
+    <div class="harvey{% cycle '', ' harvey--swap' %}">
+      <div class="harvey__img" style="background-image: url('{{site.img}}/img.jpg');">
+        <a href="{{site.baseurl}}{{group-page.url}}" class="harvey__link"></a>
+      </div>
+      <div class="harvey__text">
+        <h2 class="title title--xl">{{group-page.title}}</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ducimus, fuga non eos praesentium. Eius quasi mollitia incidunt repudiandae voluptatibus earum nesciunt, sit eos tenetur veritatis vel facere ea nihil.</p>
+        <div class="space--sm"></div>
+        <a href="{{site.baseurl}}{{group-page.url}}" class="btn btn--orange-outline">Discover More</a>
+      </div>
+    </div>
+  {% endunless %}
+{% endfor %}

@@ -2,7 +2,24 @@
 layout: default
 ---
 
-<div class="container vpad--xxl text--center">
-  <h1 class="title title--lg">{{page.title}}</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint odit aliquam reprehenderit magni eius, esse quisquam minima inventore, adipisci excepturi. Quibusdam sequi eum labore vitae recusandae aliquam commodi, consectetur itaque.</p>
+<div class="container container--xl text--center text--lg space--xxxxl">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore illum saepe velit assumenda praesentium quo dolores dolorem maiores ducimus, aperiam laborum, eveniet nostrum quia? Deleniti nobis, quasi adipisci cumque quia ullam voluptatibus consectetur mollitia neque ea eius, accusamus dignissimos debitis maxime dolore culpa facilis reprehenderit totam fugiat necessitatibus? Velit, dolorem.</p>
+</div>
+
+
+<div class="space--xxxl">
+  {% assign group-pages = site.html_pages | where: 'group-parent', page.id | sort: 'group-order' %}
+  {% for page in group-pages %}
+    <div class="harvey{% cycle '', ' harvey--swap' %}">
+      <div class="harvey__img" style="background-image: url('{{site.img}}/img.jpg');">
+        <a href="{{site.baseurl}}{{page.url}}" class="harvey__link"></a>
+      </div>
+      <div class="harvey__text">
+        <h2 class="title title--xl">{{page.title}}</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ducimus, fuga non eos praesentium. Eius quasi mollitia incidunt repudiandae voluptatibus earum nesciunt, sit eos tenetur veritatis vel facere ea nihil.</p>
+        <div class="space--sm"></div>
+        <a href="{{site.baseurl}}{{page.url}}" class="btn btn--orange-outline">Discover More</a>
+      </div>
+    </div>
+  {% endfor %}
 </div>

@@ -26,8 +26,8 @@
     padding-bottom: $s8;
     @include page-padding;
     @include bp($bp) {
-      padding-top: $s12;
-      padding-bottom: $s12;
+      padding-top: $s15;
+      padding-bottom: $s15;
     }
   }
   &__img {
