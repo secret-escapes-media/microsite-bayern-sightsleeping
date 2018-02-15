@@ -1,5 +1,5 @@
 # Site settings
-title: Template
+title: Destination Region
 client:
   name: Client Name
   link: "#client-name"
@@ -9,10 +9,10 @@ description: >
 
 # file paths
 url:     "http://mp.secretescapes.com" # the base hostname & protocol for your site
-baseurl: "/template" # the subpath of your site, e.g. /blog/
-img:     "/template/_assets/img"
-css:     "/template/_assets/css"
-js:      "/template/_assets/js"
+baseurl: "/destination-region" # the subpath of your site, e.g. /blog/
+img:     "/destination-region/_assets/img"
+css:     "/destination-region/_assets/css"
+js:      "/destination-region/_assets/js"
 
 
 # Build settings
