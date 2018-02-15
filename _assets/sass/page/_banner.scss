@@ -15,6 +15,7 @@
     min-height: 650px;
   }
   &__wrap {
+    position: relative;
     z-index: $z-content-upper;
     display: flex;
     width: 100%;
@@ -51,5 +52,9 @@
     left: 0;
     bottom: 0;
     z-index: $z-content-upper;
+    &--top {
+      top: 0;
+      bottom: auto;
+    }
   }
 }
