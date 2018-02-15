@@ -1,9 +1,98 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-{% include page/banner.html %}
+{% include page/head.html %}
 
-<div class="content-spacing section-spacing">
-  {{ content }}
-</div>
+<body>
+
+  <header class="site-header js-hide-site-header">
+    {% include nav/core.html %}
+  </header>
+
+  <div class="banner banner--lg">
+    <div class="site-header__offset"></div>
+    <div class="banner__bg" style="background-image: url('{{site.img}}/img.jpg')"></div>
+    <div class="banner__wrap">
+      <div class="banner__nav banner__nav--top js-hide-site-nav">
+        {% include nav/site.html %}
+      </div>
+      <div class="container text--center">
+        {% if page.banner.title-sup %}<h2 class="sub-title">{{page.banner.title-sup}}</h2>{% endif %}
+        <h1 class="banner-title">{% if page.banner.title %}{{page.banner.title}}{% else %}{{page.title}}{% endif %}</h1>
+        {% if page.banner.title-sub %}<h2 class="sub-title">{{page.banner.title-sub}}</h2>{% endif %}
+      </div>
+    </div>
+  </div>
+
+  <div class="content-spacing section-spacing">
+
+    <div class="container container--xl text--center text--lg space--xxxxl">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore illum saepe velit assumenda praesentium quo dolores dolorem maiores ducimus, aperiam laborum, eveniet nostrum quia? Deleniti nobis, quasi adipisci cumque quia ullam voluptatibus consectetur mollitia neque ea eius, accusamus dignissimos debitis maxime dolore culpa facilis reprehenderit totam fugiat necessitatibus? Velit, dolorem.</p>
+    </div>
+
+    <div class="container">
+      <div class="bob">
+        <div class="bob__img">
+          <div class="bg-img bg-img--1-1" style="background-image: url('{{site.img}}/img.jpg');"></div>
+        </div>
+        <div class="bob__text">
+          <div class="title title--md">Lorem ipsum dolor sit amet, consectetur.</div>
+          <p class="<text--lg></text--lg>">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad quam minus facere, sunt sed quaerat voluptatum fuga natus amet tempora, nesciunt dolorem fugit ipsam suscipit voluptate cupiditate obcaecati asperiores ipsum, animi dolores soluta recusandae fugiat veritatis! Adipisci numquam, corrupti temporibus!</p>
+        </div>
+      </div>
+      <div class="space--xxxxl"></div>
+      <div class="bob">
+        <div class="bob__img">
+          <div class="bg-img bg-img--1-1" style="background-image: url('{{site.img}}/img.jpg');"></div>
+        </div>
+        <div class="bob__text">
+          <div class="title title--md">Lorem ipsum dolor sit amet, consectetur.</div>
+          <p class="<text--lg></text--lg>">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad quam minus facere, sunt sed quaerat voluptatum fuga natus amet tempora, nesciunt dolorem fugit ipsam suscipit voluptate cupiditate obcaecati asperiores ipsum, animi dolores soluta recusandae fugiat veritatis! Adipisci numquam, corrupti temporibus!</p>
+        </div>
+      </div>
+      <div class="space--xxxxl"></div>
+      <div class="bob">
+        <div class="bob__img">
+          <div class="bg-img bg-img--1-1" style="background-image: url('{{site.img}}/img.jpg');"></div>
+        </div>
+        <div class="bob__text">
+          <div class="title title--md">Lorem ipsum dolor sit amet, consectetur.</div>
+          <p class="<text--lg></text--lg>">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad quam minus facere, sunt sed quaerat voluptatum fuga natus amet tempora, nesciunt dolorem fugit ipsam suscipit voluptate cupiditate obcaecati asperiores ipsum, animi dolores soluta recusandae fugiat veritatis! Adipisci numquam, corrupti temporibus!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="space--xxxxl"></div>
+
+    <div class="bg--light vpad--xxxl">
+      <div class="container container--xxl">
+        <div class="row row--xl-6-6">
+          {% assign guides = site.html_pages | where: 'group-parent', 'explore' | sort: 'group-order' %}
+          {% for guide in guides %}
+            {% unless guide.id == page.id %}
+            <div class="col">
+              <div class="bg-img bg-img--2-3" style="background-image: url('{{site.img}}/img.jpg');">
+                <a href="{{site.baseurl}}{{guide.url}}" class="bg-img__link"></a>
+                <div class="bg-img__content">
+                  <h2 class="title title--xl">{{guide.title}}</h2>
+                </div>
+                <div class="bg-img__bg-overlay"></div>
+              </div>
+            </div>
+            {% endunless %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    {% include page/promo-comp.html %}
+
+  </div>
+
+  {% include page/footer.html %}
+
+  {% include modal/modal.html %}
+
+</body>
+
+</html>

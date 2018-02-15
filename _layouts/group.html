@@ -2,8 +2,33 @@
 layout: default
 ---
 
-{% include page/banner.html %}
+{% include page/banner.html size="sm" %}
 
 <div class="content-spacing section-spacing">
-  {{ content }}
+
+  <div class="container container--xl text--center text--lg space--xxxl">
+    <p>{{page.intro}}</p>
+  </div>
+
+  <div class="container container--xxl">
+    <div class="row row--xl-6-6">
+      {% assign guides = site.html_pages | where: 'group-parent', 'explore' | sort: 'group-order' %}
+      {% for guide in guides %}
+        <div class="col">
+          <div class="bg-img bg-img--2-3" style="background-image: url('{{site.img}}/img.jpg');">
+            <a href="{{site.baseurl}}{{guide.url}}" class="bg-img__link"></a>
+            <div class="bg-img__content">
+              <h2 class="title title--xl">{{guide.title}}</h2>
+            </div>
+            <div class="bg-img__bg-overlay"></div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="space--xxxl"></div>
+
+  {% include page/promo-comp.html %}
+
 </div>

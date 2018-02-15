@@ -16,11 +16,15 @@
   }
   &--sm {
     height: 66.66%;
-    min-height: auto;
+    min-height: 350px;
     @include bp($lg){
-      height: 50%;
-      min-height: auto;
+      height: 60%;
+      min-height: 500px;
     }
+  }
+  &--lg {
+    height: 100%;
+    @include bp($lg){ min-height: 750px; }
   }
   &__wrap {
     position: relative;
