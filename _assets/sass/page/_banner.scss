@@ -14,7 +14,16 @@
     height: 80%;
     min-height: 650px;
   }
+  &--sm {
+    height: 66.66%;
+    min-height: auto;
+    @include bp($lg){
+      height: 50%;
+      min-height: auto;
+    }
+  }
   &__wrap {
+    position: relative;
     z-index: $z-content-upper;
     display: flex;
     width: 100%;
@@ -51,5 +60,9 @@
     left: 0;
     bottom: 0;
     z-index: $z-content-upper;
+    &--top {
+      top: 0;
+      bottom: auto;
+    }
   }
 }
