@@ -1,0 +1,18 @@
+.sticky-enter {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: $s-4;
+  padding-bottom: $s-4;
+  @include page-padding();
+  background-color: rgba($grey-darker,.85);
+  @include transition();
+  transform: scaleY(0);
+  transform-origin: bottom center;
+  &.is-stuck {
+    transform: scaleY(1);
+  }
+}

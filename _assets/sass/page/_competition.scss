@@ -1,0 +1,37 @@
+// page elements for the competition page
+
+.competition-title,
+.competition-footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: $white;
+  &__wrap {
+    position: relative;
+    z-index: $z-content-upper;
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+    @include page-padding;
+  }
+}
+
+.competition-title {
+  height: 100%;
+  min-height: 525px;
+  @include bp($lg){
+    height: 80%;
+    min-height: 650px;
+  }
+}
+
+.competition-footer {
+  height: 66.66%;
+  min-height: 400px;
+}
