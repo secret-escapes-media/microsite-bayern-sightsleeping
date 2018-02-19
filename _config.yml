@@ -9,10 +9,10 @@ description: >
 
 # file paths
 url:     "http://mp.secretescapes.com" # the base hostname & protocol for your site
-baseurl: "/collection-single" # the subpath of your site, e.g. /blog/
-img:     "/collection-single/_assets/img"
-css:     "/collection-single/_assets/css"
-js:      "/collection-single/_assets/js"
+baseurl: "/_templates/collection-single" # the subpath of your site, e.g. /blog/
+img:     "/_templates/collection-single/_assets/img"
+css:     "/_templates/collection-single/_assets/css"
+js:      "/_templates/collection-single/_assets/js"
 
 
 # Build settings
