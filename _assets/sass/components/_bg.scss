@@ -5,6 +5,16 @@
   &--light { background-color: $grey-lightest; }
   &--dark  { background-color: $grey-dark; }
   &--img   { @include background-attributes; }
+  &__fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $z-background;
+    @include background-attributes;
+    background-color: $grey-darker;
+  }
 
   &--grey  { background-color: $grey-lighter; }
 }
