@@ -13,7 +13,7 @@
   cursor: pointer;
   @include transition;
   &--sm { padding: $s1 $s4; font-size: $s-2; }
-  &--lg { padding: $s4 $s8; font-size: $s-1; }
+  &--lg { padding: $s3 $s8; font-size: $s-1; }
   &--orange { background-color: $orange;
     &:hover { background-color: $orange-dark; }
   }
