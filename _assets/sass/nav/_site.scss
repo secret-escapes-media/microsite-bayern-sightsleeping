@@ -97,4 +97,16 @@ $nav-color:          $orange-dark;
     &.is-current { background-color: rgba($nav-color,.66); }
     &:hover      { background-color: rgba($nav-color,1); }
   }
+
+  // js-sticky-nav style
+  &.is-stuck {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    z-index: $z-nav  ;
+  }
+
 }
+

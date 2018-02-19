@@ -10,12 +10,43 @@
     {% include page/banner.html %}
 
     <div class="content-spacing section-spacing">
-      {{ content }}
+
+      <!-- loops through section file for page content -->
+      {% for section in site.data.sections %}
+        <div id="{{section.id}}" class="js-nav-section vpad--xxxxl {% cycle 'bg--white', 'bg--light' %}">
+          <div class="container">
+
+            <div class="row row--valign-center row--gutters-lg row--6-6">
+              <div class="col">
+                <div class="title title--xxl">{{section.title}}</div>
+                <p>{{section.description}}</p>
+              </div>
+              <div class="col">
+                <div class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/img.jpg');"></div>
+              </div>
+            </div>
+
+            <div class="space--xxl"></div>
+
+            <div class="row row--6-6 row--xxl-4-4-4">
+              {% for offer in section.offers %}
+                <div class="col">
+                  {% include offer/offer-sm.html %}
+                </div>
+              {% endfor %}
+            </div>
+
+
+          </div>
+        </div>
+      {% endfor %}
+
+      {% include page/promo-campaign.html %}
+
     </div>
 
-    {% include page/footer.html %}
 
-    {% include modal/modal.html %}
+    {% include page/footer.html %}
 
   </body>
 

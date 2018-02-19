@@ -35,26 +35,6 @@
       expires: 2020/04/20
       link: https://www.secretescapes.com/first-hotel-marin-bergen-norway/sale?gce_scp=1&utm_source=SE&utm_medium=Hub&utm_campaign=13_Norway_201704
 
-    - title: ONE - Magic Hotel
-      id: magic-hotel
-      location: Bergen, Norway
-      description: A brand-new hip hotel in the centre of Bergen, designed by a top New York designer
-      price: 73
-      price-description: per room per night
-      saved: 55
-      expires: 2020/04/20
-      link: https://www.secretescapes.com/magic-hotel-bergen-norway/sale?gce_hpf=1&utm_source=SE&utm_medium=Hub&utm_campaign=14_Norway_201704
-
-    - title: ONE - Sola Strand Hotel
-      id: sola-strand-hotel
-      location: Sola, Norway
-      description: Discover one of the world's sixth best beaches on Norway's gorgeous coast, with breakfast and more
-      price: 79
-      price-description: per room per night
-      saved: 47
-      expires: 2020/04/20
-      link: https://www.secretescapes.com/sola-strand-hotel-sola-norway/sale?gce_hpf=1&utm_source=SE&utm_medium=Hub&utm_campaign=15_Norway_201704
-
 
 
 ################################################################################
@@ -97,26 +77,6 @@
       saved: 43
       expires: 2020/04/20
       link: https://www.secretescapes.com/first-hotel-marin-bergen-norway/sale?gce_scp=1&utm_source=SE&utm_medium=Hub&utm_campaign=13_Norway_201704
-
-    - title: TWO - Magic Hotel
-      id: magic-hotel
-      location: Bergen, Norway
-      description: A brand-new hip hotel in the centre of Bergen, designed by a top New York designer
-      price: 73
-      price-description: per room per night
-      saved: 55
-      expires: 2020/04/20
-      link: https://www.secretescapes.com/magic-hotel-bergen-norway/sale?gce_hpf=1&utm_source=SE&utm_medium=Hub&utm_campaign=14_Norway_201704
-
-    - title: TWO - Sola Strand Hotel
-      id: sola-strand-hotel
-      location: Sola, Norway
-      description: Discover one of the world's sixth best beaches on Norway's gorgeous coast, with breakfast and more
-      price: 79
-      price-description: per room per night
-      saved: 47
-      expires: 2020/04/20
-      link: https://www.secretescapes.com/sola-strand-hotel-sola-norway/sale?gce_hpf=1&utm_source=SE&utm_medium=Hub&utm_campaign=15_Norway_201704
 
 
 
@@ -161,26 +121,6 @@
       expires: 2020/04/20
       link: https://www.secretescapes.com/first-hotel-marin-bergen-norway/sale?gce_scp=1&utm_source=SE&utm_medium=Hub&utm_campaign=13_Norway_201704
 
-    - title: THREE - Magic Hotel
-      id: magic-hotel
-      location: Bergen, Norway
-      description: A brand-new hip hotel in the centre of Bergen, designed by a top New York designer
-      price: 73
-      price-description: per room per night
-      saved: 55
-      expires: 2020/04/20
-      link: https://www.secretescapes.com/magic-hotel-bergen-norway/sale?gce_hpf=1&utm_source=SE&utm_medium=Hub&utm_campaign=14_Norway_201704
-
-    - title: THREE - Sola Strand Hotel
-      id: sola-strand-hotel
-      location: Sola, Norway
-      description: Discover one of the world's sixth best beaches on Norway's gorgeous coast, with breakfast and more
-      price: 79
-      price-description: per room per night
-      saved: 47
-      expires: 2020/04/20
-      link: https://www.secretescapes.com/sola-strand-hotel-sola-norway/sale?gce_hpf=1&utm_source=SE&utm_medium=Hub&utm_campaign=15_Norway_201704
-
 
 
 ################################################################################
@@ -223,23 +163,3 @@
       saved: 43
       expires: 2020/04/20
       link: https://www.secretescapes.com/first-hotel-marin-bergen-norway/sale?gce_scp=1&utm_source=SE&utm_medium=Hub&utm_campaign=13_Norway_201704
-
-    - title: FOUR - Magic Hotel
-      id: magic-hotel
-      location: Bergen, Norway
-      description: A brand-new hip hotel in the centre of Bergen, designed by a top New York designer
-      price: 73
-      price-description: per room per night
-      saved: 55
-      expires: 2020/04/20
-      link: https://www.secretescapes.com/magic-hotel-bergen-norway/sale?gce_hpf=1&utm_source=SE&utm_medium=Hub&utm_campaign=14_Norway_201704
-
-    - title: FOUR - Sola Strand Hotel
-      id: sola-strand-hotel
-      location: Sola, Norway
-      description: Discover one of the world's sixth best beaches on Norway's gorgeous coast, with breakfast and more
-      price: 79
-      price-description: per room per night
-      saved: 47
-      expires: 2020/04/20
-      link: https://www.secretescapes.com/sola-strand-hotel-sola-norway/sale?gce_hpf=1&utm_source=SE&utm_medium=Hub&utm_campaign=15_Norway_201704

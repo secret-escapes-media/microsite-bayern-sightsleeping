@@ -131,9 +131,11 @@ $offer-max-width: 600px;
     &__arrow { display: block; }
   }
   @include bp($md) {
-    &__bottom-right { align-self: center; }
-    &__saved        { min-width: 130px; } // bit of a magic number, basically keeps the saved label & percent on the same line
-    &__saved-label  { display: inline-block; }
+    &__bottom-right      { align-self: center; }
+    &__saved             { min-width: 130px; } // bit of a magic number, basically keeps the saved label & percent on the same line
+    &__saved-label       { display: inline-block; }
+    &--sm &__saved       { min-width: auto; }
+    &--sm &__saved-label { display: block; font-size: $s-1; }
   }
 
   // dark offer card styles
