@@ -1,7 +1,12 @@
 <!-- offer variables just to make the loops more readable -->
 
 <!-- all offers -->
-{% assign offers = site.data.offers %}
+{% assign offers = null
+  | concat: site.data.offers.one
+  | concat: site.data.offers.two
+  | concat: site.data.offers.three
+  | concat: site.data.offers.four
+ %}
 
 <!-- offers by saving -->
 {% assign offers-by-saving = offers | sort: 'saved' | reverse %}

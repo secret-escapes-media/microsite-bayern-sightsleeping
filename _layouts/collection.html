@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="container container--xl text--center text--lg space--xxxxl">
+  <p>{{page.intro}}</p>
+</div>
+
+<div class="container vpad--xxxl">
+  <div class="row row--xl-6-6 row--gutters-lg">
+    {% for offer in site.data.offers.[page.id] %}
+      <div class="col">
+        {% include offer/offer.html %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% include page/promo-comp.html %}
