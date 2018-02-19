@@ -9,10 +9,10 @@ description: >
 
 # file paths
 url:     "http://mp.secretescapes.com" # the base hostname & protocol for your site
-baseurl: "/destination-topic" # the subpath of your site, e.g. /blog/
-img:     "/destination-topic/_assets/img"
-css:     "/destination-topic/_assets/css"
-js:      "/destination-topic/_assets/js"
+baseurl: "/_templates/destination-topic" # the subpath of your site, e.g. /blog/
+img:     "/_templates/destination-topic/_assets/img"
+css:     "/_templates/destination-topic/_assets/css"
+js:      "/_templates/destination-topic/_assets/js"
 
 
 # Build settings
