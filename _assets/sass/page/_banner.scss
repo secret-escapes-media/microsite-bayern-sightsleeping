@@ -10,17 +10,19 @@
   min-height: 525px;
   color: $white;
   background-color: $grey;
-  overflow: hidden;
   @include bp($lg){
     height: 80%;
     min-height: 650px;
   }
   &__wrap {
+    position: relative;
     z-index: $z-content-upper;
     display: flex;
+    width: 100%;
     flex-grow: 1;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
     @include page-padding;
   }
   &__bg {
@@ -50,5 +52,9 @@
     left: 0;
     bottom: 0;
     z-index: $z-content-upper;
+    &--top {
+      top: 0;
+      bottom: auto;
+    }
   }
 }
