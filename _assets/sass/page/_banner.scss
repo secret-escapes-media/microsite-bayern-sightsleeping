@@ -10,10 +10,7 @@
   min-height: 525px;
   color: $white;
   background-color: $grey;
-  @include bp($lg){
-    height: 80%;
-    min-height: 650px;
-  }
+  @include bp($lg){ min-height: 750px; }
   &__wrap {
     position: relative;
     z-index: $z-content-upper;
@@ -51,7 +48,7 @@
     right: 0;
     left: 0;
     bottom: 0;
-    z-index: $z-content-upper;
+    z-index: $z-nav;
     &--top {
       top: 0;
       bottom: auto;

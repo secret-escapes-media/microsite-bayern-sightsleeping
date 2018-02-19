@@ -1,0 +1,31 @@
+<!--
+  single page navigation for each section. Very similar to the nav/site.html
+    - removes group nav
+    - id link
+    - no is-current class
+    - is sticky for whole page after banner
+    - manually entered offer section
+-->
+
+<div class="site-nav js-sticky-nav">
+  <div class="site-nav__scroll-wrap">
+    <div class="site-nav__wrap">
+
+        <!-- loops through all sections within page -->
+        {% for section in site.data.sections %}<span class="site-nav__item">
+
+          <a class="site-nav__link site-nav__link--{{section.id}}" href="#{{section.id}}">
+            {% if section.nav-title %}
+              {{section.nav-title}}
+            {% else %}
+              {{section.title}}
+            {% endif %}
+          </a>
+
+        </span>{% endfor %}<span class="site-nav__item">
+          <!-- Offer section -->
+          <a class="site-nav__link site-nav__link--offers" href="#offers">Offers</a>
+        </span>
+    </div>
+  </div>
+</div>
