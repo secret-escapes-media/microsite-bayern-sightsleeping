@@ -1,4 +1,5 @@
 var gulp         = require('gulp');
+var path         = require('path');
 var del          = require('del');
 var cp           = require('child_process');
 var gulpSequence = require('gulp-sequence');
@@ -69,7 +70,17 @@ gulp.task('watch-js', ['build-js'], function() {
 
 // watch for images
 gulp.task('watch-images', ['build-images'], function() {
-  gulp.watch(['_assets/img/**/*.*'], ['build-images']);
+  gulp.watch(['_assets/img/**/*.*'], ['build-images'])
+    // updates the compiled folder if an image is deleted
+    // modified snippet from https://gulpjs.org/recipes/handling-the-delete-event-on-watch
+    .on('change', function (event) {
+      if (event.type === 'deleted') {
+        var filePathFromSrc = path.relative(path.resolve('_assets/img/**/*.*'), event.path);
+        var destFilePath = path.resolve('_site/_assets/img/**/*.*', filePathFromSrc);
+        del.sync(destFilePath);
+      }
+      browserSync.reload();
+    })
 });
 
 
@@ -136,9 +147,6 @@ gulp.task('build-js', function(cb) {
 gulp.task('build-images', function(cb) {
   return gulp.src('./_assets/img/**/*.*')
   .pipe(gulp.dest('./_site/_assets/img/'))
-  .pipe(browserSync.reload({
-    stream: true
-  }))
 });
 
 
