@@ -10,8 +10,8 @@
   // styles
   &--italic       { font-style: italic; }
   &--light        { font-weight: 200; }
-  &--bold         { font-style: bold; }
-  &--bolder       { font-style: bolder; }
+  &--bold         { font-weight: bold; }
+  &--bolder       { font-weight: bolder; }
   &--wide-kern    { letter-spacing: .25em; }
   &--wide-kern-lg { letter-spacing: .5em; }
   &--upper        { text-transform: uppercase; }
