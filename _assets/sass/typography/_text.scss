@@ -3,8 +3,8 @@
 .text {
   // sizes
   &--xxl { font-size: $s3; }
-  &--xl  { font-size: $s2; }
-  &--lg  { font-size: $s1; }
+  &--xl  { font-size: $s2; line-height: 1.6; }
+  &--lg  { font-size: $s1; line-height: 1.6; }
   &--sm  { font-size: $s-1; }
 
   // styles
