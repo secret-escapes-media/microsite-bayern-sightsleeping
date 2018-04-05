@@ -84,18 +84,22 @@ $nav-color:          $orange-dark;
     flex-grow: 1;
     align-items: center;
     justify-content: center;
-    padding-left: $s0;
-    padding-right: $s0;
+    padding-left: $s2;
+    padding-right: $s2;
     font-family: $font-core;
-    font-weight: 600;
-    font-size: $s-1;
-    letter-spacing: .143em;
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: .25em;
     text-transform: uppercase;
     color: $white;
     transition: background-color $transition-time ease;
     white-space: nowrap;
     &.is-current      { background-color: rgba($nav-color,.66); }
     .no-touch &:hover { background-color: rgba($nav-color,1); }
+    @include bp($nav-width-bp){
+      padding-left: $s0;
+      padding-right: $s0;
+    }
   }
 
   // js-sticky-nav style
