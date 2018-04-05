@@ -83,7 +83,7 @@ $logo-bp: 600px;
     width: 50%;
     @include bp($logo-bp) { flex-grow: 3; }
     @include bp($nav-list-bp) {
-      width: 66.66%;
+      width: auto;
       justify-content: flex-start;
     }
   }
@@ -98,7 +98,7 @@ $logo-bp: 600px;
       visibility: visible;
     }
     @include bp($nav-list-bp) {
-      width: 33.33%;
+      width: auto;
     }
   }
   &__list {

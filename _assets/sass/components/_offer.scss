@@ -47,6 +47,7 @@ $offer-max-width: 600px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     font-weight: 600;
+    color: $grey;
     &:before {
       content: "";
       display: inline-block;
@@ -145,6 +146,8 @@ $offer-max-width: 600px;
      border-bottom: 0;
      background-color: lighten($grey-darkest,4);
    }
-   &#{&}--dark &__separator { background-color: $grey-dark; }
+   &#{&}--dark &__separator           { background-color: $grey-dark; }
+   &#{&}--dark &__location            { color: $grey-lighter;}
+   &#{&}--dark &__content .core-title { color: $white;}
 
 }
