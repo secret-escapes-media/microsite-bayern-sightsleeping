@@ -7,10 +7,14 @@
   flex-direction: column;
   justify-content: flex-start;
   height: 100%;
-  min-height: 525px;
+  min-height: 450px;
+  max-height: 700px;
   color: $white;
   background-color: $grey;
-  @include bp($lg){ min-height: 750px; }
+  @include bp($lg){
+    min-height: 650px;
+    max-height: none;
+  }
   &__wrap {
     position: relative;
     z-index: $z-content-upper;
