@@ -57,6 +57,7 @@
   // open-sans – core site typeface
   font-family: $font-core;
   font-weight: 200;
+  letter-spacing: -.025em;
   @include font-smoothing;
 
   &--xxxl   { font-size: $s8; line-height: 1.1; }
