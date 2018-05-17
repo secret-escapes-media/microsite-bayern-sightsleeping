@@ -32,10 +32,10 @@ $group-nav-color:  $orange-darker;
     padding: $s0;
     font-family: $font-core;
     font-size: $s0;
-    font-weight: 300;
+    font-weight: 600;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: .25em;
+    letter-spacing: .15em;
     color: $white;
     @include transition;
     &.is-current      { background-color: rgba($group-nav-color,.66); }
