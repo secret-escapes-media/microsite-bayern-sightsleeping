@@ -7,12 +7,13 @@
     padding-top: $s8;
     padding-bottom: $s8;
     color: $grey-lighter;
+    font-weight: 400;
     text-align: center;
     background-color: $grey-darkest;
   }
 
   // spacing for multiple logos in site footer
-  .logo + .logo { margin-left: $s0; }
+  .logo { margin: $s-2; }
 
   // white background for footer. Transparent colours will appear as block colours
   position: relative;
