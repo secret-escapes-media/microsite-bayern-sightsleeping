@@ -46,6 +46,10 @@
   }
   &__text {
     @include bp($bp) { width: 40%; }
+    &--center {
+      text-align: center;
+      @include bp($bp){ text-align: left; }
+    }
   }
 
 }

@@ -12,7 +12,6 @@ body, html { height: 100%; }
 *:after,
 *:before {
   box-sizing: border-box;
-  font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
 
@@ -50,13 +49,4 @@ a {
   color: inherit;
   text-decoration:none;
   cursor: pointer;
-}
-
-// annoying snippet to get proper thin font weights in chrome
-@mixin font-smoothing {
-  -webkit-font-smoothing: antialiased;
-     -moz-font-smoothing: antialiased;
-          font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
 }
