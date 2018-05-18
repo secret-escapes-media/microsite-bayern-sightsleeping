@@ -74,6 +74,7 @@ $logo-bp: 600px;
     align-items: center;
     width: 25%;
     min-width: $core-nav-height-sm;
+    @include bp($logo-bp) { width: 33.33%; }
     @include bp($nav-list-bp) { display: none; }
   }
   &__center {
@@ -81,9 +82,12 @@ $logo-bp: 600px;
     align-items: center;
     justify-content: center;
     width: 50%;
-    @include bp($logo-bp) { flex-grow: 3; }
+    @include bp($logo-bp) {
+      width: 33.33%;
+      flex-grow: 3; // needed for firefox
+    }
     @include bp($nav-list-bp) {
-      width: auto;
+      width: 66.66%;
       justify-content: flex-start;
     }
   }
@@ -95,10 +99,8 @@ $logo-bp: 600px;
     min-width: $core-nav-height-sm;
     visibility: hidden;
     @include bp($logo-bp) {
+      width: 33.33%;
       visibility: visible;
-    }
-    @include bp($nav-list-bp) {
-      width: auto;
     }
   }
   &__list {

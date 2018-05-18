@@ -2,10 +2,10 @@
 
 .text {
   // sizes
-  &--xxl { font-size: $s3; letter-spacing: 0; }
-  &--xl  { font-size: $s2; line-height: 1.6; letter-spacing: 0; }
-  &--lg  { font-size: $s1; line-height: 1.6; letter-spacing: 0; }
-  &--sm  { font-size: $s-1; }
+  &--xxl { font-size: 1.2rem; line-height: 1.6; letter-spacing: 0; }
+  &--xl  { font-size: 1.1rem; line-height: 1.6; letter-spacing: 0; }
+  &--lg  { font-size: 1.05rem; letter-spacing: 0; }
+  &--sm  { font-size: .8rem; }
 
   // styles
   &--italic       { font-style: italic; }
