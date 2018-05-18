@@ -8,7 +8,7 @@ $group-nav-color:  $orange-darker;
   top: 100%;
   left: 0;
   z-index: $z-nav;
-  display: flex;
+  display: none;
   justify-content: space-between;
   height: $group-nav-height;
   width: 100%;
@@ -17,6 +17,7 @@ $group-nav-color:  $orange-darker;
   transform: scaleY(0);
   transform-origin: top center;
   @include bp($nav-width-bp){
+    .no-touch & { display: flex; }
     .site-nav__item:hover & { transform: scaleY(1); }
   }
   &__item {
@@ -32,10 +33,10 @@ $group-nav-color:  $orange-darker;
     padding: $s0;
     font-family: $font-core;
     font-size: $s0;
-    font-weight: 300;
+    font-weight: 600;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: .25em;
+    letter-spacing: .15em;
     color: $white;
     @include transition;
     &.is-current      { background-color: rgba($group-nav-color,.66); }
