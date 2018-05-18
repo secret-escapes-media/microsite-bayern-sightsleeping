@@ -8,6 +8,13 @@ html { // This is the root size for REM
 
 body {
 
+  // font rendering options
+  -webkit-font-smoothing: antialiased;
+     -moz-font-smoothing: antialiased;
+          font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+
   // standard
   font-family: $font-core;
   -webkit-text-size-adjust: 100%;

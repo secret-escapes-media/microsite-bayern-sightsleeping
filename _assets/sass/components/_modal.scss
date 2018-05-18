@@ -31,6 +31,7 @@
     &.is-closed { display: none; }
   }
   &__content {
+    color: $grey-dark;
     background-color: $white;
     padding: $s2 $s3;
   }

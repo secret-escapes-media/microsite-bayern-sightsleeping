@@ -104,7 +104,8 @@ $offer-max-width: 600px;
       margin-left: $s-6;
       text-align: center;
       color: #fff;
-      font-weight: 400;
+      font-weight: 600;
+      letter-spacing: 0;
       line-height: $circle-height;
       background-color: $orange;
       border-radius: $circle-height;
@@ -125,8 +126,9 @@ $offer-max-width: 600px;
   &__price {
     color: $orange;
     font-size: $s2;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 1;
+    letter-spacing: 0;
   }
   @include bp($sm) {
     &__arrow { display: block; }
