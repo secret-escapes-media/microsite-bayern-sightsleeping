@@ -1,0 +1,21 @@
+{% assign page-content = include.content %}
+
+<div class="page-nav__sticky-wrap js-sticky-page-nav-wrap">
+  <div class="page-nav js-sticky-page-nav">
+    <div class="page-nav__scroll-wrap">
+      <div class="page-nav__wrap">
+
+          {% for page-section in page-content %}<span class="page-nav__item">
+
+            <a class="page-nav__link page-nav__link--{{page-section.id}}{% if page-section.id == page.id or page-section.id == page.group-parent %} is-current{% endif %}" href="{{site.baseurl}}{{page.url}}#{{page-section.id}}">
+              {% if page-section.nav-title %}
+                {{page-section.nav-title}}
+              {% else %}
+                {{page-section.title}}
+              {% endif %}
+            </a>
+          </span>{% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

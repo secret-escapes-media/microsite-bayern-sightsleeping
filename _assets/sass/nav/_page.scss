@@ -1,0 +1,118 @@
+// styles for the micropage nav
+
+$page-nav-height:    56px;
+$page-nav-height-sm: 44px;
+$page-nav-width-bp:  720px;
+$page-nav-color:     $grey-lightest;
+
+
+// global page nav height
+@mixin page-nav-height {
+  height: $page-nav-height-sm;
+  min-height: $page-nav-height-sm;
+  @include bp($md){
+    height: $page-nav-height;
+    min-height: $page-nav-height;
+  }
+}
+
+.page-nav {
+  position: relative;
+  background-color: rgba($page-nav-color,.8);
+  text-align: center;
+
+  // NEEDS EXPLAINING LIKE THE CORE NAV OFFSET
+  &__offset:before {
+    // corrects header overlapping content
+    content: '';
+    display: block;
+    @include page-nav-height;
+  }
+
+
+  &:before {
+    // arrow icon prompt for horizontal scroll
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $z-nav-upper;
+    width: $page-nav-height-sm;
+    background-image: url("../img/icons/nav-arrow-light.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: $page-nav-height-sm auto;
+    @include page-nav-height;
+    @include bp($md){
+      width: $page-nav-height;
+      background-size: $page-nav-height auto;
+    }
+    // remove arrow icon when no overflow
+    @include bp($page-nav-width-bp){ display: none; }
+  }
+  &__sticky-wrap { @include page-nav-height; }
+  &__scroll-wrap {
+    overflow-x: auto;
+    overflow-y: hidden;
+    @include bp($page-nav-width-bp){ overflow: visible; }
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    max-width: $xxxl;
+    margin-left: auto;
+    margin-right: auto;
+    @include page-nav-height;
+    &:after {
+      // additional spacing for end of list so content can scroll past the overlaid arrow icon
+      content: '';
+      min-width: $page-nav-height-sm;
+      @include bp($md){ min-width: $page-nav-height; }
+      @include bp($page-nav-width-bp){ display: none; }
+    }
+  }
+  &__item {
+    display: flex;
+    flex: 1 0 auto;
+    // border-right: 1px solid rgba($white,.15);
+    &:last-child { border-right: 0; }
+  }
+  &__link {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    padding-left: $s4;
+    padding-right: $s4;
+    font-family: $font-core;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: $grey-dark;
+    transition: background-color $transition-time ease;
+    white-space: nowrap;
+    // &.is-current {
+    //   background-color: rgba($grey-lighter,.5);
+    // }
+    .no-touch &:hover {
+      background-color: rgba($grey-lighter,.4);
+    }
+    @include bp($page-nav-width-bp){
+      padding-left: $s0;
+      padding-right: $s0;
+    }
+  }
+
+  // js-sticky-nav style
+  &.is-stuck {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    z-index: $z-nav  ;
+  }
+}
