@@ -8,7 +8,7 @@
   {% endif %}
 
   <!-- page meta title -->
-  {% assign meta-title = page.title | remove: '&shy;' %}
+  {% assign meta-title = page.title | remove: '&shy;' | replace: '&nbsp;', ' ' %}
 
   <!-- social image -->
   {% assign social-image-url = site.url | append: site.img | append: '/thumbnail/social.jpg' %}
