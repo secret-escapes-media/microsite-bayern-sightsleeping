@@ -14,12 +14,13 @@
 
       <div class="offer__bottom-left">
 
-        <div class="offer__saved">
-          <div class="offer__saved-label">Save up to&nbsp;</div>
-          <div class="offer__saved-percent">{{offer.saved}}%</div>
-        </div>
-
-        <div class="offer__separator"></div>
+        {% if offer.saved %}
+          <div class="offer__saved">
+            <div class="offer__saved-label">Save up to&nbsp;</div>
+            <div class="offer__saved-percent">{{offer.saved}}%</div>
+          </div>
+          <div class="offer__separator"></div>
+        {% endif %}
 
         <div class="offer__details">
           <div>From <span class="offer__price">£{{offer.price}}</span></div>
