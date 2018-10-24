@@ -2,7 +2,11 @@
 
   <a class="offer__link" href="{{offer.link}}"><span class="btn btn--orange">View Offer</span></a>
 
-  <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/offers/{{offer.id}}.jpg')"></div>
+  {% if offer.image %}
+    <div class="bg-img bg-img--3-2" style="background-image: url('{{offer.image}}')"></div>
+  {% else %}
+    <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/offers/{{offer.id}}.jpg')"></div>
+  {% endif %}
 
   <div class="offer__content">
 
