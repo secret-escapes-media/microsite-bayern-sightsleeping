@@ -4,6 +4,8 @@
   <div class="banner__wrap">
     {% if page.banner.content %}
       {{page.banner.content | liquify}}
+    {% elsif layout.banner.content %}
+      {{layout.banner.content | liquify}}
     {% else %}
       <div class="container container--no-padding text--center">
         {% if page.banner.title-sup %}<h2 class="sub-title">{{page.banner.title-sup}}</h2>{% endif %}

@@ -24,6 +24,12 @@ $('.js-year').html(new Date().getFullYear());
 
 
 ///////////////////////////////////////
+//    removes no-js class on body
+///////////////////////////////////////
+$('body.no-js').removeClass('no-js');
+
+
+///////////////////////////////////////
 //      detects touch device
 ///////////////////////////////////////
 if ("ontouchstart" in document.documentElement){

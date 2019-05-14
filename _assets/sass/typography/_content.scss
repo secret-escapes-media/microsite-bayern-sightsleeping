@@ -15,6 +15,11 @@ a[href]:not([class]) {
   &:hover { color: $orange-darker; }
 }
 
+.link {
+  &:hover { text-decoration: underline; }
+  &--underlined { text-decoration: underline; }
+}
+
 li {
   list-style-position:
   outside; margin-left: $s1;

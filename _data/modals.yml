@@ -98,3 +98,18 @@
       content: >
         <div class="title title--lg">He drinks the Cider drinks</div>
         <p>Ipsam harum numquam corporis at fugit necessitatibus porro possimus laboriosam odit dolores quaerat nemo veritatis incidunt, totam perspiciatis eaque magnam debitis delectus? Harum fuga quia animi, ipsa in consectetur, quae nostrum dolores sint molestiae sit consequatur odit enim ex optio nisi eveniet expedita accusantium iure commodi illum quidem cum unde dolorem! Expedita aliquam neque, reprehenderit voluptatum perspiciatis facere quod ab laboriosam aperiam. Delectus molestias atque, cumque quae labore nisi eveniet odit! Dolorem, ex hic nisi quam deleniti, et deserunt sapiente!</p>
+
+
+#################################################
+#   Competition
+#################################################
+
+- id: competition-terms
+  pages:
+    - id: competition
+  content: >
+    <div class="content-spacing">
+      <h3 class="core-title core-title--lg">Competition terms & conditions</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maxime est soluta expedita inventore corrupti ipsam illo, eligendi sit id accusamus iure dicta qui suscipit culpa fugiat possimus consequatur totam iste perspiciatis delectus nesciunt deleniti, cumque nemo labore? Nesciunt explicabo velit iure, et voluptatibus beatae vitae laboriosam. Magni suscipit, facere eum culpa ab ullam, accusantium tempora, ut similique vero odit placeat sit tenetur quas, consectetur eaque. Praesentium distinctio, quae mollitia amet! Libero debitis minima cumque, eaque ipsam rerum porro, quo.</p>
+      <p>Quos non sit omnis cum facilis, laborum culpa natus totam quae animi magnam minima aspernatur, harum dolorem nostrum maxime distinctio! Facilis hic exercitationem, blanditiis, saepe iusto minus libero unde amet molestiae, nemo id! Dolores aperiam commodi dolore neque ipsum rerum error, eum. Ratione rem maxime incidunt quam nostrum, voluptas alias soluta accusamus magni quibusdam, tempore numquam! Unde nemo a optio dolore sunt ex repellat molestiae quisquam quas. Fugiat, eligendi ullam. Exercitationem sapiente neque debitis omnis commodi cumque illo magni quam.</p>
+    </div>

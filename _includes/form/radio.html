@@ -1,0 +1,5 @@
+{% assign this = include.data %}
+<p class="c-label">{{this.label}}</p>
+<div class="input-buttons">
+  {% for option in this.options %}<label for="{{option.id}}" class="input-button js-input-button"> <input type="radio" id="{{option.id}}" name="{{this.id}}" value="{{option.value}}"{% if this.required %} data-required{% endif %}>{{option.label}}</label>{% endfor %}
+</div>
