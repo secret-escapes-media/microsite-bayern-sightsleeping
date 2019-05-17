@@ -33,9 +33,11 @@ var formFunctions = (function functionName(form) {
   // apply a class for selected radio or checkbox input
   function formSelectedInputClass() {
     var inputButtonClass = 'js-input-button';
-    $(form.element).find('.' + inputButtonClass + ' input').on('change',function () {
-      var inputType = $(this).attr('type');
-      var selectedLabel = $(this).closest('.' + inputButtonClass);
+    // console.log($(form.element).find('.' + inputButtonClass + ' input'));
+    $(form.element).find('.' + inputButtonClass).on('change',function () {
+      var $input = $(this).find('input');
+      var inputType = $input.attr('type');
+      var selectedLabel = $input.closest('.' + inputButtonClass);
       var selectedClass = 'is-selected';
       if (inputType === 'checkbox') {
         // checkbox function
@@ -46,7 +48,7 @@ var formFunctions = (function functionName(form) {
         }
       } else if (inputType === 'radio') {
         // radio function
-        var radioGroup = $(this).closest('.' + form.inputClass);
+        var radioGroup = $input.closest('.' + form.inputClass);
         // check if it is already selected
         if (!(selectedLabel.hasClass(selectedClass))) {
           radioGroup.find('.' + inputButtonClass + '.' + selectedClass).removeClass(selectedClass);
@@ -60,7 +62,7 @@ var formFunctions = (function functionName(form) {
   ///////////////////////////////////////////////////////////// public functions
 
   function submissionInProgress() {
-    form.element.find('button').prop("disabled", true).addClass('is-loading');
+    form.element.find('button').prop("disabled", true).addClass('is-loading').html('Sending <div class="loading-icon"></div>');
   }
 
   function formInit() {
@@ -69,6 +71,7 @@ var formFunctions = (function functionName(form) {
     $(form.element).find('button[type="submit"]').prop("disabled", false); // enable submit button - disabled for no js
     formAddStatusMessages(); // add all form status messages
     formSelectedInputClass(); // add function to detect selected radio or checkbox
+    formValidation(form).invalidAnswer(); // there is an invalid answer in the form, add the message if selected
   }
 
   // show status message on form

@@ -39,7 +39,7 @@ banner:
       {% assign form = page.competition-form %}
       <form class="form boilerform competition-form" action="{{form.post-url}}" method="POST" data-expires="{{form.expiry-date}}" novalidate>
         {% include form/messages.html %}
-        <div class="width width--md">
+        <div class="form__content width width--md">
           {% for item in form.fields %}
             <div class="form__input js-form-input">
               {% case item.type %}

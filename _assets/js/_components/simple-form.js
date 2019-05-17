@@ -4,7 +4,7 @@
 var simpleForm = (function functionName() { // IIFE to control scope of form code
 
   var form = {
-    element: $('.simple-form'),
+    element: $('.signup-form'),
     inputClass: 'js-form-input',
     isOnPage: function () { return this.element.length > 0; },
     statusMessages: [],

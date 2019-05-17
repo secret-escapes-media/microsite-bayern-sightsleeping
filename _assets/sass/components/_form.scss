@@ -36,6 +36,7 @@
   line-height: 1;
   font-family: $font-core;
   width: 100%;
+  color: $grey-dark;
 }
 .boilerform [class*="decor"] {
   line-height: 0;
@@ -80,7 +81,6 @@
 }
 .boilerform .c-button:disabled {
   opacity: .5;
-  cursor: not-allowed;
 }
 ///////////////////////////// CHECK FIELD COMPONENT Radio buttons and checkboxes
 .boilerform .c-check-field {
@@ -148,18 +148,19 @@
 }
 //////////////////////////////////////////// LABEL COMPONENT A simple form label
 .boilerform .c-label {
-  display: inline;
+  display: block;
   font-family: $font-core;
   font-weight: 600;
   font-size: 0.88rem;
+  width: 100%;
 }
 .boilerform .c-label[for] {
   cursor: pointer;
 }
-.boilerform .c-label:after {
-  content: "\A";
-  white-space: pre;
-}
+// .boilerform .c-label:after {
+//   content: "\A";
+//   white-space: pre;
+// }
 .boilerform .c-label + [class*="field"] {
   margin-top: 2px;
 }
@@ -209,6 +210,7 @@ $errorbg: #feeaed;
       padding-right: $s-3;
       padding-bottom: $s-4;
       background-color: $errorbg;
+      color: $grey-dark;
     }
   }
   &__messages {
@@ -219,7 +221,6 @@ $errorbg: #feeaed;
     right: 0;
     bottom: 0;
     z-index: $z-content-overlay;
-    background-color: rgba($white,.9);
     align-items: flex-start;
     justify-content: center;
     .form-message-is-visible &,
@@ -227,6 +228,17 @@ $errorbg: #feeaed;
       display: flex;
       justify-content: center;
     }
+  }
+  &__content {
+    .form-message-is-visible &,
+    .no-js & {
+      opacity: .15;
+      filter: blur(3px);
+    }
+  }
+  &--optional {
+    font-style: italic;
+    opacity: .5;
   }
 }
 
@@ -263,8 +275,14 @@ $errorbg: #feeaed;
   border: 1px solid $grey-lighter;
   border-radius: 3px;
   transition: all .15s ease;
-  vertical-align: middle;
   cursor: pointer;
+  color: $grey-dark;
+  &__wrap {
+    display: flex;
+    align-items: center;
+  }
+  &__wrap-input { line-height: 0; }
+  &__wrap-text { line-height: 1.25; }
   &:hover,
   & input:focus {
     background-color: $grey-lightest;
@@ -282,11 +300,22 @@ $errorbg: #feeaed;
 }
 
 .input-buttons {
-  margin: -3px;
+  $button-gutter: 6px;
+  margin: -($button-gutter / 2);
   padding-top: 3px;
-  > .input-button { margin: 3px; }
+  > .input-button { margin: ($button-gutter / 2); }
 }
 
-.boilerform .c-button:disabled.is-loading {
-  cursor: wait;
+.loading-icon {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  vertical-align: middle;
+  border: 2px solid rgba($white, 0.2);
+  border-top-color: $white;
+  border-radius: 50%;
+  animation: loading-icon-spin 1s linear infinite;
+}
+@keyframes loading-icon-spin {
+  to { transform: rotate(360deg); }
 }

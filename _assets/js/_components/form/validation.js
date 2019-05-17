@@ -15,6 +15,7 @@ var formValidation = (function functionName(form) {
     'checkbox': 'Please select an answer for this question',
     'select': 'Please select an option from this list',
     'textarea': 'Please fill in a response over 100 characters',
+    'compInvalid': 'Sorry, but you must meet this requirement to enter the competition'
   };
 
 
@@ -166,7 +167,7 @@ var formValidation = (function functionName(form) {
     // now groups are defined, loop through each to validate
     for (var i = 0; i < radioGroups.length; i++) {
       // find all of the inputs related to this group
-      var radioGroupInputs = $('input[type=radio][name=' + radioGroups[i] + ']');
+      var radioGroupInputs = form.element.find('input[type=radio][name=' + radioGroups[i] + ']');
       var radioGroupSelected = false; // set status if an input has been selected
       // if input is selected, change the status for this group
       for (var j = 0; j < radioGroupInputs.length; j++) {
@@ -175,7 +176,15 @@ var formValidation = (function functionName(form) {
         }
       }
       // has no input been selected for this radio group?
-      if (!(radioGroupSelected)) {
+      if (radioGroupSelected) {
+        // check if an invalid answer is selected
+        for (var k = 0; k < radioGroupInputs.length; k++) {
+          // if this input has the class and is selected
+          if (radioGroupInputs[k].classList.contains('js-form-invalid-answer') && radioGroupInputs[k].checked) {
+            invalidData = true;
+          }
+        }
+      } else {
         // check if this radio group is required
         isInputRequired(radioGroupInputs[0], errorMessages.radio);
       }
@@ -254,10 +263,26 @@ var formValidation = (function functionName(form) {
     // find first error
     var firstError = $(form.element).find('.' + form.inputClass + '.' + inputErrorClass).first();
     // scroll top of screen to first error
-    $('html,body').animate({scrollTop: firstError.offset().top}, 500);
+    $('html,body').stop(true, true).animate({scrollTop: firstError.offset().top}, 350);
     // focus on first error input
     var firstErrorInput = firstError.find('input, select, textarea').not('input[type="hidden"]').first();
     firstErrorInput.focus();
+  }
+
+  function invalidAnswer() {
+    form.element.find('.js-form-invalid-answer').each(function() {
+      var $input = $(this);
+      var $parent = $input.closest('.' + form.inputClass);
+      $parent.on('click', 'input', function(e) {
+        var invalidAnswer = $parent.find('.js-form-invalid-answer');
+        var isChecked = invalidAnswer[0].checked;
+        if (isChecked) {
+          showInputErrorMessage($input, errorMessages.compInvalid);
+        } else {
+          removeInputErrorMessage($input);
+        }
+      });
+    });
   }
 
 
@@ -266,6 +291,7 @@ var formValidation = (function functionName(form) {
   return {
     isValid: isFormDataValid,
     scrollToFirstError: scrollToFirstError,
+    invalidAnswer: invalidAnswer,
   };
 
 });

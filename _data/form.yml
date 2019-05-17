@@ -1,0 +1,26 @@
+- id: signup
+  post-url: https://getform.io/f/eca27354-735f-4831-875d-e9e430123593
+  fields:
+    - id: name
+      type: text
+      label: Name
+      required: true
+    - id: email
+      type: email
+      label: Email
+      required: true
+    - id: qualify
+      type: radio
+      label: Are you a UK resident and over the age of 18?
+      required: true
+      options:
+        - id: qualify-true
+          label: 'Yes'
+          value: 'Yes'
+        - id: qualify-false
+          label: 'No'
+          value: 'No'
+          invalid: true
+  submit: Sign up
+  terms: >
+    By submitting your entry, you agree to the <a href="#" class="js-open-modal link--underlined" data-open-modal="signup-terms">terms and conditions</a>.

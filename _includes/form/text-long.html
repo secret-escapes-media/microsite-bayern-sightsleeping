@@ -1,3 +1,3 @@
 {% assign this = include.data %}
-<label for="{{this.id}}" class="c-label">{{this.label}}</label>
-<textarea id="{{this.id}}" name="{{this.id}}" class="c-input-field c-input-field--multiline" maxlength="1500"{% if this.required %} data-required{% endif %}></textarea>
+<label for="{{form.id}}-{{this.id}}" class="c-label">{{this.label}}{% unless this.required %}<span class="form--optional"> -&nbsp;optional</span>{% endunless %}</label>
+<textarea id="{{form.id}}-{{this.id}}" name="{{this.id}}" class="c-input-field c-input-field--multiline" maxlength="1500"{% if this.required %} data-required{% endif %}></textarea>
