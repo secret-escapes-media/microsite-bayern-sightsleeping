@@ -33,9 +33,8 @@ var formFunctions = (function functionName(form) {
   // apply a class for selected radio or checkbox input
   function formSelectedInputClass() {
     var inputButtonClass = 'js-input-button';
-    // console.log($(form.element).find('.' + inputButtonClass + ' input'));
     $(form.element).find('.' + inputButtonClass).on('change',function () {
-      var $input = $(this).find('input');
+      var $input = $(this).find('input').not('input[type="hidden"]');
       var inputType = $input.attr('type');
       var selectedLabel = $input.closest('.' + inputButtonClass);
       var selectedClass = 'is-selected';
