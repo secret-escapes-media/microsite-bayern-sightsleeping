@@ -182,12 +182,23 @@
 .boilerform .c-select-field__menu::-ms-expand {
   display: none;
 }
+
 .boilerform .c-select-field__decor {
   position: absolute;
-  top: 50%;
-  right: 15px;
-  width: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: $z-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 9px;
+  margin-right: $s2;
   pointer-events: none;
+  > img {
+    width: 9px;
+    height: 5px;
+  }
 }
 
 
