@@ -47,7 +47,7 @@ var formValidation = (function functionName(form) {
       errorElement.className = inputErrorMessageClass;
        // add content
       var errorMessage = document.createTextNode(inputErrorMessage);
-      errorElement.append(errorMessage);
+      $(errorElement).append(errorMessage);
       // add to page
       $(inputParentElement).append(errorElement).addClass(inputErrorClass);
     }
@@ -216,7 +216,8 @@ var formValidation = (function functionName(form) {
   function formValidateSelect() {
     // check all select inputs in form
     form.element.find('select').each(function() {
-      var selectedOption = $(this)[0].selectedOptions[0].value;
+      var $this = $(this).get(0);
+      var selectedOption = $this.options[$this.selectedIndex].value;
       if (selectedOption === '') { // pre selected first option has no value
         isInputRequired(this, errorMessages.select);
       } else {
@@ -262,11 +263,12 @@ var formValidation = (function functionName(form) {
   function scrollToFirstError() {
     // find first error
     var firstError = $(form.element).find('.' + form.inputClass + '.' + inputErrorClass).first();
-    // scroll top of screen to first error
-    $('html,body').stop(true, true).animate({scrollTop: firstError.offset().top}, 350);
-    // focus on first error input
-    var firstErrorInput = firstError.find('input, select, textarea').not('input[type="hidden"]').first();
-    firstErrorInput.focus();
+    // scroll the first error to the top of screen
+    $('html,body').stop(true, true).animate({scrollTop: firstError.offset().top}, 250, function() {
+      // focus on first error input, after animation has happened
+      var firstErrorInput = firstError.find('input, select, textarea').not('input[type="hidden"]').first();
+      firstErrorInput.focus();
+    });
   }
 
   function invalidAnswer() {
