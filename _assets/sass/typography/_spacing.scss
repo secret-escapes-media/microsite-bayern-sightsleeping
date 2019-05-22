@@ -14,9 +14,9 @@
   .title + p { padding-top: $s-3; }
   .title + .title { padding-top: 0; padding-bottom: $s-3; }
 
-  p + .core-title { padding-top: $s5; }
-  .core-title + p { padding-top: $s-5; }
-  .core-title + .core-title { padding-top: 0; padding-bottom: $s-3; }
+  p + .title { padding-top: $s5; }
+  .title + p { padding-top: $s-5; }
+  .title + .title { padding-top: 0; padding-bottom: $s-3; }
 
   .sub-title,
   .sub-title { padding: 0; }

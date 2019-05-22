@@ -39,7 +39,7 @@
   pages:
     - id: all
   content: >
-    <div class="core-title core-title--md">Image Credits</div>
+    <div class="title title--md">Image Credits</div>
     <ol>
       <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non tenetur dolorem quod, perspiciatis explicabo harum doloremque aut eveniet reprehenderit voluptatibus.</li>
       <li>Cupiditate fugiat voluptatibus molestias soluta perspiciatis deserunt eum officia autem laboriosam, fugit provident harum architecto delectus iure dolores quis corrupti.</li>
@@ -109,7 +109,7 @@
     - id: competition
   content: >
     <div class="content-spacing">
-      <h3 class="core-title core-title--lg">Competition terms & conditions</h3>
+      <h3 class="title title--lg">Competition terms & conditions</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maxime est soluta expedita inventore corrupti ipsam illo, eligendi sit id accusamus iure dicta qui suscipit culpa fugiat possimus consequatur totam iste perspiciatis delectus nesciunt deleniti, cumque nemo labore? Nesciunt explicabo velit iure, et voluptatibus beatae vitae laboriosam. Magni suscipit, facere eum culpa ab ullam, accusantium tempora, ut similique vero odit placeat sit tenetur quas, consectetur eaque. Praesentium distinctio, quae mollitia amet! Libero debitis minima cumque, eaque ipsam rerum porro, quo.</p>
       <p>Quos non sit omnis cum facilis, laborum culpa natus totam quae animi magnam minima aspernatur, harum dolorem nostrum maxime distinctio! Facilis hic exercitationem, blanditiis, saepe iusto minus libero unde amet molestiae, nemo id! Dolores aperiam commodi dolore neque ipsum rerum error, eum. Ratione rem maxime incidunt quam nostrum, voluptas alias soluta accusamus magni quibusdam, tempore numquam! Unde nemo a optio dolore sunt ex repellat molestiae quisquam quas. Fugiat, eligendi ullam. Exercitationem sapiente neque debitis omnis commodi cumque illo magni quam.</p>
     </div>

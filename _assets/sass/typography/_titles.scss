@@ -1,9 +1,9 @@
 // all banner types on site
 
 .title {
-
   // custom content headline
-  font-family: $font-title-01;
+  font-family: $serif;
+  line-height: 1.1;
   &--xxxl   { font-size: $s8; }
   &--xxl    { font-size: $s7; }
   &--xl     { font-size: $s6; }
@@ -24,13 +24,12 @@
     &--xxs    { font-size: $s2; }
     &--xxxs   { font-size: $s1; }
   }
-
 }
 
 .sub-title {
-
   // custom content headline
-  font-family: $font-title-01;
+  font-family: $sans;
+  line-height: 1.4;
   font-size: $s2; // default size
   &--lg     { font-size: $s4; }
   &--sm     { font-size: $s0; }
@@ -39,48 +38,14 @@
     &--lg     { font-size: $s5; }
     &--sm     { font-size: $s1; }
   }
-
-}
-
-
-.core-title {
-
-  // open-sans – core site typeface
-  font-family: $font-core;
-  font-weight: 300;
-  letter-spacing: -.02em;
-
-  &--xxxl   { font-size: $s8; line-height: 1.1; }
-  &--xxl    { font-size: $s7; line-height: 1.1; }
-  &--xl     { font-size: $s6; line-height: 1.2; }
-  &--lg     { font-size: $s5; line-height: 1.25; }
-  &--md     { font-size: $s4; line-height: 1.35; }
-  &--sm     { font-size: $s3; line-height: 1.35; }
-  &--xs     { font-size: $s2; line-height: 1.35; }
-  &--xxs    { font-size: $s1; line-height: 1.4; }
-  &--xxxs   { font-size: $s0; line-height: 1.45; }
-  @include bp($lg){
-    &--xxxl   { font-size: $s9; line-height: 1.1; }
-    &--xxl    { font-size: $s8; line-height: 1.175; }
-    &--xl     { font-size: $s7; line-height: 1.2; }
-    &--lg     { font-size: $s6; line-height: 1.2; }
-    &--md     { font-size: $s5; line-height: 1.3; }
-    &--sm     { font-size: $s4; line-height: 1.3; }
-    &--xs     { font-size: $s3; line-height: 1.3; }
-    &--xxs    { font-size: $s2; line-height: 1.35; }
-    &--xxxs   { font-size: $s1; line-height: 1.4; }
-  }
-
 }
 
 
 .banner-title {
-
   // custom banner headline
-  font-family: $font-title-01;
-  text-transform: uppercase;
+  font-family: $serif;
+  line-height: 1.1;
   font-size: $s5;
   @include bp($md){ font-size: $s7; }
   @include bp($xl){ font-size: $s10; }
-
 }

@@ -1,19 +1,18 @@
 .btn {
   position: relative;
   display: inline-block;
-  padding: $s2 $s5;
+  padding: $s1 $s4;
   color: $white;
   font-weight: 700;
   font-size: $s-1;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: .25em;
-  line-height: 1.33;
+  letter-spacing: .2em;
   border-radius: 3px;
   cursor: pointer;
   @include transition;
-  &--sm { padding: $s1 $s4; font-size: $s-2; }
-  &--lg { padding: $s3 $s8; font-size: $s-1; }
+  &--sm { padding: $s0 $s3; font-size: $s-2; }
+  &--lg { padding: $s2 $s6; font-size: $s-1; }
   &--orange { background-color: $orange;
     &:hover { background-color: $orange-dark; }
   }
