@@ -17,7 +17,7 @@ var competitionForm = (function functionName() { // IIFE to control scope of for
   };
 
   // is the competition form on the page?
-  if (form.isOnPage) {
+  if (form.isOnPage()) {
     // setting up the form
     formFunctions(form).init();
     // has the competition expired?

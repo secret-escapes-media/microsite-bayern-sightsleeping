@@ -11,7 +11,7 @@ var simpleForm = (function functionName() { // IIFE to control scope of form cod
   };
 
   // is the competition form on the page?
-  if (form.isOnPage) {
+  if (form.isOnPage()) {
     // setting up the form
     formFunctions(form).init();
     // submit form function
