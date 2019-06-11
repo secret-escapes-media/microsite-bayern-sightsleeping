@@ -81,6 +81,15 @@ var formFunctions = (function functionName(form) {
     form.element.find('.message--' + messageID).addClass('is-visible'); // show specific form message
   }
 
+  // add timestamp to entry
+  function addEntryTimestamp() {
+    // get the current date and convert into "YYYY-MM-DD HH:MM" format
+    var now = new Date();
+    var timestamp = now.getFullYear() + "-" + ("0"+(now.getMonth()+1)).slice(-2) + "-" + ("0" + now.getDate()).slice(-2) + " " + ("0" + now.getHours()).slice(-2) + ":" + ("0" + now.getMinutes()).slice(-2);
+    // add timestamp for entry to hidden input
+    form.element.find('.js-form-entry-time').val(timestamp);
+  }
+
 
   ////////////////////////////////////////////////////// export public functions
 
@@ -88,6 +97,7 @@ var formFunctions = (function functionName(form) {
     init: formInit,
     showMessage: formShowMessage,
     submissionInProgress: submissionInProgress,
+    addEntryTimestamp: addEntryTimestamp
   };
 
 });

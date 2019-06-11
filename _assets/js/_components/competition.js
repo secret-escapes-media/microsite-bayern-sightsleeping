@@ -29,6 +29,7 @@ var competitionForm = (function functionName() { // IIFE to control scope of for
     // submit form function
     form.element.submit(function(e){
       if (formValidation(form).isValid()) {
+        formFunctions(form).addEntryTimestamp();
         formFunctions(form).submissionInProgress();
       } else {
         e.preventDefault(); // stop the default submit function
