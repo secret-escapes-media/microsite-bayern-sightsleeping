@@ -1,6 +1,6 @@
-<div class="width width--md text--left">
-  {% assign form = site.data.form | where: 'id', 'signup' | first %}
-  <form class="form boilerform signup-form" action="{{form.post-url}}" method="POST" novalidate>
+<div id="entry-form" class="vpad--md text--left">
+  {% assign form = site.data.form | where: 'id', 'comp' | first %}
+  <form class="form boilerform competition-form" action="{{form.post-url}}" method="POST" data-expires="{{form.expiry-date}}" novalidate>
     {% include form/messages.html %}
     <div class="form__content width width--md">
       {% for item in form.fields %}
@@ -21,7 +21,9 @@
           {% endcase %}
         </div>
       {% endfor %}
-      <div class="space--lg"></div>
+      <div class="space--sm"></div>
+      <p class="text--sm text--normal">{{form.terms}}</p>
+      <div class="space--sm"></div>
       <input class="js-form-entry-time" id="entry-time" name="entry-time" type="hidden">
       <button type="submit" class="c-button" disabled>{{form.submit}}</button>
     </div>

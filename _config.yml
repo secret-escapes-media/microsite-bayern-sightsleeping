@@ -1,5 +1,5 @@
 # Site settings
-title: Destination Single
+title: Tourist Board
 client:
   name: Client Name
   link: "#client-name"
@@ -9,10 +9,10 @@ description: >
 
 # file paths
 url:     "http://mp.secretescapes.com" # the base hostname & protocol for your site
-baseurl: "/_templates/destination-single" # the subpath of your site, e.g. /blog/
-img:     "/_templates/destination-single/_assets/img"
-css:     "/_templates/destination-single/_assets/css"
-js:      "/_templates/destination-single/_assets/js"
+baseurl: "/tourist-board" # the subpath of your site, e.g. /blog/
+img:     "/tourist-board/_assets/img"
+css:     "/tourist-board/_assets/css"
+js:      "/tourist-board/_assets/js"
 
 
 # Build settings

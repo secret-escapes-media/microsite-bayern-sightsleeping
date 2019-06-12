@@ -99,7 +99,7 @@
 
 - id: competition-terms
   pages:
-    - id: competition
+    - id: all
   content: >
     <div class="content-spacing">
       <h3 class="core-title core-title--lg">Competition terms & conditions</h3>

@@ -27,7 +27,7 @@ function browserSyncServe() {
     server: {
       baseDir: '_site/',
       routes: {
-        '/_templates/destination-single': '_site/'
+        '/tourist-board': '_site/'
       }
     }
   });
