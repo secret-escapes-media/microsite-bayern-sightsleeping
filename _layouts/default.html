@@ -3,7 +3,7 @@
 
   {% include page/head.html %}
 
-  <body>
+  <body class="no-js">
 
     {% include components/tracking.html %}
 
@@ -14,6 +14,8 @@
     <div class="content-spacing section-spacing">
       {{ content }}
     </div>
+
+    {% include page/promo-signup.html %}
 
     {% include page/footer.html %}
 

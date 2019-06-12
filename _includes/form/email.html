@@ -1,0 +1,3 @@
+{% assign this = include.data %}
+<label for="{{form.id}}-{{this.id}}" class="c-label">{{this.label}}{% unless this.required %}<span class="form--optional"> -&nbsp;optional</span>{% endunless %}</label>
+<input type="email" id="{{form.id}}-{{this.id}}" name="{{this.id}}" class="c-input-field" autocapitalize="none" autocorrect="off"{% if this.required %} data-required{% endif %}>

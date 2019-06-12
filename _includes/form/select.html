@@ -1,0 +1,11 @@
+{% assign this = include.data %}
+<label for="{{form.id}}-{{this.id}}" class="c-label">{{this.label}}{% unless this.required %}<span class="form--optional"> -&nbsp;optional</span>{% endunless %}</label>
+<div class="c-select-field">
+  <select id="{{form.id}}-{{this.id}}" name="{{this.id}}" class="c-select-field__menu"{% if this.required %} data-required{% endif %}>
+    <option disabled selected value>-- Please choose an option --</option>
+    {% for option in this.options %}
+      <option value="{{option.value}}">{{option.label}}</option>
+    {% endfor %}
+  </select>
+  <span class="c-select-field__decor" aria-hidden="true" role="presentation"><img src="{{site.img}}/icons/drop-down-arrow.svg" alt="Drop down arrow"></span>
+</div>

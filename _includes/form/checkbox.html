@@ -1,0 +1,15 @@
+{% assign this = include.data %}
+<p class="c-label">{{this.label}}{% unless this.required %}<span class="form--optional"> -&nbsp;optional</span>{% endunless %}</p>
+<div class="input-buttons js-checkbox-question" data-question-id="{{form.id}}-{{this.id}}">
+  {% for option in this.options %}<label for="{{form.id}}-{{option.id}}" class="input-button js-input-button">
+    <div class="input-button__wrap">
+      <div class="input-button__wrap-input">
+        <input type="hidden" name="{{option.id}}" value="no">
+        <input type="checkbox" id="{{form.id}}-{{option.id}}" name="{{option.id}}" value="yes"{% if this.required %} data-required{% endif %}>
+      </div>
+      <div class="input-button__wrap-text">
+        {{option.label}}
+      </div>
+      </div>
+  </label>{% endfor %}
+</div>

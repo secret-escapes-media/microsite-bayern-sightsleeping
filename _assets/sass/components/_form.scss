@@ -1,0 +1,332 @@
+////////////////////////////////////////////////////////////////////////////////
+// Boilerform
+////////////////////////////////////////////////////////////////////////////////
+
+.boilerform .c-input-field, .boilerform .c-select-field__menu {
+  background: $white;
+  border: 1px solid $grey-light;
+  padding: 11px 15px 10px 15px;
+  padding: $s-1;
+  border-radius: 3px;
+  font-size: 16px;
+}
+.boilerform .c-check-field__input {
+  display: block;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(1px);
+  white-space: nowrap;
+  position: absolute;
+}
+.boilerform {
+  font-size: 16px;
+  border-color: $grey-light;
+}
+.boilerform, .boilerform * {
+  box-sizing: border-box;
+}
+.boilerform [class*="-field"] {
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  line-height: 1;
+  font-family: $font-core;
+  width: 100%;
+  color: $grey-dark;
+}
+.boilerform [class*="decor"] {
+  line-height: 0;
+}
+.boilerform ::-webkit-search-decoration {
+  display: none;
+}
+.boilerform input::-webkit-input-placeholder,
+.boilerform textarea::-webkit-input-placeholder,
+.boilerform select::-webkit-input-placeholder {
+  line-height: normal;
+}
+.boilerform input[type="search"] {
+  -webkit-appearance: textfield;
+}
+////////////////////////////////// BUTTON COMPONENT Base button styles and reset
+.boilerform .c-button {
+  display: inline-block;
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  background: $orange;
+  color: $white;
+  padding: $s2 $s5;
+  font-family: $font-core;
+  font-size: $s-1;
+  font-weight: 700;
+  letter-spacing: .25em;
+  line-height: 1.33;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  @include transition;
+}
+.boilerform .c-button:hover,
+.boilerform .c-button:focus {
+  background: $orange-dark;
+}
+.boilerform .c-button:disabled {
+  opacity: .5;
+}
+///////////////////////////// CHECK FIELD COMPONENT Radio buttons and checkboxes
+.boilerform .c-check-field {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.boilerform .c-check-field__decor {
+  display: block;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  background: $grey-lightest;
+  border: 1px solid $grey-light;
+  border-radius: 3px;
+  position: relative;
+  cursor: pointer;
+}
+.boilerform .c-check-field__decor:after {
+  content: "";
+  speak: none;
+  display: block;
+  opacity: 0;
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  background: $grey;
+  border-radius: 1px;
+}
+.boilerform .c-check-field__label {
+  padding: 3px 0 0 10px;
+  cursor: pointer;
+}
+.boilerform .c-check-field--radio .c-check-field__decor,
+.boilerform .c-check-field--radio .c-check-field__decor:after {
+  border-radius: 50%;
+}
+.boilerform .c-check-field__input:checked ~ [class*="decor"]:after {
+  opacity: 1;
+}
+.boilerform .c-check-field__input:focus ~ [class*="decor"] {
+  outline: 1px dotted $grey-darkest;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+.boilerform .c-check-field + .c-check-field {
+  padding-top: 10px;
+}
+////////////////////// INPUT FIELD COMPONENT All input based form field elements
+.boilerform .c-input-field[type="number"] {
+  padding-right: 11px 15px 10px 15px / 2;
+}
+.boilerform .c-input-field--multiline {
+  vertical-align: top;
+  overflow: auto;
+  resize: none;
+  line-height: 1.4;
+}
+.boilerform .c-input-field--multiline:not([rows]) {
+  min-height: 200px;
+}
+.boilerform .c-input-field--date {
+  line-height: 1.6;
+}
+//////////////////////////////////////////// LABEL COMPONENT A simple form label
+.boilerform .c-label {
+  display: block;
+  font-family: $font-core;
+  font-weight: 600;
+  font-size: 0.88rem;
+  width: 100%;
+}
+.boilerform .c-label[for] {
+  cursor: pointer;
+}
+// .boilerform .c-label:after {
+//   content: "\A";
+//   white-space: pre;
+// }
+.boilerform .c-label + [class*="field"] {
+  margin-top: 2px;
+}
+/////////////////////// SELECT FIELD Option driven fields such as <select> menus
+.boilerform .c-select-field {
+  display: inline-block;
+  position: relative;
+}
+.boilerform .c-select-field__menu {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 45px;
+  line-height: 1.4;
+}
+.boilerform .c-select-field__menu:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 $grey-darkest;
+}
+.boilerform .c-select-field__menu::-ms-expand {
+  display: none;
+}
+
+.boilerform .c-select-field__decor {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: $z-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 9px;
+  margin-right: $s2;
+  pointer-events: none;
+  > img {
+    width: 9px;
+    height: 5px;
+  }
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
+// Custom edits
+////////////////////////////////////////////////////////////////////////////////
+
+$error:   #ca0929;
+$errorbg: #feeaed;
+
+.form {
+  position: relative;
+  z-index: $z-content;
+  &__input {
+    border-radius: 3px;
+    @include transition;
+    & + & { margin-top: $s2; }
+    &.has-error {
+      padding-left: $s-3;
+      padding-right: $s-3;
+      padding-bottom: $s-4;
+      background-color: $errorbg;
+      color: $grey-dark;
+    }
+  }
+  &__messages {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $z-content-overlay;
+    align-items: flex-start;
+    justify-content: center;
+    .form-message-is-visible &,
+    .no-js & {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__content {
+    .form-message-is-visible &,
+    .no-js & {
+      opacity: .15;
+      filter: blur(3px);
+    }
+  }
+  &--optional {
+    font-style: italic;
+    opacity: .5;
+  }
+}
+
+.boilerform p.c-label{
+  display: inline-block;
+  &:after{ display: none; }
+}
+
+.input {
+  &__error-message {
+    font-size: $s-1;
+    font-weight: 600;
+    padding-top: $s-4;
+    color: $error;
+   }
+}
+
+.message {
+  display: none;
+  text-align: center;
+  .no-js &--no-js {
+    display: block;
+    position: relative;
+  }
+  &.is-visible { display: block; }
+}
+
+.input-button {
+  display: inline-block;
+  padding: $s0 $s1;
+  font-weight: 400;
+  line-height: 1;
+  background: $white;
+  border: 1px solid $grey-lighter;
+  border-radius: 3px;
+  transition: all .15s ease;
+  cursor: pointer;
+  color: $grey-dark;
+  &__wrap {
+    display: flex;
+    align-items: center;
+  }
+  &__wrap-input { line-height: 0; }
+  &__wrap-text { line-height: 1.25; }
+  &:hover,
+  & input:focus {
+    background-color: $grey-lightest;
+    border-color: $grey-light;
+  }
+  &.is-selected {
+    background-color: $grey-lightest;
+    border-color: $grey;
+  }
+  input {
+    cursor: pointer;
+    margin: 0;
+    margin-right: $s-4;
+  }
+}
+
+.input-buttons {
+  $button-gutter: 6px;
+  margin: -($button-gutter / 2);
+  padding-top: 3px;
+  > .input-button { margin: ($button-gutter / 2); }
+}
+
+.loading-icon {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  vertical-align: middle;
+  border: 2px solid rgba($white, 0.2);
+  border-top-color: $white;
+  border-radius: 50%;
+  animation: loading-icon-spin 1s linear infinite;
+}
+@keyframes loading-icon-spin {
+  to { transform: rotate(360deg); }
+}

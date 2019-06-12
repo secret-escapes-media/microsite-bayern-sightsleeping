@@ -1,0 +1,27 @@
+{% assign form = site.data.form | where: 'id', 'signup' | first %}
+<form class="form boilerform signup-form" action="{{form.post-url}}" method="POST" novalidate>
+  {% include form/messages.html %}
+  <div class="form__content width width--md">
+    {% for item in form.fields %}
+      <div class="form__input js-form-input">
+        {% case item.type %}
+          {% when 'text' %}
+            {% include form/text.html data=item %}
+          {% when 'text-long' %}
+            {% include form/text-long.html data=item %}
+          {% when 'email' %}
+            {% include form/email.html data=item %}
+          {% when 'radio' %}
+            {% include form/radio.html data=item %}
+          {% when 'checkbox' %}
+            {% include form/checkbox.html data=item %}
+          {% when 'select' %}
+            {% include form/select.html data=item %}
+        {% endcase %}
+      </div>
+    {% endfor %}
+    <div class="space--lg"></div>
+    <input class="js-form-entry-time" id="entry-time" name="entry-time" type="hidden">
+    <button type="submit" class="c-button" disabled>{{form.submit}}</button>
+  </div>
+</form>

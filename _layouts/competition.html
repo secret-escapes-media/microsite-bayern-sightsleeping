@@ -1,0 +1,70 @@
+---
+layout: default
+banner:
+  content: >
+    <div class="container container--no-padding">
+      <div class="width width--xxl text--center">
+        <h1 class="title title--xxxl">{{page.long-title}}</h1>
+        <div class="space--sm"></div>
+        <a href="#entry-form" class="btn btn--lg btn--orange">{{page.enter-cta}}</a>
+      </div>
+    </div>
+---
+
+<div class="bg--light">
+  <div class="container">
+    <div class="space--xxl"></div>
+    <div class="width width--xl text--center">
+      <p class="text--xxl">{{page.intro}}</p>
+    </div>
+    <div class="space--xl"></div>
+    <div class="row row--constant-4-4-4 row--gutters-sm">
+      <div class="col">
+        <div class="bg-img bg-img--1-1 bg-img--lg-4-3 bg-img--xxl-3-2" style="background-image: url('{{site.img}}/content/{{page.id}}/bg.jpg');"></div>
+      </div>
+      <div class="col">
+        <div class="bg-img bg-img--1-1 bg-img--lg-4-3 bg-img--xxl-3-2" style="background-image: url('{{site.img}}/content/{{page.id}}/bg.jpg');"></div>
+      </div>
+      <div class="col">
+        <div class="bg-img bg-img--1-1 bg-img--lg-4-3 bg-img--xxl-3-2" style="background-image: url('{{site.img}}/content/{{page.id}}/bg.jpg');"></div>
+      </div>
+    </div>
+    <div class="space--xxl"></div>
+  </div>
+</div>
+
+<div class="vpad--xl">
+  <div class="container">
+    <div id="entry-form" class="vpad--md">
+      {% assign form = page.competition-form %}
+      <form class="form boilerform competition-form" action="{{form.post-url}}" method="POST" data-expires="{{form.expiry-date}}" novalidate>
+        {% include form/messages.html %}
+        <div class="form__content width width--md">
+          {% for item in form.fields %}
+            <div class="form__input js-form-input">
+              {% case item.type %}
+                {% when 'text' %}
+                  {% include form/text.html data=item %}
+                {% when 'text-long' %}
+                  {% include form/text-long.html data=item %}
+                {% when 'email' %}
+                  {% include form/email.html data=item %}
+                {% when 'radio' %}
+                  {% include form/radio.html data=item %}
+                {% when 'checkbox' %}
+                  {% include form/checkbox.html data=item %}
+                {% when 'select' %}
+                  {% include form/select.html data=item %}
+              {% endcase %}
+            </div>
+          {% endfor %}
+          <div class="space--sm"></div>
+          <p class="text--sm text--normal">{{form.terms}}</p>
+          <div class="space--sm"></div>
+          <input class="js-form-entry-time" id="entry-time" name="entry-time" type="hidden">
+          <button type="submit" class="c-button" disabled>{{form.submit}}</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
