@@ -13,6 +13,7 @@
         {% if page.banner.title-sub %}<h2 class="sub-title">{{page.banner.title-sub}}</h2>{% endif %}
       </div>
     {% endif %}
+    {% if page.banner-attribution %}<div class="banner__attribution js-image-attribution">{{page.banner-attribution}}</div>{% endif %}
   </div>
   <div class="banner__nav">
     {% include nav/sections.html %}

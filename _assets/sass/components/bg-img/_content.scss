@@ -38,4 +38,23 @@
     @include transition;
   }
   &:hover &__bg-overlay { background-color: rgba($black,.6); }
+  &__attribution {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: inline-block;
+    max-width: 90%;
+    padding: $s-4 $s-2;
+    font-size: $s-1;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: right;
+    color: rgba($grey-darkest,.8);
+    background-color: rgba($white,.66);
+    border-top-left-radius: 3px;
+    > a {
+      text-decoration: underline;
+      color: rgba($grey-darkest,.8);
+    }
+  }
 }

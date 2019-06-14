@@ -8,12 +8,12 @@ sup {
   vertical-align: super;
 }
 
-// standard inline link style
-a[href]:not([class]) {
-  color: $orange;
-  @include transition;
-  &:hover { color: $orange-darker; }
-}
+// // standard inline link style
+// a[href]:not([class]) {
+//   color: $orange;
+//   @include transition;
+//   &:hover { color: $orange-darker; }
+// }
 
 .link {
   &:hover { text-decoration: underline; }

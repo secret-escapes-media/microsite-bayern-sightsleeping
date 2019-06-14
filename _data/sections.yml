@@ -13,21 +13,25 @@
         title: One First POI
         description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
         link: "#poi-link"
+        image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 
       - id: one-second-poi
         title: One Second POI
         description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
         link: "#poi-link"
+        image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 
       - id: one-third-poi
         title: One Third POI
         description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
         link: "#poi-link"
+        image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 
       - id: one-fourth-poi
         title: One Fourth POI
         description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
         link: "#poi-link"
+        image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 
 
 
@@ -50,21 +54,25 @@
         title: Two First POI
         description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
         link: "#poi-link"
+        image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 
       - id: two-second-poi
         title: Two Second POI
         description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
         link: "#poi-link"
+        image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 
       - id: two-third-poi
         title: Two Third POI
         description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
         link: "#poi-link"
+        image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 
       - id: two-fourth-poi
         title: Two Fourth POI
         description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
         link: "#poi-link"
+        image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 
 
 
@@ -87,18 +95,22 @@
         title: Three First POI
         description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
         link: "#poi-link"
+        image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 
       - id: three-second-poi
         title: Three Second POI
         description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
         link: "#poi-link"
+        image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 
       - id: three-third-poi
         title: Three Third POI
         description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
         link: "#poi-link"
+        image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 
       - id: three-fourth-poi
         title: Three Fourth POI
         description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
         link: "#poi-link"
+        image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"

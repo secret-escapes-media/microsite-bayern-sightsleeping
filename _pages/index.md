@@ -13,4 +13,5 @@ banner:
       <div class="space--sm"></div>
       <a href="#offers" class="btn btn--lg btn--outline btn--outline-orange">See Offers</a>
     </div>
+banner-attribution: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 ---

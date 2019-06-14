@@ -14,7 +14,9 @@
           <div class="js-close-modal modal__close"></div>
           <div class="js-modal-nav modal__nav modal__nav--next" data-nav-direction="next"></div>
           <div class="js-modal-nav modal__nav modal__nav--previous" data-nav-direction="previous"></div>
-          <div class="bg-img bg-img--16-9" style="background-image: url('{{site.baseurl}}/img/content/{{section.id}}/pois/large/{{item.id}}.jpg');"></div>
+          <div class="bg-img bg-img--16-9" style="background-image: url('{{site.baseurl}}/img/content/{{section.id}}/pois/large/{{item.id}}.jpg');">
+            {% if item.image-credit %}<div class="bg-img__attribution js-image-attribution">{{item.image-credit}}</div>{% endif %}
+          </div>
           <div class="modal__content text--center">
             <h3 class="title title--md title--core">{{item.title}}</h3>
             <p>{{item.description}}</p>
