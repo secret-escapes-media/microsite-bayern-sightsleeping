@@ -16,6 +16,9 @@
   &--orange { background-color: $orange;
     &:hover { background-color: $orange-dark; }
   }
+  &--turquoise { background-color: $turquoise;
+    &:hover { background-color: $turquoise-dark; }
+  }
   &--outline {
     color: inherit;
     &:before {
@@ -38,6 +41,14 @@
       color: $white;
       background-color: $orange;
       &:before { border-color: $orange; }
+    }
+  }
+  &--outline-turquoise {
+    &:before { border-color: $turquoise; }
+    &:hover {
+      color: $white;
+      background-color: $turquoise;
+      &:before { border-color: $turquoise; }
     }
   }
 }

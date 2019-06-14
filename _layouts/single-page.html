@@ -34,7 +34,7 @@
                 <div class="title title--xxl">{{section.title}}</div>
                 <p class="text--xxl">{{section.description}}</p>
                 <div class="space--sm"></div>
-                <a href="{{section.link}}" class="btn btn--outline btn--outline-orange">Find Out More</a>
+                <a href="{{section.link}}" class="btn btn--outline btn--outline-turquoise">Find Out More</a>
               </div>
               <div class="col">
                 <div class="bg-img bg-img--1-1 bg-img--md-3-2 bg-img--xxl-1-1" style="background-image: url('{{site.img}}/content/{{section.id}}/feature.jpg');">
@@ -50,7 +50,7 @@
             <div class="row row--md-6-6 row--xxl-3-3-3-3">
               {% for poi in section.pois.items %}
               <div class="col">
-                <div class="bg-img bg-img--16-9 bg-img--md-1-1 bg-img--lg-4-3 bg-img--xxl-2-3" style="background-image: url('{{site.img}}/content/{{section.id}}/pois/{{poi.id}}.jpg');">
+                <div class="bg-img bg-img--16-9 bg-img--md-1-1 bg-img--lg-4-3 bg-img--xxl-2-3 shadow" style="background-image: url('{{site.img}}/content/{{section.id}}/pois/{{poi.id}}.jpg');">
                   <a id="track-poi-{{poi.id}}" href="#" class="bg-img__link js-open-modal" data-open-modal="{{poi.id}}"></a>
                   <div class="bg-img__bg-overlay"></div>
                   <div class="bg-img__content">

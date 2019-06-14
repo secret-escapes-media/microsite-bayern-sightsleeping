@@ -32,9 +32,6 @@ $offer-max-width: 560px;
   }
   &__content {
     padding: $s2;
-    border-left: 1px solid $grey-lighter;
-    border-right: 1px solid $grey-lighter;
-    border-bottom: 1px solid $grey-lighter;
     background-color: $white;
   }
   &__location {
@@ -87,10 +84,10 @@ $offer-max-width: 560px;
     min-width: $circle-height;
     min-height: $circle-height;
     margin-left: $s-3;
-    border: 1px solid $orange;
+    background-color: $orange;
     border-radius: $circle-height;
     background-repeat: no-repeat;
-    background-image: url('../img/icons/arrow-right-orange.svg');
+    background-image: url('../img/icons/arrow-right-white.svg');
     background-size: auto ($circle-height/2.25);
     background-position: 52% center;
   }
@@ -103,11 +100,11 @@ $offer-max-width: 560px;
       height: $circle-height;
       margin-left: $s-6;
       text-align: center;
-      color: $white;
+      color: $turquoise;
       font-weight: 700;
       letter-spacing: 0;
       line-height: $circle-height;
-      background-color: $orange;
+      border: 1px solid rgba($turquoise,.40);
       border-radius: $circle-height;
     }
   }
