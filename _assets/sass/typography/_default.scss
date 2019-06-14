@@ -1,9 +1,9 @@
 // These are the default settings for type
 
 html { // This is the root size for REM
-  font-size: 81.25%; // = 13px
-  @include bp($md) { font-size: 87.5%; } // = 14px
-  @include bp($xl) { font-size: 92.5%; } // = 15px
+  font-size: 87.5%; // = 14px
+  @include bp($md) { font-size: 93.75%; } // = 15px
+  @include bp($xl) { font-size: 100%; } // = 16px
 }
 
 body {
@@ -16,13 +16,13 @@ body {
   text-rendering: optimizeLegibility;
 
   // standard
-  font-family: $font-core;
+  font-family: $sans;
   -webkit-text-size-adjust: 100%;
 
   // light theme
-  font-weight: 300;
-  line-height: 1.55;
-  letter-spacing: .015rem;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -.005rem;
   color: $grey-dark;
   background-color: $white;
 

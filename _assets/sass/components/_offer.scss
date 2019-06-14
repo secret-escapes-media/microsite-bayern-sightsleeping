@@ -1,7 +1,7 @@
 // Offer block styles
 
 $circle-height: 3.4rem; // height for arrow and saved number
-$offer-max-width: 600px;
+$offer-max-width: 560px;
 
 .offer {
   position: relative;
@@ -25,7 +25,7 @@ $offer-max-width: 600px;
     @include transition;
     &:hover {
       opacity: 1;
-      background-color: rgba($grey-darkest,.33);
+      background-color: rgba($grey-darkest,.5);
       color: $white;
       .touch & { opacity: 0; }
     }
@@ -38,9 +38,9 @@ $offer-max-width: 600px;
     background-color: $white;
   }
   &__location {
-    margin-top: .9em;
+    margin-top: 1em;
     margin-left: 1.5em;
-    margin-bottom: 1.15em;
+    margin-bottom: 1em;
     text-indent: -1.5em;
     font-size: 0.75em;
     line-height: 1.5;
@@ -67,7 +67,7 @@ $offer-max-width: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: $s2;
+    padding-top: $s0;
     &-right {
       margin-left: auto;
       align-self: flex-end;
@@ -103,8 +103,8 @@ $offer-max-width: 600px;
       height: $circle-height;
       margin-left: $s-6;
       text-align: center;
-      color: #fff;
-      font-weight: 600;
+      color: $white;
+      font-weight: 700;
       letter-spacing: 0;
       line-height: $circle-height;
       background-color: $orange;
@@ -125,10 +125,10 @@ $offer-max-width: 600px;
   }
   &__price {
     color: $orange;
-    font-size: $s2;
+    font-size: $s3;
     font-weight: 600;
     line-height: 1;
-    letter-spacing: 0;
+    letter-spacing: -.02em;
   }
   @include bp($sm) {
     &__arrow { display: block; }
@@ -148,6 +148,6 @@ $offer-max-width: 600px;
    }
    &#{&}--dark &__separator           { background-color: $grey-dark; }
    &#{&}--dark &__location            { color: $grey-lighter;}
-   &#{&}--dark &__content .core-title { color: $white;}
+   &#{&}--dark &__content .title { color: $white;}
 
 }

@@ -6,9 +6,9 @@
   background: $white;
   border: 1px solid $grey-light;
   padding: 11px 15px 10px 15px;
-  padding: $s-1;
+  padding: $s-1 $s-2;
   border-radius: 3px;
-  font-size: 16px;
+  font-size: 17px;
 }
 .boilerform .c-check-field__input {
   display: block;
@@ -34,7 +34,7 @@
   vertical-align: middle;
   white-space: normal;
   line-height: 1;
-  font-family: $font-core;
+  font-family: $sans;
   width: 100%;
   color: $grey-dark;
 }
@@ -61,12 +61,12 @@
   text-decoration: none;
   background: $orange;
   color: $white;
-  padding: $s2 $s5;
-  font-family: $font-core;
+  padding: $s1 $s4;
+  font-family: $sans;
   font-size: $s-1;
   font-weight: 700;
-  letter-spacing: .25em;
-  line-height: 1.33;
+  letter-spacing: .2em;
+  line-height: 1.6;
   border-radius: 3px;
   cursor: pointer;
   text-align: center;
@@ -138,7 +138,7 @@
   vertical-align: top;
   overflow: auto;
   resize: none;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 .boilerform .c-input-field--multiline:not([rows]) {
   min-height: 200px;
@@ -149,7 +149,7 @@
 //////////////////////////////////////////// LABEL COMPONENT A simple form label
 .boilerform .c-label {
   display: block;
-  font-family: $font-core;
+  font-family: $sans;
   font-weight: 600;
   font-size: 0.88rem;
   width: 100%;
@@ -157,10 +157,6 @@
 .boilerform .c-label[for] {
   cursor: pointer;
 }
-// .boilerform .c-label:after {
-//   content: "\A";
-//   white-space: pre;
-// }
 .boilerform .c-label + [class*="field"] {
   margin-top: 2px;
 }
@@ -172,7 +168,7 @@
 .boilerform .c-select-field__menu {
   -webkit-appearance: none;
   -moz-appearance: none;
-  padding-right: 45px;
+  padding-right: $s5;
   line-height: 1.4;
 }
 .boilerform .c-select-field__menu:-moz-focusring {
@@ -193,7 +189,7 @@
   align-items: center;
   justify-content: center;
   width: 9px;
-  margin-right: $s2;
+  margin-right: $s1;
   pointer-events: none;
   > img {
     width: 9px;
@@ -219,7 +215,7 @@ $errorbg: #feeaed;
     &.has-error {
       padding-left: $s-3;
       padding-right: $s-3;
-      padding-bottom: $s-4;
+      padding-bottom: $s-9;
       background-color: $errorbg;
       color: $grey-dark;
     }
@@ -262,7 +258,8 @@ $errorbg: #feeaed;
   &__error-message {
     font-size: $s-1;
     font-weight: 600;
-    padding-top: $s-4;
+    padding-top: $s-10;
+    padding-bottom: $s-8;
     color: $error;
    }
 }
@@ -279,7 +276,7 @@ $errorbg: #feeaed;
 
 .input-button {
   display: inline-block;
-  padding: $s0 $s1;
+  padding: $s0;
   font-weight: 400;
   line-height: 1;
   background: $white;
@@ -293,7 +290,7 @@ $errorbg: #feeaed;
     align-items: center;
   }
   &__wrap-input { line-height: 0; }
-  &__wrap-text { line-height: 1.25; }
+  &__wrap-text { line-height: 1.2; font-size: 17px; }
   &:hover,
   & input:focus {
     background-color: $grey-lightest;

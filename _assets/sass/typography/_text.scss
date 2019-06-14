@@ -2,8 +2,8 @@
 
 .text {
   // sizes
-  &--xxl { font-size: 1.2rem; line-height: 1.6; letter-spacing: 0; }
-  &--xl  { font-size: 1.1rem; line-height: 1.6; letter-spacing: 0; }
+  &--xxl { font-size: 1.2rem; letter-spacing: 0; }
+  &--xl  { font-size: 1.1rem; letter-spacing: 0; }
   &--lg  { font-size: 1.05rem; letter-spacing: 0; }
   &--sm  { font-size: .8rem; }
 
@@ -13,8 +13,6 @@
   &--normal       { font-weight: 400; }
   &--bold         { font-weight: 600; }
   &--bolder       { font-weight: 700; }
-  &--wide-kern    { letter-spacing: .25em; }
-  &--wide-kern-lg { letter-spacing: .5em; }
   &--upper        { text-transform: uppercase; }
 
   // colours
