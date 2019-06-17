@@ -1,116 +1,74 @@
-- id: one
-  title: Section one
-  nav-title: One
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum. Consequuntur recusandae nemo, magni excepturi laborum nihil aperiam est!
-  link: "#section-link"
+- id: discover
+  title: Discover
+  nav-title: Discover
+  description: Discover your destination here. From the new Wales Way, a trio of touring routes that takes you through the most diverse and beautiful parts of this land, to the lesser-known destinations that promise to show you the best of Wales, plan your trip here.
+  link: https://www.visitwales.com/inspire-me/welcome-year-discovery
 
   pois:
 
     title: points of interest title
     items:
 
-      - id: one-first-poi
-        title: One First POI
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
-        link: "#poi-link"
+      - id: the-north-wales-way
+        title: The North Wales Way
+        description: Stretching along the northern reaches of Wales, the North Wales Way makes for an inspired road trip. Start by driving through the pretty Clwydian hills before stopping at historic Ruthin, and on to the long crescent beach of Colwyn Bay. Hop between bustling Llandudno and Conwy, where an imposing fortress marks one of many dramatic castles you’ll spot. Bangor, Caernarfon and Beaumaris follow, before the trail ends at Holy Island, just off Anglesey.
+        link: https://www.visitwales.com/inspire-me/wales-way/north-wales-way
         image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 
-      - id: one-second-poi
-        title: One Second POI
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
-        link: "#poi-link"
+      - id: the-cambrian-way
+        title: The Cambrian Way
+        description: The longest of the national routes, the Cambrian Way connects the south coast to the north coast along a road that winds through beautiful Welsh heartlands. Starting in Cardiff, explore the rolling Brecon Beacons on the narrow-gauge railway, head north to Rhayader and explore the beautiful Elan Valley lakes, and navigate the dramatic landscapes of Snowdonia before finishing at the iconic seaside retreat of Llandudno.
+        link: https://www.visitwales.com/inspire-me/wales-way/cambrian-way
         image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 
-      - id: one-third-poi
-        title: One Third POI
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
-        link: "#poi-link"
+      - id: the-coastal-way
+        title: The Coastal Way
+        description: Delight in the stunning Welsh coast, a classic draw for visitors spanning centuries. From Llŷn to Pembrokeshire, you’ll find picturesque seaside towns, ruined castles, and sublime beaches interrupted by dramatic cliffs. Incredible hikes await, with seaside hubs like Aberystwyth, Abarearon and iconic Portmeirion making great bases for exploring this wild coastline.
+        link: https://www.visitwales.com/inspire-me/wales-way/coastal-way
         image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 
-      - id: one-fourth-poi
-        title: One Fourth POI
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
-        link: "#poi-link"
+      - id: island-hop
+        title: Island Hop
+        description: Head out to sea and explore serene, isolated crags, that jut out of the Irish and Celtic seas. In the south, spot puffins on Skomer island, or purchase lavender and shortbread made by the monks at the Cistercian Monastery on idyllic Caldey. The largest island lies north. Anglesey offers a host of activities, framed by characterful harbour towns and pretty coastal walks.
+        link: https://www.visitwales.com/things-do/nature-landscapes/wildlife-flora-fauna/different-world-meet-puffins-skomer-island
         image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
-
 
 
 ################################################################################
 
 
 
-- id: two
-  title: Section Two
-  nav-title: Two
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum. Consequuntur recusandae nemo, magni excepturi laborum nihil aperiam est!
-  link: "#section-link"
+- id: experience
+  title: Experience
+  nav-title: Experience
+  description: Experience adventure in Wales. Fuel your adrenaline cravings with some of the most exciting challenges on offer – from the world’s fastest zip line to traversing weather-beaten cliffs at a coasteering session – or experience unique outdoor delights including astounding Dark Sky locations for unrivalled stargazing.
+  link: https://www.visitwales.com/things-do
 
   pois:
 
     title: points of interest title
     items:
 
-      - id: two-first-poi
-        title: Two First POI
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
-        link: "#poi-link"
+      - id: three-peaks-challenge
+        title: Climb the Peaks
+        description: Whether it’s hiking to their summit, abseiling down their sheer drops, or hurtling down their slopes on a mountain bike, the Welsh hills and mountains are a playground for outdoor adventures. Snowdon, the highest peak in Wales, already poses a formidable challenge to any avid climber. To really test your endurance, try the Welsh 3 Peaks Challenge, encompassing Cadair Idris and Pen y Fan – a 24 hour challenge covering 17 miles and 1500 metres.
+        link: https://www.visitwales.com/things-do/adventure-and-activities/walking/welsh-three-peaks-challenge-snowdon-cader-idris-and-pen
         image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 
-      - id: two-second-poi
-        title: Two Second POI
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
-        link: "#poi-link"
+      - id: zip-world
+        title: World’s Longest Zip Line
+        description: What to do with an abandoned slate mine? Well, build the world’s longest and fastest zip line of course! Zip World has made north Wales the capital of adrenaline, where you can fly over a vast quarry at dizzying speeds of up to 125mph. But there’s more; a whole underground cavern filled with adventure awaits. Zip World is a truly unique experience.
+        link: https://www.visitwales.com/en-us/destinations/north-wales/matthew-rhys-zip-wire-adventure
         image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 
-      - id: two-third-poi
-        title: Two Third POI
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
-        link: "#poi-link"
+      - id: cliff-camping-cliff-diving
+        title: Cliff Camping, Cliff Climbing
+        description: The Welsh sure know how to live life on the edge. Whether it’s hanging off the edge or jumping off the edge, either is truly daring. Spend the night in a tent suspended down steep cliff sides, with the ocean roaring beneath. Or, throw caution to the wind and launch yourself into the bitter sea, on a guided coasteering day for unrivalled fun. Both unique experiences are, naturally, available here in Wales.
+        link: https://www.visitwales.com/inspire-me/short-breaks/10-special-seaside-experiences
         image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 
-      - id: two-fourth-poi
-        title: Two Fourth POI
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
-        link: "#poi-link"
-        image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
-
-
-
-################################################################################
-
-
-
-- id: three
-  title: Section Three
-  nav-title: Three
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum. Consequuntur recusandae nemo, magni excepturi laborum nihil aperiam est!
-  link: "#section-link"
-
-  pois:
-
-    title: points of interest title
-    items:
-
-      - id: three-first-poi
-        title: Three First POI
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
-        link: "#poi-link"
-        image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
-
-      - id: three-second-poi
-        title: Three Second POI
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
-        link: "#poi-link"
-        image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
-
-      - id: three-third-poi
-        title: Three Third POI
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
-        link: "#poi-link"
-        image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
-
-      - id: three-fourth-poi
-        title: Three Fourth POI
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
-        link: "#poi-link"
+      - id: mountain-biking
+        title: Mountain Biking
+        description: Hurtle down the valleys, with daring twists and turns set to test your skills. From technically demanding tracks like those found in Antur Stiniog, Snowdonia or the Brecon Beacons, to picturesque and more forgiving spots like the Elan Valley, Wales has no shortage of premiere mountain biking destinations.
+        link: https://www.visitwales.com/things-do/adventure-and-activities/cycling-mountain-biking
         image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"

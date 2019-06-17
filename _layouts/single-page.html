@@ -103,8 +103,19 @@
                   {% include page/signup-form.html %}
                 </div>
               {% when 'competition' %}
-                <div class="title title--xl">{{promo.title}}</div>
-                <p class="width width--xl text--xxl">{{promo.description}}</p>
+                <div class="title title--xl width width--xl">{{promo.title}}</div>
+                <p class="width width--lg text--xxl">{{promo.description}}</p>
+                <div class="row row--constant-4-4-4 row--no-gutters space--lg">
+                  <div class="col">
+                    <div class="bg-img bg-img--1-1" style="background-image: url('{{site.img}}/content/competition/01.jpg'); background-position: center left;"></div>
+                  </div>
+                  <div class="col">
+                    <div class="bg-img bg-img--1-1" style="background-image: url('{{site.img}}/content/competition/02.jpg');" ></div>
+                  </div>
+                  <div class="col">
+                    <div class="bg-img bg-img--1-1" style="background-image: url('{{site.img}}/content/competition/03.jpg');" ></div>
+                  </div>
+                </div>
                 <div class="space--lg">
                   {% include page/competition-form.html %}
                 </div>

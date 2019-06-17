@@ -1,18 +1,19 @@
 # Site settings
-title: Tourist Board
+title: Wales
 client:
-  name: Client Name
-  link: "#client-name"
+  name: Visit Wales
+  link: http://www.visitwales.com/
 core-se-link: https://www.secretescapes.com/current-sales
 description: >
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  Start your next Wales adventure here. Zip-line along vast quarries, visit remote islands, gaze at a sea of stars – your adventure awaits, laid out on these pages to inspire your Welsh getaway. Discover epic, cross-country routes and little-known hideaways, adrenaline-fuelled activities and inspired natural sights. Find your luxury hotel, enter our incredible competition, and craft your very own adventure in Wales.
+offer-tracking-code: ?utm_source=SE_media&utm_medium=Wales&utm_campaign=June2019
 
 # file paths
 url:     "http://mp.secretescapes.com" # the base hostname & protocol for your site
-baseurl: "/tourist-board" # the subpath of your site, e.g. /blog/
-img:     "/tourist-board/_assets/img"
-css:     "/tourist-board/_assets/css"
-js:      "/tourist-board/_assets/js"
+baseurl: "/wales" # the subpath of your site, e.g. /blog/
+img:     "/wales/_assets/img"
+css:     "/wales/_assets/css"
+js:      "/wales/_assets/js"
 
 
 # Build settings
