@@ -45,7 +45,7 @@
   // custom banner headline
   font-family: $serif;
   line-height: 1.1;
-  font-size: $s5;
-  @include bp($md){ font-size: $s7; }
-  @include bp($xl){ font-size: $s10; }
+  font-size: $s8;
+  @include bp($md){ font-size: $s10; }
+  @include bp($xl){ font-size: $s12; }
 }

@@ -5,8 +5,6 @@
   link: https://www.visitwales.com/inspire-me/welcome-year-discovery
 
   pois:
-
-    title: points of interest title
     items:
 
       - id: the-north-wales-way
@@ -45,8 +43,6 @@
   link: https://www.visitwales.com/things-do
 
   pois:
-
-    title: points of interest title
     items:
 
       - id: three-peaks-challenge
