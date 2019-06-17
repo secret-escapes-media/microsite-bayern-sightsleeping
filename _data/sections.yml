@@ -5,8 +5,6 @@
   link: "#section-link"
 
   pois:
-
-    title: points of interest title
     items:
 
       - id: one-first-poi
@@ -46,8 +44,6 @@
   link: "#section-link"
 
   pois:
-
-    title: points of interest title
     items:
 
       - id: two-first-poi
@@ -87,8 +83,6 @@
   link: "#section-link"
 
   pois:
-
-    title: points of interest title
     items:
 
       - id: three-first-poi

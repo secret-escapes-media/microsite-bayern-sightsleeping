@@ -4,7 +4,6 @@ id: overview
 nav: true
 nav-order: 1
 title: Overview
-intro: this is my home page
 
 banner:
   content: >
