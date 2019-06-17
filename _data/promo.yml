@@ -1,10 +1,10 @@
 id: promo
-nav-title: optional promo
+nav-title: Watch
 
 type: membership
-title: Start your wishlist today on touristboard.com
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-link: "#tb-membership-signup-link"
+title: Now is the time to Experience Scotland
+description: If you're looking for the beat of a music festival, the adrenaline of an outdoor adventure, the experience of a breathtaking roadtrip, or the magic of a new attraction like the V&A, then Scotland's for you right now.
+link: https://www.visitscotland.com/
 
 # type: social
 # title: Keep up to date on touristboard.com destination

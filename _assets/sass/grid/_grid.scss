@@ -50,6 +50,7 @@
   &--justify       { justify-content: space-between; }
   &--valign-bottom { align-items: flex-end; }
   &--valign-center { align-items: center; }
+  &--reverse       { flex-direction: row-reverse;}
 
 
   ////////////////////////////////////////////// row column widths & breakpoints

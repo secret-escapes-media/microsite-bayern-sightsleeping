@@ -1,18 +1,18 @@
 # Site settings
-title: Tourist Board
+title: Scotland
 client:
-  name: Client Name
-  link: "#client-name"
+  name: VisitScotland
+  link: "https://www.visitscotland.com"
 core-se-link: https://www.secretescapes.com/current-sales
 description: >
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  As winter turns to spring, the sweeping landscapes of Scotland begin to shine with life once more - there’s simply no better time to visit. From the sun-specked coastal towns dotted along the shores to the sprawling forests at the heart of the national parks, there’s a hidden treasure-trove of springtime wonders suited to every traveller. Discover ancient castles, shimmering lochs, relaxing getaways and adrenaline-fuelled adventures in the Scottish wilderness. Indeed, whether you’ve come for adventure, culture, or just to escape from the daily rat race, there’s a few things in Scotland you can be sure to expect: clean air, staggering views, and a warm welcome.
 
 # file paths
 url:     "http://mp.secretescapes.com" # the base hostname & protocol for your site
-baseurl: "/tourist-board" # the subpath of your site, e.g. /blog/
-img:     "/tourist-board/_assets/img"
-css:     "/tourist-board/_assets/css"
-js:      "/tourist-board/_assets/js"
+baseurl: "/scotland" # the subpath of your site, e.g. /blog/
+img:     "/scotland/_assets/img"
+css:     "/scotland/_assets/css"
+js:      "/scotland/_assets/js"
 
 
 # Build settings

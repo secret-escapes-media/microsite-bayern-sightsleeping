@@ -1,34 +1,34 @@
-- id: one
-  title: Section one
-  nav-title: One
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum. Consequuntur recusandae nemo, magni excepturi laborum nihil aperiam est!
-  link: "#section-link"
+- id: adventure
+  title: Adventure
+  nav-title: Adventure
+  description: By air, by sea or by land - the natural wonders of Scotland are there to be conquered. Take on the Munro Bagging challenge for testing terrains and eye-popping landscapes, battle the rollercoaster rapids of the River Tay, or try your hand at the wild sport of coasteering - no matter what, the extremities of the Scottish environment will no doubt make for a demanding and rewarding ride.
+  link: https://www.visitscotland.com/see-do/active/adventure/
 
   pois:
     items:
 
-      - id: one-first-poi
-        title: One First POI
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
-        link: "#poi-link"
+      - title: Munro Bagging
+        id: munro-bagging
+        description: In case you didn’t know, a “munro” is a Scottish mountain with a height of over 3,000 feet - if you manage to reach the summit, you might say you’ve “bagged it”, and for good reason, too. From the formidable boulder fields of Schiehallion to the sweeping landscapes and high altitudes of Ben Chonzie, Buachaille Etive Mor and Mount Keen, the 282 munros of Scotland are as physically challenging as they are beautiful.
+        link: https://www.visitscotland.com/see-do/active/walking/munro-bagging/
         image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 
-      - id: one-second-poi
-        title: One Second POI
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
-        link: "#poi-link"
+      - title: White Water Rafting
+        id: white-water-rafting
+        description: Hidden away in the historic county of Perthshire, the rollercoaster rapids along the River Tay remain a hot location for the wild at heart. Being the largest river in Scotland to offer white water rafting, the River Tay boasts a wide range of rapids for beginners and adrenaline junkies alike. Ride downstream for an adrenaline-fuelled 6 hours, through stunning wildlife and heavy waters, paddle in hand, helmet on head, and heartbeat racing.
+        link: https://www.visitscotland.com/see-do/active/watersports/white-water-rafting/
         image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 
-      - id: one-third-poi
-        title: One Third POI
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
-        link: "#poi-link"
+      - title: Coasteering
+        id: coasteering
+        description: Along the wild, craggy coastline of East Lothian hides an adrenaline fuelled adventure. Coasteering is one of those sports that seems to defy reason; see a cliff, jump off it. Feel the rush as you plunge through the salty spray into the cool water before climbing up the rocks to do it all again – and although it feels unnatural, it is certainly a thrill. Head for Coast to Coast Surf School to try your hand at this wild practice.
+        link: https://www.visitscotland.com/see-do/active/watersports/canyoning-coasteering/
         image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 
-      - id: one-fourth-poi
-        title: One Fourth POI
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
-        link: "#poi-link"
+      - title: Land Yachting
+        id: land-yachting
+        description: An unlikely fusion of go-karting and sailing, ‘land yachting’ is a popular fixture of St Andrews’ West Sands in The Kingdom of Fife. With the sea-breeze as your motor, speed along this lengthy stretch of beach; race against your friends or just take it for a spin and discover the beauty of the coast. Other activities here include surfing, kayaking and ‘zapcatting’ - a means of shooting across the water on high-speed catamarans.
+        link: https://www.visitscotland.com/blog/active-sport/summer/
         image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 
 
@@ -37,37 +37,37 @@
 
 
 
-- id: two
-  title: Section Two
-  nav-title: Two
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum. Consequuntur recusandae nemo, magni excepturi laborum nihil aperiam est!
-  link: "#section-link"
+- id: culture
+  title: Culture
+  nav-title: Culture
+  description: The unique culture of Scotland is so much more than kilts and bagpipes (although there are plenty of those around). From Neolithic villages to world-class art galleries, and from medieval castles to contemporary whisky festivals, discover why Scotland is the perfect blend of old and new.
+  link: https://www.visitscotland.com/see-do/attractions/arts-culture/
 
   pois:
     items:
 
-      - id: two-first-poi
-        title: Two First POI
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
-        link: "#poi-link"
+      - title: V&A Dundee
+        id: v-a-dundee
+        description: On the edge of the River Tay, the recently opened V&A in Dundee is a feat of modern architecture, with curving concrete walls reminiscent of a Scottish cliff face. Centred entirely around the art of design, the exhibitions here aim to celebrate the country’s rich heritage of innovation, while also championing the contemporary talents of the future. Once you’ve finished perusing the galleries, make sure to check out the outdoor terrace for spectacular views across the Tay.
+        link: https://www.visitscotland.com/info/see-do/va-dundee-p1873141
         image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 
-      - id: two-second-poi
-        title: Two Second POI
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
-        link: "#poi-link"
+      - title: Skara Brae
+        id: skara-brae
+        description: Often regarded as one of the most spectacular prehistoric sites in Western Europe, the Neolithic village of Skara Brae provides a vivid picture of life lived around 5,000 years ago. Found on the Mainland, the largest island of the Orkney archipelago, these ancient homes are fitted with beds of stone, and even dressers, while an array of tools and artefacts can be seen at the nearby Visitor’s Centre - a fascinating, and deeply moving testament to human achievement.
+        link: https://www.visitscotland.com/info/see-do/skara-brae-prehistoric-village-p247671
         image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 
-      - id: two-third-poi
-        title: Two Third POI
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
-        link: "#poi-link"
+      - title: Knockengorroch World Ceilidh Festival
+        id: knockengorroch-world-ceilidh-festival
+        description: Billed as a “hoedown in the hills”, this lesser-known music festival takes place in Dumfries & Galloway between the 23rd and 26th of March. With an eclectic mix of Celtic, world and roots music, expect a riotous three days of singing, dancing, drinking and storytelling. Being a family festival at heart, there’s also a children’s marquee and procession, as well as puppet shows, fire shows, and an array of delicious world cuisine.
+        link: https://www.visitscotland.com/info/events/knockengorroch-world-ceilidh-2020-p2187341
         image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 
-      - id: two-fourth-poi
-        title: Two Fourth POI
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
-        link: "#poi-link"
+      - title: Abbotsford House
+        id: abbotsford-house
+        description: The ancestral home of the world-renowned poet and novelist, Sir Walter Scott, offers a beguiling insight into the mind of the man himself. Located on the stunning banks of the River Tweed in the Scottish Borders, Abbotsford House tells the tale of Scott’s tumultuous life, while offering visitors a glimpse into the tastes and preoccupations of the Romantic movement of which he was a part. For the full literary experience, however, there’s also the option of staying the night in the Hope Scott Wing - a chance to experience some 19th century hospitality, as one of Walter Scott’s distinguished guests.
+        link: https://www.visitscotland.com/info/tours/the-border-abbeys-and-abbotsford-house-248f9ded
         image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 
 
@@ -76,35 +76,35 @@
 
 
 
-- id: three
-  title: Section Three
-  nav-title: Three
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum. Consequuntur recusandae nemo, magni excepturi laborum nihil aperiam est!
-  link: "#section-link"
+- id: escape
+  title: Escape
+  nav-title: Escape
+  description: Switch off your phone, and breathe at last - the rolling hills and open skies of Scotland make it ideal for a digital detox. Take a trip to an east coast fishing village, famed for their beauty, their seafood, and their down-to-earth people; or retreat inland, and unpick the rivers, lochs and National Parks. Take your time to reflect and appreciate the stunning scenery - unedited and no filter needed.
+  link: https://www.visitscotland.com/blog/attractions/escape-the-cabin-fever/
 
   pois:
     items:
 
-      - id: three-first-poi
-        title: Three First POI
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
-        link: "#poi-link"
+      - title: Dumfries & Galloway
+        id: dumfries-galloway
+        description: This region offers the perfect blend of coastal and forest scenery. The Solway Coast is a beachcomber’s haven with an array of shell beaches, and for avid star gazers, there is The Galloway Forest Park. Due to its sparse population and lack of light pollution, it was named the country’s first Dark Sky Park. If you’re feeling sporty, rent a mountain bike at one of the 7stanes centres for sweat-inducing inclines and soul-stirring views.
+        link: https://www.visitscotland.com/destinations-maps/dumfries-galloway/
         image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 
-      - id: three-second-poi
-        title: Three Second POI
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
-        link: "#poi-link"
+      - title: Angus
+        id: angus
+        description: Escape to the east of Scotland for the undisturbed valleys of the Angus Glens. Against the backdrop of the Grampian Mountains, dust off your walking boots and stroll deep into the peaceful Scottish countryside. During your visit, be sure to take a trip to the wind-swept Angus coast, where you’ll find the rolling dunes and strawberry blonde sands of Lunan Bay. A secluded beach that stretches from Boddin Point to Land Craig, it’s the perfect way to wind down on an easy-going, sunny afternoon.
+        link: https://www.visitscotland.com/destinations-maps/dundee-angus/
         image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 
-      - id: three-third-poi
-        title: Three Third POI
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
-        link: "#poi-link"
+      - title: The Scottish Borders
+        id: the-scottish-borders
+        description: Step inside the picturesque, medieval villages of the Scottish Borders. From the historicism of Melrose to the awe-inspiring vistas of Scott’s View, there’s a quiet charm to this landscape that’s utterly infectious. While you’re here, too, why not stop over at Stobo Castle? This A-listed building now operates as a luxury spa retreat, complete with a state-of-the-art Ozone pool, Hydrospa and mud room - you may never feel stressed again.
+        link: https://www.visitscotland.com/destinations-maps/scottish-borders/
         image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 
-      - id: three-fourth-poi
-        title: Three Fourth POI
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
-        link: "#poi-link"
+      - title: The Outer Hebrides
+        id: the-outer-hebrides
+        description: A collection of islands at the edge of the Atlantic, the Outer Hebrides offer a true escape from the rat race. Here you’ll find a slower pace of life exploring rugged coast and countryside and observing stunning wildlife and fauna – walk or cycle the Hebridean Way and your reward will be the picturesque lighthouse at the Butt of Lewis. There are also prehistoric gems such as The Calanais Standing Stones on the Isle of Lewis. In the towns, however, you’ll hear Gaelic being spoken by the locals and traditional folk music been played in the pubs.
+        link: https://www.visitscotland.com/destinations-maps/outer-hebrides/
         image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"

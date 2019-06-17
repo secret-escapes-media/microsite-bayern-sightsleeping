@@ -13,7 +13,7 @@
 
     <div class="vpad--xxl bg--light">
       <div class="container">
-        <div class="width width--lg text--center text--xxl">
+        <div class="width width--xl text--center text--xxl">
           <p>{{site.description}}</p>
         </div>
       </div>
@@ -73,13 +73,26 @@
           <div class="bg__fixed-img" style="background-image: url('{{site.img}}/content/{{promo.id}}/bg.jpg');"></div>
         </div>
         <div class="container text--center">
-          <div class="width width--xxl">
+          <div>
             {% case promo.type %}
               {% when 'membership' %}
-                <div class="title title--xl">{{promo.title}}</div>
-                <p class="width width--xl text--xxl">{{promo.description}}</p>
-                <div class="space--sm"></div>
-                <a id="track-{{promo.id}}-btn" href="{{promo.link}}" class="btn btn--lg btn--orange">Sign up now</a>
+              <div class="row row--reverse row--valign-center">
+                <div class="col col--xxl-7">
+                  <div class="bg-img bg-img--16-9" style="background-image: url('{{site.img}}/video.jpg');">
+                    <a href="{{promo.link}}" class="bg-img__link"></a>
+                    <div class="bg-img__bg-overlay"></div>
+                    <div class="bg-img__content">
+                      <img class="width width--xs" src="{{site.img}}/icons/play.svg" alt="Play icon">
+                    </div>
+                  </div>
+                </div>
+                <div class="col col--xxl-5 text--left">
+                  <div class="title title--lg width--lg">{{promo.title}}</div>
+                  <p class="width--xl text--xxl">{{promo.description}}</p>
+                  <div class="space--sm"></div>
+                  <a id="track-{{promo.id}}-btn" href="{{promo.link}}" class="btn btn--lg btn--orange">Watch & share our video</a>
+                </div>
+              </div>
               {% when 'social' %}
                 <div class="title title--xl">{{promo.title}}</div>
                 <p class="width width--xl text--xxl">{{promo.description}}</p>
@@ -98,7 +111,7 @@
                 </div>
               {% when 'newsletter' %}
                 <div class="title title--xl">{{promo.title}}</div>
-                <p class="width width--xl text--xxl">{{promo.description}}</p>
+                <p class="width width--lg text--xxl">{{promo.description}}</p>
                 <div class="text--left space--lg">
                   {% include page/signup-form.html %}
                 </div>
