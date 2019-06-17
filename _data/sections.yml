@@ -1,32 +1,32 @@
-- id: one
-  title: Section one
-  nav-title: One
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum. Consequuntur recusandae nemo, magni excepturi laborum nihil aperiam est!
-  link: "#section-link"
+- id: city
+  title: City
+  nav-title: City
+  description: The cities of Britain are melting pots of culture; sprawling urban playgrounds, each unique in their own way, and teeming with a diverse array of people - but you probably already knew that, which is why you want a micrograp experience that offers something new. Discover the hidden treasures that shine beneath the surface of our incredible cities. From boxing in Manchester to ghost tours in Cardiff - these are experiences you’ll never forget.
+  link: https://www.visitbritain.com/gb/en/10-cool-and-unique-ways-see-britains-cities
 
   pois:
     items:
 
-      - id: one-first-poi
-        title: One First POI
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
+      - id: blacksmithing-in-glasgow
+        title: Blacksmithing in Glasgow
+        description: Try your hand at the time-honoured craft of blacksmithing at the Vanguard Centre in Glasgow. In learning a trade that dates back as far as 1500 BC, the course provides a sure-fire way of reconnecting with your ancient ancestors, by transforming a raw material into something functional using your own bare hands. With a red hot forge beside you, learn how to bend and beat the metal into shape, creating everything from bottle openers to Viking-style jewellery.
+        link: https://www.visitbritain.com/gb/en/exploring-fantastic-city-glasgow
+        image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
+
+      - id: ethical-eating-in-london
+        title: Ethical eating in London
+        description: There are countless places to eat in London (throw a stone and you’ll hit one), but among them are restaurants pioneering a trend of sustainability and community-building. One of the best is the Clink Restaurant in Brixton Prison - a charity that aims to rehabilitate prisoners by training them as chefs - book in for a fine-dining experience like no other; one that truly gives something back. Next, try Jamie Oliver’s flagship Fifteen restaurant, an organisation aimed at giving unemployed young people the start they need in the food industry, with a menu that uses local-produce to create mouth-wateringly good 5-course meals.
         link: "#poi-link"
         image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 
-      - id: one-second-poi
-        title: One Second POI
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
+      - id: the-black-country-heritage-of-birmingham
+        title: The black country heritage of Birmingham
+        description: The industrial heritage of Birmingham is brought to life in the Black Country Living Museum in Dudley, an open-air recreation of an early 20th century village. Telling the tale of the Industrial Revolution, of which Dudley played a central role, the museum is staffed by a host of characters in period costume who’ll take you back in time. There’s a coal mine, a school, a fairground, a pub, a chippy, and a whole village of retro houses and shops to explore. It’s a nostalgia trip that’s yet to be surpassed.
         link: "#poi-link"
         image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 
-      - id: one-third-poi
-        title: One Third POI
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
-        link: "#poi-link"
-        image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
-
-      - id: one-fourth-poi
-        title: One Fourth POI
+      - id: take-a-cookery-class-in-bath
+        title: Take a cookery class in Bath
         description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
         link: "#poi-link"
         image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
@@ -37,37 +37,37 @@
 
 
 
-- id: two
-  title: Section Two
-  nav-title: Two
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum. Consequuntur recusandae nemo, magni excepturi laborum nihil aperiam est!
-  link: "#section-link"
+- id: coast
+  title: Coast
+  nav-title: Coast
+  description: The UK's coastline is studded with an array of microgap experiences that are just waiting to be found. Whether you’re learning to paint in the creative hub of St Ives, island hopping on the sub-tropical Isles of Scilly or embarking on a coastal road trip of the Scottish Highlands, the wild shores of the UK are home to a host of adventures to inspire the mind and stimulate the soul...
+  link: https://www.visitbritain.com/gb/en/countryside/coast
 
   pois:
     items:
 
-      - id: two-first-poi
-        title: Two First POI
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
-        link: "#poi-link"
+      - id: ride-the-north-coast-500-in-the-highlands
+        title: Ride the north coast 500 in the highlands
+        description: By car, bike or motorbike - the UK’s answer to Route 66 is a journey to the heart of Scotland. Starting and ending at Inverness Castle, take a week to ride this 516 mile tour of the breathtaking Scottish Coastline. Stopping off at the scenic towns of Ullapool, Durness, Dornoch and John O’Groats along the way, the North Coast 500 is the perfect opportunity to discover the heritage and culture along the outer rim of the Highlands. After all, it’s the ancient castles, glassy lochs, cosy inns, and friendly locals that make this Scottish road trip so iconic.
+        link: https://www.visitbritain.com/gb/en/unmissable-experiences-along-north-coast-500
         image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 
-      - id: two-second-poi
-        title: Two Second POI
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
-        link: "#poi-link"
+      - id: wild-swimming-in-county-antrim
+        title: Wild swimming in County Antrim
+        description: Dive deep into the bracing waters of Larrybane Bay and swim across to the dramatic island of Carrick-a-Rede. Passing under the famous rope-bridge that connects the island to the mainland, this 1km swim is as visually compelling as it is challenging, with grass-topped cliffs, coastal caves and and rocky outcrops to see on your crawl to the other side. Celebrate afterwards with a sea-view picnic, before heading to the seaside village of Cushendun. Here you’ll find Mary McBride’s, one of Ireland’s smallest pubs, a traditional establishment stocking a wide range of Irish Whiskeys, a cosy atmosphere and some jolly good craic!
+        link: https://www.visitbritain.com/gb/en/antrim-coast-mythical-giants-and-incredible-geology
         image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 
-      - id: two-third-poi
-        title: Two Third POI
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
-        link: "#poi-link"
+      - id: learn-to-paint-in-st-ives-cornwall
+        title: Learn to paint in St Ives, Cornwall
+        description: Despite the glimmering seafront, pristine white beaches and historic houses that populate the picturesque town of St Ives, it’s the arts scene that truly defines it. Switch off and discover Cornwall’s art hub for yourself at the St Ives School of Painting, a historic institution offering classes and courses on everything from oil painting to life drawing. With sea-facing views and excellent facilities, it’s a chance to unplug from the outside world and unleash your inner creativity. And why stop there? Continue the experience with visits to the iconic Tate St Ives and Barbara Hepworth Museum, and be inspired by the greats of British Modernism.
+        link: https://www.visitbritain.com/gb/en/england/south-west/st-ives
         image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 
-      - id: two-fourth-poi
-        title: Two Fourth POI
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
-        link: "#poi-link"
+      - id: guided-walking-over-morecambe-bay-lancashire
+        title: Guided walking over Morecambe Bay, Lancashire
+        description: Morecambe Bay is the largest expanse of mudflats in the UK, a dramatic seascape of sand and water, overlooked by the mountains of the Lake District. Take a sponsored walk with the Guide Over Sands Trust, a charity providing guides for a safe passage over the estuary - a means of experiencing the Bay’s spectacular sand-spread vistas while raising money for a worthy cause. Setting off from Arnside, the walk will lead you to the village of Kent’s Bank at the foot of the magnificent Lake District.
+        link: https://www.visitbritain.com/gb/en/london-lakes-take-tracks
         image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 
 
@@ -76,35 +76,35 @@
 
 
 
-- id: three
-  title: Section Three
-  nav-title: Three
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum. Consequuntur recusandae nemo, magni excepturi laborum nihil aperiam est!
-  link: "#section-link"
+- id: country
+  title: Country
+  nav-title: Country
+  description: Retreat to the rolling hills and bucolic landscapes of the British countryside, where a series of secret adventures, relaxing getaways and enriching experiences are waiting to be discovered. Try your hand at the sports of fly fishing or rocking climbing, take a relaxing cruise on a canal boat, or explore the medieval wonders and foodie hotspots of Ludlow. Whatever you choose, these microgaps will take you out of your comfort zone and introduce you to your new favourite pocket of the UK.
+  link: https://www.visitbritain.com/gb/en/countryside
 
   pois:
     items:
 
-      - id: three-first-poi
-        title: Three First POI
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
-        link: "#poi-link"
+      - id: retreat-to-a-buddhist-monastery-in-hertfordshire
+        title: Retreat to a buddhist monastery in Hertfordshire
+        description: Observe the Buddhist traditions of the Amaravati Monastery at the eastern end of the Chiltern Hills in Hertfordshire. A fully-functioning community of monks and nuns practicing in the Theravada tradition, the monastery allows you to join in on their daily meditation sessions and talks, or stay for longer if you need more downtime. Being a space of peace and inward reflection, the monastery has become a welcome sanctuary from the stresses of the world, as well as a chance for visitors to learn from traditional Buddhist teachings and even offer something back through volunteer work.
+        link: https://www.visitbritain.com/ae/en/media-consumer-location/hertfordshire
         image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 
-      - id: three-second-poi
-        title: Three Second POI
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
-        link: "#poi-link"
+      - id: fly-fishing-in-new-forest-hampshire
+        title: Fly fishing in new forest, Hampshire
+        description: Who’s never once dreamed of fishing in a glassy stream, surrounded by the ancient trees of a magical woodland? The chalk streams of the rivers Test, Itchen and Wiltshire Avon in the New Forest are the birthplace of fly fishing, home to brown trout, grayling and atlantic salmon alike - and with plenty of fishing guides available in the local area to show you the ropes, you’ll be hooking your first catch in no time. Immersed in the spectral beauty of this incredible forest - with a packed lunch and flask of coffee in tow - lose yourself to the reflective wonders of the sport.
+        link: https://www.visitbritain.com/gb/en/new-forest
         image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 
-      - id: three-third-poi
-        title: Three Third POI
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
-        link: "#poi-link"
+      - id: cruise-on-the-llangollen-canal
+        title: Cruise on the Llangollen Canal
+        description: Hire a narrowboat and drift along this historic canal route. Starting in north-east Wales, navigate the twists and turns of the waterway before floating into the Shropshire countryside, making sure, of course, to pitstop at the various pubs on the way - ideal for a small group of friends. The highlight of the trip will undoubtedly be the “stream in the sky”, the Pontcysyllte Aqueduct, a bridge over the River Dee that soars at around 126ft. Expect some truly epic views (and a hit of adrenaline) as you pass across to the other side...
+        link: https://www.visitbritain.com/ae/en/narrow-boat-trip-llangollen-canal
         image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
 
-      - id: three-fourth-poi
-        title: Three Fourth POI
-        description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos rerum optio est consequuntur ut quibusdam soluta molestias perspiciatis, dolor corrupti culpa labore aspernatur voluptates, ipsum laborum eligendi placeat et fugiat sit, quidem, totam iure ea ad velit! Aliquid, placeat, ea. Amet accusamus voluptas odit harum necessitatibus consequatur delectus autem rerum architecto voluptatum.
-        link: "#poi-link"
+      - id: stargazing-in-the-yorkshire-dales
+        title: Stargazing in the Yorkshire Dales
+        description: By day the Yorkshire Dales National Park is a grassy wonderland of sweeping landscapes and rolling hills; by night it plays host to a glimmering sky of soul-stirring constellations. As the sun begins to set over the heather moorlands, take a hike to one of the park’s star discovery sites - the Hawes centre, Malham centre, the Buckden car park, or the Tan Hill Inn, otherwise known as the ‘highest pub in Britain’ - where the high-altitude, open landscapes provide spine-tingling panoramic views of the Northern Hemisphere. On a clear night, you might even catch a glimpse of the Milky Way...
+        link: https://www.visitbritain.com/ae/en/out-and-about-yorkshire-dales
         image-credit: "<a href=\"#photo-link\">Photo</a> by username / <a rel=\"nofollow\" href=\"https://creativecommons.org/licenses/by/2.0/\">CC BY</a>"
