@@ -117,8 +117,21 @@
                 </div>
               {% when 'competition' %}
                 <div class="title title--xl">{{promo.title}}</div>
-                <p class="width width--xl text--xxl">{{promo.description}}</p>
-                <div class="space--lg">
+                <p class="width width--xl text--xl">{{promo.description}}</p>
+                <div class="width width--xxl space--lg">
+                  <div class="row row--constant-4-4-4 row--no-gutters">
+                    <div class="col">
+                      <div class="bg-img bg-img--1-1" style="background-image: url('{{site.img}}/content/competition/01.jpg')"></div>
+                    </div>
+                    <div class="col">
+                      <div class="bg-img bg-img--1-1" style="background-image: url('{{site.img}}/content/competition/02.jpg')"></div>
+                    </div>
+                    <div class="col">
+                      <div class="bg-img bg-img--1-1" style="background-image: url('{{site.img}}/content/competition/03.jpg')"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="space--md">
                   {% include page/competition-form.html %}
                 </div>
             {% endcase %}

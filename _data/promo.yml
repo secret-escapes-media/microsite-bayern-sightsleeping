@@ -1,10 +1,10 @@
 id: promo
-nav-title: Watch
+nav-title: Competition
 
-type: membership
-title: Now is the time to Experience Scotland
-description: If you're looking for the beat of a music festival, the adrenaline of an outdoor adventure, the experience of a breathtaking roadtrip, or the magic of a new attraction like the V&A, then Scotland's for you right now.
-link: https://www.visitscotland.com/
+# type: membership
+# title: Now is the time to Experience Scotland
+# description: If you're looking for the beat of a music festival, the adrenaline of an outdoor adventure, the experience of a breathtaking roadtrip, or the magic of a new attraction like the V&A, then Scotland's for you right now.
+# link: https://www.visitscotland.com/
 
 # type: social
 # title: Keep up to date on touristboard.com destination
@@ -24,6 +24,6 @@ link: https://www.visitscotland.com/
 # title: sign up to touristboard.com newsletter
 # description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-# type: competition
-# title: Win an amazing luxury prize in touristboard.com destination
-# description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+type: competition
+title: Win a wild escape to Highland Perthshire
+description: Enter below for your chance to win a Scotland escape like no other. Boutique lodgings, a delicious foodie experience and a rugged safari-drive deep into the Highlands make this one unmissable adventure.
