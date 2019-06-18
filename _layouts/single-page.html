@@ -15,6 +15,11 @@
       <div class="container">
         <div class="width width--xl text--center text--xxl">
           <p>{{site.description}}</p>
+          {% if page.primary-cta %}
+            <div class="space--sm">
+              <a href="{{page.primary-cta.link}}" class="btn btn--lg btn--outline btn--outline-orange">{{page.primary-cta.label}}</a>
+            </div>
+          {% endif %}
         </div>
       </div>
     </div>
