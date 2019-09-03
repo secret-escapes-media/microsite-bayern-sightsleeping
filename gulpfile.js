@@ -3,7 +3,6 @@ var path         = require('path');
 var del          = require('del');
 var cp           = require('child_process');
 var browserSync  = require('browser-sync');
-var watch        = require('gulp-watch');
 var sass         = require('gulp-sass');
 var sourcemaps   = require('gulp-sourcemaps');
 var autoprefix   = require('gulp-autoprefixer');
