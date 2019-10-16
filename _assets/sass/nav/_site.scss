@@ -59,6 +59,7 @@ $nav-color:          $orange-dark;
   }
   &__wrap {
     display: flex;
+    display: -webkit-flex;
     justify-content: space-between;
     position: relative;
     max-width: $xxxl;

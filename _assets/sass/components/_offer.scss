@@ -66,19 +66,8 @@ $offer-max-width: 600px;
   &__bottom {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding-top: $s2;
-    &-right {
-      margin-left: auto;
-      align-self: flex-end;
-    }
-    &-left  {
-      display: flex;
-      align-items: center;
-      width: 100%; // needed for ie11
-      max-width: $offer-max-width; // needed for ie11
-      margin-right: auto;
-    }
   }
   &__arrow {
     display: none;
@@ -93,16 +82,25 @@ $offer-max-width: 600px;
     background-image: url('../img/icons/arrow-right-orange.svg');
     background-size: auto ($circle-height/2.25);
     background-position: 52% center;
+    flex-basis: $circle-height;
+    align-self: flex-end;
+    @include bp($sm) { display: block; }
+    @include bp($md) { align-self: center; }
   }
   &__saved {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    margin-right: $s-1;
+    padding-right: $s-1;
+    border-right: 1px solid $grey-lighter;
     text-align: center;
     &-percent {
-      display: inline-block;
       width: $circle-height;
       height: $circle-height;
-      margin-left: $s-6;
-      text-align: center;
+      margin-top: $s-5;
       color: #fff;
       font-weight: 600;
       letter-spacing: 0;
@@ -110,18 +108,36 @@ $offer-max-width: 600px;
       background-color: $orange;
       border-radius: $circle-height;
     }
+    &-label {
+      max-width: 100px;
+      line-height: 1.2;
+    }
+    @include bp($md) {
+      flex-direction: row;
+      margin-right: $s0;
+      &-percent {
+        margin-top: 0;
+        margin-left: $s-6;
+      }
+    }
+    @include bp($xl) {
+      flex-direction: column;
+      &-percent {
+        margin-top: $s-5;
+        margin-left: 0;
+      }
+    }
+    @include bp($xxl) {
+      flex-direction: row;
+      &-percent {
+        margin-top: 0;
+        margin-left: $s-6;
+      }
+    }
   }
   &__details {
-    display: inline-block;
-  }
-  &__separator {
-    display: inline-block;
-    align-self: stretch;
-    width: 1px;
-    max-width: 1px;
-    margin-left: $s0;
-    margin-right: $s0;
-    background-color: $grey-lighter;
+    flex-grow: 1;
+    > div + div { padding-top: $s-10; }
   }
   &__price {
     color: $orange;
@@ -129,14 +145,6 @@ $offer-max-width: 600px;
     font-weight: 600;
     line-height: 1;
     letter-spacing: 0;
-  }
-  @include bp($sm) {
-    &__arrow { display: block; }
-  }
-  @include bp($md) {
-    &__bottom-right { align-self: center; }
-    &__saved        { min-width: 130px; } // bit of a magic number, basically keeps the saved label & percent on the same line
-    &__saved-label  { display: inline-block; }
   }
 
   // dark offer card styles

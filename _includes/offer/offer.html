@@ -15,37 +15,20 @@
     <div class="offer__description">{{offer.description}}</div>
 
     <div class="offer__bottom">
-
-      <div class="offer__bottom-left">
-
-        {% if offer.saved %}
-          <div class="offer__saved">
-            <div class="offer__saved-label">Save up to&nbsp;</div>
-            <div class="offer__saved-percent">{{offer.saved}}%</div>
-          </div>
-          <div class="offer__separator"></div>
-        {% endif %}
-
-        <div class="offer__details">
-          <div>From <span class="offer__price">£{{offer.price}}</span></div>
-          <div class="text--sm">{{offer.price-description}}</div>
-          <div class="js-offer-expires text--sm" data-expires="{{offer.expires}}"></div>
+      {% if offer.saved %}
+        <div class="offer__saved">
+          <div class="offer__saved-label">Save up to</div>
+          <div class="offer__saved-percent">{{offer.saved}}%</div>
         </div>
-
+      {% endif %}
+      <div class="offer__details">
+        <div>From <span class="offer__price">£{{offer.price}}</span></div>
+        <div class="text--sm">{{offer.price-description}}</div>
+        <div class="js-offer-expires text--sm" data-expires="{{offer.expires}}"></div>
       </div>
-      <div class="offer__bottom-right">
-        <div class="offer__arrow"></div>
-      </div>
-
+      <div class="offer__arrow"></div>
     </div>
 
   </div>
 
 </div>
-
-
-
-
-
-
-
