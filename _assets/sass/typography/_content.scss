@@ -20,12 +20,44 @@ a[href]:not([class]) {
   &--underlined { text-decoration: underline; }
 }
 
-li {
-  list-style-position:
-  outside; margin-left: $s1;
+ol {
+  counter-reset: mycounter;
+  li {
+    display: flex;
+    list-style: none;
+    &:before {
+      content: counter(mycounter) ".";
+      counter-increment: mycounter;
+      padding-right: $s-6;
+    }
+  }
+  &.continuing-list {
+    counter-reset: none;
+    &--start { counter-reset: mycounter; }
+  }
 }
-ul li   { list-style-type: disc; }
-ol li   { list-style-type: decimal; }
+
+.ol {
+  &--nested {
+    padding-left: $s2;
+    padding-bottom: $s2;
+  }
+  &--letters {
+    li:before { content: counter(mycounter, lower-alpha) "."; }
+  }
+}
+
+ul {
+  li {
+    display: flex;
+    list-style: none;
+    &:before {
+      content: "•";
+      padding-right: $s-3;
+      font-weight: 600;
+    }
+  }
+}
 
 hr {
   border: 0;
