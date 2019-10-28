@@ -1,5 +1,5 @@
 # Site settings
-title: Visit Britain
+title: Britain
 client:
   name: Visit Britain
   link: https://www.visitbritain.com/gb/en/
@@ -9,10 +9,10 @@ description: >
 
 # file paths
 url:     "http://mp.secretescapes.com" # the base hostname & protocol for your site
-baseurl: "/visit-britain" # the subpath of your site, e.g. /blog/
-img:     "/visit-britain/_assets/img"
-css:     "/visit-britain/_assets/css"
-js:      "/visit-britain/_assets/js"
+baseurl: "/_tb-template/britain" # the subpath of your site, e.g. /blog/
+img:     "/_tb-template/britain/_assets/img"
+css:     "/_tb-template/britain/_assets/css"
+js:      "/_tb-template/britain/_assets/js"
 
 
 # Build settings
