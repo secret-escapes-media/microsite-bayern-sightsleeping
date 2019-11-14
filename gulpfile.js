@@ -178,7 +178,9 @@ function compressJs() {
 // compress images files for live
 function compressImages() {
   return gulp.src('./_site/_assets/img/**/*')
-  .pipe(image())
+  .pipe(image({
+      svgo: ['--disable', 'removeViewBox']
+    }))
   .pipe(gulp.dest('./_site/_assets/img'));
 }
 
