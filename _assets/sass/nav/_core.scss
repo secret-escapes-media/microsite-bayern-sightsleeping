@@ -22,16 +22,12 @@ $core-nav-padding-sm: 1rem;
   right: 0;
   z-index: $z-nav-upper;
   @include core-nav-height;
-
-  // Need to come back to this, once I decide the best way. Either always in the layout file for the page
-  // I do like the way this works on capital region, each section has the nav padding, works really well
   &__offset:before {
     // corrects header overlapping content
     content: '';
     display: block;
     @include core-nav-height;
   }
-
 }
 
 
@@ -59,69 +55,58 @@ $logo-bp: 600px;
     padding-right: $core-nav-padding;
   }
   &__wrap {
-    position: relative;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    height: 100%;
+    line-height: 0;
     max-width: $xxxl;
     margin-left: auto;
     margin-right: auto;
+    > * {
+      flex-basis: 16.66%;
+      @include bp($logo-bp) { flex-basis: 33.33%; }
+      @include bp($nav-list-bp) { flex-basis: auto; }
+    }
+    .core-nav__main {
+      flex-basis: 66.64%;
+      @include bp($logo-bp) { flex-basis: 33.33%; }
+      @include bp($nav-list-bp) { flex-basis: auto; }
+    }
   }
-  &__left {
-    display: flex;
-    align-items: center;
-    width: 25%;
-    min-width: $core-nav-height-sm;
-    @include bp($logo-bp) { width: 33.33%; }
+  &__toggle {
+    text-align: left;
     @include bp($nav-list-bp) { display: none; }
   }
-  &__center {
+  &__main {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
-    @include bp($logo-bp) {
-      width: 33.33%;
-      flex-grow: 3; // needed for firefox
-    }
-    @include bp($nav-list-bp) {
-      width: 66.66%;
-      justify-content: flex-start;
-    }
+    @include bp($nav-list-bp) { text-align: left; }
   }
-  &__right {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 25%;
-    min-width: $core-nav-height-sm;
+  &__client {
+    text-align: right;
     visibility: hidden;
-    @include bp($logo-bp) {
-      width: 33.33%;
-      visibility: visible;
-    }
+    @include bp($logo-bp) { visibility: visible; }
   }
   &__list {
     display: none;
     margin-left: $s-1;
-    line-height: 0;
     @include bp($nav-list-bp) {
       display: block;
     }
-    &-link {
-      display: inline-block;
-      padding: $s-1 $s-4;
-      text-transform: uppercase;
-      font-weight: 700;
-      font-size: $s-1;
-      line-height: 0;
-      @include transition;
-      &:hover,
-      &.is-current {
-        color: $orange;
-      }
+  }
+  &__list-link {
+    display: inline-block;
+    padding: $s-1 $s-4;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: $s-1;
+    line-height: 0;
+    @include transition;
+    &:hover,
+    &.is-current {
+      color: $orange;
     }
   }
 }
