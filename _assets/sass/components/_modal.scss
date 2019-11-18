@@ -13,7 +13,6 @@
     align-items: center;
     justify-content: center;
     min-height: 100%;
-    margin-bottom: ($icon-size * 6);
   }
   &__bg {
     position: fixed;
@@ -88,7 +87,7 @@
         right: -($icon-size);
         border-left: 0;
       }
-      &:hover     { background-color: $black; }
+      &:hover { background-color: $black; }
     }
   }
   &--standard { max-width: $xl; }
@@ -118,15 +117,11 @@
     }
   }
   @include bp($md) {
-
     margin-left: $icon-size;
     margin-right: $icon-size;
-    &__wrap { margin-bottom: 0; }
   }
   @include bp($lg){
-    &__content {
-      padding: $s4 $s6;
-    }
+    &__content { padding: $s4 $s6; }
   };
 }
 
