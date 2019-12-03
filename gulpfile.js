@@ -26,7 +26,7 @@ function browserSyncServe() {
     server: {
       baseDir: '_site/',
       routes: {
-        '/template': '_site/'
+        '/uk/2019/template': '_site/'
       }
     }
   });
