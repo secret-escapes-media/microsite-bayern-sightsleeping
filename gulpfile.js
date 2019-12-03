@@ -22,11 +22,14 @@ function cleanAssets() {
 
 // start browserSync local server and show under site subdirectory
 function browserSyncServe() {
+  const baseurl = '/uk/2019/template';
   browserSync.init({
+    baseDir: '_site/',
+    ui: false,
+    startPath: baseurl,
     server: {
-      baseDir: '_site/',
       routes: {
-        '/uk/2019/template': '_site/'
+        [baseurl]: '_site/'
       }
     }
   });
