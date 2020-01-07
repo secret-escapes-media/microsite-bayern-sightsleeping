@@ -10,10 +10,10 @@ description: >
 
 # file paths
 url:     "http://mp.secretescapes.com" # the base hostname & protocol for your site
-baseurl: "/uk/2019/template" # the subpath of the site, including territory and year
-img:     "/uk/2019/template/_assets/img"
-css:     "/uk/2019/template/_assets/css"
-js:      "/uk/2019/template/_assets/js"
+baseurl: "/uk/2020/template" # the subpath of the site, including territory and year
+img:     "/uk/2020/template/_assets/img"
+css:     "/uk/2020/template/_assets/css"
+js:      "/uk/2020/template/_assets/js"
 
 
 # Build settings
