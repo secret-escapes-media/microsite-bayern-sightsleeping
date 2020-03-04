@@ -14,6 +14,7 @@ var offerSections = $('.js-dynamic-offers');
 $(offerSections).each(function(){
   var offerSection = $(this);
   var sheetName = offerSection.data('offer-sheet');
+  var limiter = offerSection.data('offer-limit') - 1;// -1 to balance against index number
 
   /*===== QUERY GOOGLE SHEET =====*/
   var spreadsheetID = "14g1IiRy-0A3yFke6WRhvB_AOn_bNVESIDasUVcc93PM"; // ID of Google Spreadsheet
@@ -26,9 +27,12 @@ $(offerSections).each(function(){
     var sortedDeals = deals.sort(function(a,b){ return a[6] > b[6] ?1 :-1 });
 
     // loop through deals and build HTML for output
-    $(deals).each(function(){
+    $(deals).each(function(i){
       // check deal "end date" to ensure it exists
       if(this[7]){
+
+        // limit iteration
+        if(i>limiter) return false;
 
         var saleTitle             = this[1];
         var saleLocation          = this[2];
