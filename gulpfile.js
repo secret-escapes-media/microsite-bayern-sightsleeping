@@ -93,6 +93,7 @@ function buildJsMain(cb) {
     './_assets/js/_components/form/validation.js',
     './_assets/js/_components/competition.js',
     './_assets/js/_components/simple-form.js',
+    './_assets/js/_components/offer-sheet.js',
 
     // custom js for project
     './_assets/js/main.js',
