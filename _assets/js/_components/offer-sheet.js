@@ -16,7 +16,7 @@ $(offerSections).each(function(){
   var sheetName = offerSection.data('offer-sheet');
 
   /*===== QUERY GOOGLE SHEET =====*/
-  var spreadsheetID = "1frE2NZXWESSNafmNeGa12P6zwE5k_xMhQJIzR_Ej9N8"; // ID of Google Spreadsheet
+  var spreadsheetID = "14g1IiRy-0A3yFke6WRhvB_AOn_bNVESIDasUVcc93PM"; // ID of Google Spreadsheet
   var apiKey = "AIzaSyBww8fHIRizAYPWsYyNGcRvLvzTLvvKmkw"; // API key for accessing G Sheet
   var url = "https://sheets.googleapis.com/v4/spreadsheets/" + spreadsheetID + "/values/" + sheetName + "!A3:Z?&key=" + apiKey;
 
