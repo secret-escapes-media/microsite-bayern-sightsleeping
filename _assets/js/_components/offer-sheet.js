@@ -1,6 +1,5 @@
 
 
-
 ///////////////////////////////////////
 // GET OFFERS FROM GOOGLE SHEET
 ///////////////////////////////////////
@@ -9,6 +8,7 @@
 
 // get all offer sections on page
 var offerSections = $('.js-dynamic-offers');
+
 
 // loop over offer sections to gather deals from correct sheet
 $(offerSections).each(function(){
@@ -23,14 +23,17 @@ $(offerSections).each(function(){
 
   // JSON request
   $.getJSON(url, function(data) {
-    var deals = data.values;
+    var rawData = data.values;
+    var deals = rawData.filter(function(item){
+      return item[0] != 0;
+    });
+
     var sortedDeals = deals.sort(function(a,b){ return a[6] > b[6] ?1 :-1 });
 
     // loop through deals and build HTML for output
     $(deals).each(function(i){
       // check deal "end date" to ensure it exists
       if(this[7]){
-
         // limit iteration
         if(i>limiter) return false;
 
