@@ -1,0 +1,413 @@
+---
+layout: default
+title: DLS
+
+brand-colors:
+  - group:
+      - name: bg--grey-lightest
+      - name: bg--grey-lighter
+      - name: bg--grey-light
+      - name: bg--grey
+      - name: bg--grey-dark
+      - name: bg--grey-darker
+      - name: bg--grey-darkest
+  - group:
+      - name: bg--primary-lightest
+      - name: bg--primary-lighter
+      - name: bg--primary-light
+      - name: bg--primary
+      - name: bg--primary-dark
+      - name: bg--primary-darker
+      - name: bg--primary-darkest
+  - group:
+      - name: bg--secondary-lightest
+      - name: bg--secondary-lighter
+      - name: bg--secondary-light
+      - name: bg--secondary
+      - name: bg--secondary-dark
+      - name: bg--secondary-darker
+      - name: bg--secondary-darkest
+
+utility-colors:
+  - group:
+      - name: bg--success-light
+      - name: bg--success
+      - name: bg--success-dark
+  - group:
+      - name: bg--error-light
+      - name: bg--error
+      - name: bg--error-dark
+
+form:
+  id: signup
+  post-url: "#getFormUrl"
+  fields:
+    - id: title
+      type: select
+      label: Title
+      options:
+        - id: mr
+          label: Mr
+        - id: ms
+          label: Ms
+        - id: miss
+          label: Miss
+        - id: mrs
+          label: Mrs
+        - id: dr
+          label: Dr
+    - id: name
+      type: text
+      label: Name
+      required: true
+    - id: email-address
+      type: email
+      label: Email address
+      required: true
+    - id: text-long
+      type: text-long
+      label: Long text
+      required: true
+    - id: checkbox
+      type: checkbox
+      label: I would like to receive inspiration, travel tips, news and offers. I agree to the use of my personal details for this purpose.
+      options:
+        - id: email
+          label: Email
+        - id: post
+          label: Post
+    - id: radio
+      type: radio
+      label: Are you a UK resident and over the age of 21?
+      options:
+        - id: yes
+          label: Yes
+        - id: no
+          label: No
+  submit: Submit now
+
+---
+
+<div class="bg--grey-lightest vpad--xxl content-spacing section-spacing">
+{% include page/header.html %}
+<div class="site-header__offset"></div>
+<div class="site-nav__offset"></div>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col col--12 text--center">
+        <div class="h h--xxxl">Foundations</div>
+      </div>
+
+
+
+
+
+
+      <!-- COLOURS -->
+      <div class="col col--12">
+        <div class="depth--sm rounded--sm">
+          <div class="boxpad--md bg--grey-darkest theme--light text--center">
+            <div class="h h--md">Colours</div>
+          </div>
+          <div class="boxpad--xxl bg--white depth--sm rounded--sm">
+            <div class="row">
+
+              <div class="col col--4">
+                <div class="h h--sm">Brand colours</div>
+                <p>Secret Escapes brand has historically been using orange as the main brand colour. To make this orange colour even more effective, we decided to introduce a complementary colour.</p>
+              </div>
+              <div class="col col--8">
+                <div class="row">
+                  {% for groups in page.brand-colors %}
+                    <div class="col col--4">
+                    {% for color in groups.group %}
+                      <div class="img img--4-1 {{color.name}}"></div>
+                      <div class="vpad--xxs text--mini"> .{{color.name}} </div>
+                    {% endfor %}
+                    </div>
+                  {% endfor %}
+                </div>
+              </div>
+
+              <div class="col col--4">
+                <div class="h h--sm">Utility colours</div>
+                <p>Utility colours have a functional role. They are only used when it is necessary to signal clear feedback to a user, as with error messages. We have 2 utility colours.</p>
+              </div>
+              <div class="col col--8">
+                <div class="row">
+                  {% for groups in page.utility-colors %}
+                    <div class="col col--6">
+                    {% for color in groups.group %}
+                      <div class="img img--4-1 {{color.name}}"></div>
+                      <div class="vpad--xxs text--mini"> .{{color.name}} </div>
+                    {% endfor %}
+                    </div>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- /.col--12 COLOURS  -->
+
+
+
+
+
+
+      <!-- TYPOGRAPHY -->
+      <div class="col col--12">
+        <div class="depth--sm rounded--sm">
+          <div class="boxpad--md bg--grey-darkest theme--light text--center">
+            <div class="h h--md">Typography</div>
+          </div>
+          <div class="boxpad--xxl bg--white depth--sm rounded--sm">
+            <div class="row">
+
+              <div class="col col--4">
+                <div class="h h--sm">Titles</div>
+              </div>
+              <div class="col col--8">
+                <div class="h h--xxxl">.h--xxxl</div>
+                <div class="h h--xxl">.h--xxl</div>
+                <div class="h h--xl">.h--xl</div>
+                <div class="h h--lg">.h--lg</div>
+                <div class="h h--sm">.h--sm</div>
+                <div class="h h--xs">.h--xs</div>
+                <div class="h h--xxs">.h--xxs</div>
+                <div class="h h--xxxs">.h--xxxs</div>
+              </div>
+
+              <div class="col col--4">
+                <div class="h h--sm">Text</div>
+              </div>
+              <div class="col col--8">
+                <p class="p--xxxxl">.p--xxxxl</p>
+                <p class="p--xxxl">.p--xxxl</p>
+                <p class="p--xxl">.p--xxl</p>
+                <p class="p--xl">.p--xl</p>
+                <p class="p--lg">.p--lg</p>
+                <p class="p--sm">.p--sm</p>
+                <p class="p--xs">.p--xs</p>
+              </div>
+
+              <div class="col col--4">
+                <div class="h h--sm">Modifiers</div>
+              </div>
+              <div class="col col--8">
+                <p class="text--wide">.text--wide</p>
+                <p class="text--wider">.text--wider</p>
+                <p class="text--widest">.text--widest</p>
+                <p class="text--light">.text--light</p>
+                <p class="text--normal">.text--normal</p>
+                <p class="text--bold">.text--bold</p>
+                <p class="text--bolder">.text--bolder</p>
+                <p class="text--boldest">.text--boldest</p>
+                <p class="text--italic">.text--italic</p>
+                <p class="text--upper">.text--upper</p>
+                <p class="text--left">.text--left</p>
+                <p class="text--right">.text--right</p>
+                <p class="text--center">.text--center</p>
+                <div class="row">
+                  <div class="col col--6"><p class="bg--grey-darkest theme--light">.theme--light</p></div>
+                  <div class="col col--6"><p class="bg--grey-lightest theme--dark">.theme--dark</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- /.col--12 TYPOGRAPHY  -->
+
+
+
+
+
+
+      <!-- DEPTH -->
+      <div class="col col--12">
+        <div class="depth--sm rounded--sm">
+          <div class="boxpad--md bg--grey-darkest theme--light text--center">
+            <div class="h h--md">Depth</div>
+          </div>
+          <div class="boxpad--xxl bg--white depth--sm rounded--sm">
+            <div class="row">
+
+              <div class="col col--4">
+                <div class="img img--3-1 depth--sm">
+                  <div class="img__content theme--dark">.depth--sm</div>
+                </div>
+              </div>
+
+              <div class="col col--4">
+                <div class="img img--3-1 depth--md">
+                  <div class="img__content theme--dark">.depth--md</div>
+                </div>
+              </div>
+
+              <div class="col col--4">
+                <div class="img img--3-1 depth--lg">
+                  <div class="img__content theme--dark">.depth--lg</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div> <!-- /.col--12 DEPTH  -->
+
+
+
+
+
+
+      <!-- SPACE -->
+      <div class="col col--12">
+        <div class="depth--sm rounded--sm">
+          <div class="boxpad--md bg--grey-darkest theme--light text--center">
+            <div class="h h--md">Space</div>
+          </div>
+          <div class="boxpad--xxl bg--white depth--sm rounded--sm">
+            <div class="row">
+
+              <div class="col col--4">
+                <div class="h h--sm">Spacers</div>
+              </div>
+
+              <div class="col col--4">
+                <p>Spacers are blocks placed between objects to apply padding without affecting the objects themselves</p>
+                <div class="space--xxs"></div>
+                <div class="space--xxxxl bg--secondary-lighter"></div>
+                <div class="vpad--xxs text--mini">.space--xxxxl</div>
+                <div class="space--xxxl bg--secondary-lighter"></div>
+                <div class="vpad--xxs text--mini">.space--xxxl</div>
+                <div class="space--xxl bg--secondary-lighter"></div>
+                <div class="vpad--xxs text--mini">.space--xxl</div>
+                <div class="space--xl bg--secondary-lighter"></div>
+                <div class="vpad--xxs text--mini">.space--xl</div>
+                <div class="space--lg bg--secondary-lighter"></div>
+                <div class="vpad--xxs text--mini">.space--lg</div>
+                <div class="space--md bg--secondary-lighter"></div>
+                <div class="vpad--xxs text--mini">.space--md</div>
+                <div class="space--sm bg--secondary-lighter"></div>
+                <div class="vpad--xxs text--mini">.space--sm</div>
+                <div class="space--xs bg--secondary-lighter"></div>
+                <div class="vpad--xxs text--mini">.space--xs</div>
+                <div class="space--xxs bg--secondary-lighter"></div>
+                <div class="vpad--xxs text--mini">.space--xxs</div>
+              </div>
+
+              <div class="col col--4">
+                <p>Use .vpad to place equal top and bottom padding directly to an object</p>
+                <div class="space--xxs"></div>
+                <div class="vpad--lg bg--secondary-lighter text--mini">.vpad--lg</div>
+                <div class="space--sm"></div>
+                <p>Use .hpad to place equal left and right padding directly to an object</p>
+                <div class="space--xxs"></div>
+                <div class="hpad--lg bg--secondary-lighter text--mini">.hpad--lg</div>
+                <div class="space--sm"></div>
+                <p>Use .boxpad to place equal padding on all sides directly to an object</p>
+                <div class="space--xxs"></div>
+                <div class="boxpad--lg bg--secondary-lighter text--mini">.boxpad--lg</div>
+                <div class="space--sm"></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div> <!-- /.col--12 SPACE  -->
+
+
+
+
+
+
+      <!-- UI -->
+      <div class="col col--12">
+        <div class="depth--sm rounded--sm">
+          <div class="boxpad--md bg--grey-darkest theme--light text--center">
+            <div class="h h--md">UI</div>
+          </div>
+          <div class="boxpad--xxl bg--white depth--sm rounded--sm">
+            <div class="row">
+
+              <!-- Buttons -->
+              <div class="col col--4">
+                <div class="h h--md">Buttons</div>
+              </div>
+
+              <div class="col col--4">
+                <a href="#" class="btn">.btn</a>
+                <div class="space--xxs"></div>
+                <a href="#" class="btn btn--primary">.btn .btn--primary</a>
+                <div class="space--xxs"></div>
+                <a href="#" class="btn btn--secondary">.btn .btn--secondary</a>
+                <div class="space--xxs"></div>
+                <a href="#" class="btn btn--outline">.btn .btn--outline</a>
+              </div>
+
+              <div class="col col--4">
+                <a href="#" class="btn btn--xs">.btn.btn--xs</a>
+                <div class="space--xxs"></div>
+                <a href="#" class="btn btn--sm">.btn.btn--sm</a>
+                <div class="space--xxs"></div>
+                <a href="#" class="btn btn--md">.btn.btn--md</a>
+                <div class="space--xxs"></div>
+                <a href="#" class="btn btn--lg">.btn.btn--lg</a>
+                <div class="space--xxs"></div>
+                <a href="#" class="btn btn--xl">.btn.btn--xl</a>
+                <div class="space--xxs"></div>
+              </div>
+
+              <!-- Form -->
+              <div class="col col--4">
+                <div class="h h--md">Form</div>
+              </div>
+
+              <div class="col col--8">
+
+                {% assign form = page.form %}
+                <form class="form">
+                  {% include form/messages.html %}
+                  {% for item in form.fields %}
+                    <div class="form__input js-form-input">
+                      {% case item.type %}
+                        {% when 'text' %}
+                          {% include form/text.html data=item %}
+                        {% when 'text-long' %}
+                          {% include form/text-long.html data=item %}
+                        {% when 'email' %}
+                          {% include form/email.html data=item %}
+                        {% when 'radio' %}
+                          {% include form/radio.html data=item %}
+                        {% when 'checkbox' %}
+                          {% include form/checkbox.html data=item %}
+                        {% when 'select' %}
+                          {% include form/select.html data=item %}
+                      {% endcase %}
+                    </div>
+                  {% endfor %}
+                  <div class="space--sm"></div>
+                  <p class="p--sm text--normal">By submitting your entry, you agree to the <a href="#" class="js-open-modal link--underlined" data-open-modal="competition-terms">terms and conditions</a> of this competition</p>
+                  <div class="space--sm"></div>
+                  <div class="input-buttons">
+                    <button type="submit" class="btn">{{form.submit}}</button>
+                  </div>
+                </form>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div> <!-- /.col--12 UI  -->
+
+
+
+
+
+    </div> <!-- /.row  -->
+  </div> <!-- /.container  -->
+</div>

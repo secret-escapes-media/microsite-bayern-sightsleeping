@@ -1,8 +1,7 @@
 // styles for adding titles, links and hover effects for .bg-image
 
-.bg-img {
+.img {
   // Vertically centered content in bg-image
-  background-color: $grey-dark;
   @include transition;
   &__link {
     position: absolute;
@@ -27,7 +26,7 @@
     text-align: center;
     @include page-padding;
   }
-  &__bg-overlay {
+  &__overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -37,5 +36,5 @@
     background-color: rgba($black,.4);
     @include transition;
   }
-  &:hover &__bg-overlay { background-color: rgba($black,.6); }
+  &:hover &__overlay { background-color: rgba($black,.6); }
 }

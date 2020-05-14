@@ -120,7 +120,7 @@ $logo-bp: 600px;
       @include transition;
       &:hover,
       &.is-current {
-        color: $orange;
+        color: $primary;
       }
     }
   }
@@ -196,7 +196,7 @@ $mobile-nav-width: 75%;
     font-size: $s0;
     font-weight: 700;
     text-transform: uppercase;
-    &.is-current { color: $orange; }
+    &.is-current { color: $primary; }
   }
   @include bp($nav-list-bp){ display: none; }
 }

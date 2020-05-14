@@ -129,6 +129,8 @@
 
     // equal column sizes for all columns in row
     @mixin column-widths() {
+      &1  { flex: 0 0 8.33%; max-width: 8.33%; }
+      &2  { flex: 0 0 16.66%; max-width: 16.66%; }
       &3  { flex: 0 0 25%; max-width: 25%; }
       &4  { flex: 0 0 33.33%; max-width: 33.33%; }
       &5  { flex: 0 0 40%; max-width: 40%; }
@@ -136,6 +138,8 @@
       &7  { flex: 0 0 60%; max-width: 60%; }
       &8  { flex: 0 0 66.66%; max-width: 66.66%; }
       &9  { flex: 0 0 75%; max-width: 75%; }
+      &10 { flex: 0 0 83.33%; max-width: 83.33%; }
+      &11 { flex: 0 0 91.66%; max-width: 91.66%; }
       &12 { flex: 0 0 100%; max-width: 100%; }
     }
 

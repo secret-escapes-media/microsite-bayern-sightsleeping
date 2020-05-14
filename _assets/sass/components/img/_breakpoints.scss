@@ -1,6 +1,6 @@
 // optional - allows more control to change the ratio on screen width
 
-.bg-img {
+.img {
   @include bp($sm) { &--sm- { @include ratios; } }
   @include bp($md) { &--md- { @include ratios; } }
   @include bp($lg) { &--lg- { @include ratios; } }

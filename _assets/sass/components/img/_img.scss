@@ -1,17 +1,22 @@
 // using background images for easy cropping and aspect ratio chaning
 
 @mixin ratios() {
-  &2-3:before    { padding-top: 133.333333333334%; }
+  &1-2:before    { padding-top: 200%; }
+  &2-3:before    { padding-top: 150%; }
+  &3-4:before    { padding-top: 133.333333333334%; }
   &1-1:before    { padding-top: 100%; }
   &travel:before { padding-top: 84%; }
   &4-3:before    { padding-top: 75%; }
   &3-2:before    { padding-top: 66.666666666667%; }
   &16-9:before   { padding-top: 56.25%; }
+  &2-1:before    { padding-top: 50%; }
   &21-9:before   { padding-top: 42.8571429%; }
+  &3-1:before    { padding-top: 33.3333%; }
+  &4-1:before    { padding-top: 25%; }
   &circle        { padding-top: 100%; border-radius: 9999999em; }
 }
 
-.bg-img {
+.img {
   display: block;
   position: relative;
   @include background-attributes();

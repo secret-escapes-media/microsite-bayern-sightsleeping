@@ -4,19 +4,12 @@
   '../../node_modules/reset-css/sass/reset',
 
   // core
-  'core/breakpoints',
-  'core/colours',
-  'core/z-index',
-  'core/core',
-  'core/scale',
-
-  // typography
-  'typography/families',
-  'typography/default',
-  'typography/content',
-  'typography/text',
-  'typography/titles',
-  'typography/spacing',
+  'foundations/breakpoints',
+  'foundations/colours',
+  'foundations/z-index',
+  'foundations/core',
+  'foundations/scale',
+  'foundations/fonts',
 
   // grid
   'grid/spacing',
@@ -40,12 +33,19 @@
   'components/icons',
   'components/bg',
   'components/buttons',
-  'components/bg-img/bg-img',
-  'components/bg-img/breakpoints',
-  'components/bg-img/content',
+  'components/img/img',
+  'components/img/breakpoints',
+  'components/img/content',
   'components/offer',
   'components/modal',
   'components/form',
+
+  // typography
+  'typography/default',
+  'typography/content',
+  'typography/text',
+  'typography/titles',
+  'typography/spacing',
 
   // general
   'styles'

@@ -1,23 +1,53 @@
+
+// gradient
+@mixin gradient($color1, $color2) { background: linear-gradient(180deg, $color1 12.52%, $color2 87.48%); }
+
+// sizes
+$xs: 13px;
+$sm: 14px;
+$md: 15px;
+$lg: 16px;
+$xl: 17px;
+
 .btn {
   position: relative;
   display: inline-block;
-  padding: $s1 $s4;
+  margin: 0;
+  padding: $md*1.25 $md*2.5;
   color: $white;
-  font-weight: 700;
-  font-size: $s-1;
+  font-family: $sans;
+  font-weight: 600;
+  font-size: $md;
+  line-height: $md;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: .2em;
+  text-decoration: none;
+  letter-spacing: .1em;
   border-radius: 3px;
   cursor: pointer;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   @include transition;
-  &--sm { padding: $s0 $s3; font-size: $s-2; }
-  &--lg { padding: $s2 $s6; font-size: $s-1; }
-  &--orange { background-color: $orange;
-    &:hover { background-color: $orange-dark; }
+  background-color: $primary;
+  @include gradient($primary,$primary-dark);
+  &:hover, &:focus, &:focus { background-color: $primary-dark; }
+
+  // Styles
+  &--orange, &--primary {
+    background-color: $primary;
+    @include gradient($primary,$primary-dark);
+    &:hover, &:focus { background-color: $primary-dark; }
+  }
+  &--secondary {
+    background-color: $secondary-dark;
+    @include gradient($secondary-dark,$secondary-darker);
+    &:hover, &:focus { background-color: $secondary-darker; }
   }
   &--outline {
-    color: inherit;
+    color: $grey-darkest;
+    background: transparent;
+    @include transition;
     &:before {
       // button border within original padding
       content: '';
@@ -29,14 +59,19 @@
       border-width: 1px;
       border-style: solid;
       border-radius: inherit;
+      border-color: $primary;
       @include transition;
     }
-  }
-  &--outline-orange {
-    &:before { border-color: $orange; }
-    &:hover {
-      background-color: $orange;
-      &:before { border-color: $orange; }
+    &:hover, &:focus {
+      color: $white;
+      @include gradient($primary,$primary-dark);
+      &:before { border-color: $primary-dark; }
     }
   }
+
+  // Scale
+  &--xs { padding: $xs*1.25 $xs*2.5; font-size: $xs; }
+  &--sm { padding: $sm*1.25 $sm*2.5; font-size: $sm; }
+  &--lg { padding: $lg*1.25 $lg*2.5; font-size: $lg; }
+  &--xl { padding: $xl*1.25 $xl*2.5; font-size: $xl; }
 }

@@ -13,51 +13,51 @@
 
 // equal vertical padding for large elements
 .vpad {
-  &--xxxxl { padding-top: $s13; padding-bottom: $s13; }
-  &--xxxl  { padding-top: $s11; padding-bottom: $s11; }
-  &--xxl   { padding-top: $s9;  padding-bottom: $s9; }
-  &--xl    { padding-top: $s7;  padding-bottom: $s7; }
-  &--lg    { padding-top: $s5;  padding-bottom: $s5; }
-  &--md    { padding-top: $s3;  padding-bottom: $s3; }
-  &--sm    { padding-top: $s1;  padding-bottom: $s1; }
-  &--xs    { padding-top: $s-1; padding-bottom: $s-1; }
-  &--xxs   { padding-top: $s-3; padding-bottom: $s-3; }
+  &--xxxxl { padding-top: $s11; padding-bottom: $s11; }
+  &--xxxl  { padding-top: $s9; padding-bottom: $s9; }
+  &--xxl   { padding-top: $s7; padding-bottom: $s7; }
+  &--xl    { padding-top: $s5; padding-bottom: $s5; }
+  &--lg    { padding-top: $s3; padding-bottom: $s3; }
+  &--md    { padding-top: $s1; padding-bottom: $s1; }
+  &--sm    { padding-top: $s-1; padding-bottom: $s-1; }
+  &--xs    { padding-top: $s-3; padding-bottom: $s-3; }
+  &--xxs   { padding-top: $s-5; padding-bottom: $s-5; }
   @include bp($lg) {
-    &--xxxxl { padding-top: $s14; padding-bottom: $s14; }
-    &--xxxl  { padding-top: $s12; padding-bottom: $s12; }
-    &--xxl   { padding-top: $s10; padding-bottom: $s10; }
-    &--xl    { padding-top: $s8;  padding-bottom: $s8; }
-    &--lg    { padding-top: $s6;  padding-bottom: $s6; }
-    &--md    { padding-top: $s4;  padding-bottom: $s4; }
-    &--sm    { padding-top: $s2;  padding-bottom: $s2; }
-    &--xs    { padding-top: $s0;  padding-bottom: $s0; }
-    &--xxs   { padding-top: $s-2; padding-bottom: $s-2; }
+    &--xxxxl { padding-top: $s12; padding-bottom: $s12; }
+    &--xxxl  { padding-top: $s10; padding-bottom: $s10; }
+    &--xxl   { padding-top: $s8; padding-bottom: $s8; }
+    &--xl    { padding-top: $s6; padding-bottom: $s6; }
+    &--lg    { padding-top: $s4; padding-bottom: $s4; }
+    &--md    { padding-top: $s2; padding-bottom: $s2; }
+    &--sm    { padding-top: $s0; padding-bottom: $s0; }
+    &--xs    { padding-top: $s-2; padding-bottom: $s-2; }
+    &--xxs   { padding-top: $s-4; padding-bottom: $s-4; }
   }
 }
 
-// // optional equal horizontal padding for large elements
-// .hpad {
-//   &--xxxxl { padding-top: $s13; padding-bottom: $s13; }
-//   &--xxxl  { padding-top: $s11; padding-bottom: $s11; }
-//   &--xxl   { padding-top: $s9;  padding-bottom: $s9; }
-//   &--xl    { padding-top: $s7;  padding-bottom: $s7; }
-//   &--lg    { padding-top: $s5;  padding-bottom: $s5; }
-//   &--md    { padding-top: $s3;  padding-bottom: $s3; }
-//   &--sm    { padding-top: $s1;  padding-bottom: $s1; }
-//   &--xs    { padding-top: $s-1; padding-bottom: $s-1; }
-//   &--xxs   { padding-top: $s-3; padding-bottom: $s-3; }
-//   @include bp($lg) {
-//     &--xxxxl { padding-top: $s14; padding-bottom: $s14; }
-//     &--xxxl  { padding-top: $s12; padding-bottom: $s12; }
-//     &--xxl   { padding-top: $s10; padding-bottom: $s10; }
-//     &--xl    { padding-top: $s8;  padding-bottom: $s8; }
-//     &--lg    { padding-top: $s6;  padding-bottom: $s6; }
-//     &--md    { padding-top: $s4;  padding-bottom: $s4; }
-//     &--sm    { padding-top: $s2;  padding-bottom: $s2; }
-//     &--xs    { padding-top: $s0;  padding-bottom: $s0; }
-//     &--xxs   { padding-top: $s-2; padding-bottom: $s-2; }
-//   }
-// }
+// optional equal horizontal padding for large elements
+.hpad {
+  &--xxxxl { padding-left: $s11; padding-right: $s11; }
+  &--xxxl  { padding-left: $s9; padding-right: $s9; }
+  &--xxl   { padding-left: $s7; padding-right: $s7; }
+  &--xl    { padding-left: $s5; padding-right: $s5; }
+  &--lg    { padding-left: $s3; padding-right: $s3; }
+  &--md    { padding-left: $s1; padding-right: $s1; }
+  &--sm    { padding-left: $s-1; padding-right: $s-1; }
+  &--xs    { padding-left: $s-3; padding-right: $s-3; }
+  &--xxs   { padding-left: $s-5; padding-right: $s-5; }
+  @include bp($lg) {
+    &--xxxxl { padding-left: $s12; padding-right: $s12; }
+    &--xxxl  { padding-left: $s10; padding-right: $s10; }
+    &--xxl   { padding-left: $s8; padding-right: $s8; }
+    &--xl    { padding-left: $s6; padding-right: $s6; }
+    &--lg    { padding-left: $s4; padding-right: $s4; }
+    &--md    { padding-left: $s2; padding-right: $s2; }
+    &--sm    { padding-left: $s0; padding-right: $s0; }
+    &--xs    { padding-left: $s-2; padding-right: $s-2; }
+    &--xxs   { padding-left: $s-4; padding-right: $s-4; }
+  }
+}
 
 // add in the occasional space for internal content
 // these are padding top instead of height
@@ -86,25 +86,25 @@
 
 // box padding for inner page elements like offer cards
 .boxpad {
-  &--xxxxl { padding: $s9; }
-  &--xxxl  { padding: $s7; }
-  &--xxl   { padding: $s5; }
-  &--xl    { padding: $s3; }
-  &--lg    { padding: $s1; }
-  &--md    { padding: $s-1; }
-  &--sm    { padding: $s-3; }
-  &--xs    { padding: $s-5; }
-  &--xxs   { padding: $s-7; }
+  &--xxxxl { padding: $s11; }
+  &--xxxl  { padding: $s9; }
+  &--xxl   { padding: $s7; }
+  &--xl    { padding: $s5; }
+  &--lg    { padding: $s3; }
+  &--md    { padding: $s1; }
+  &--sm    { padding: $s-1; }
+  &--xs    { padding: $s-3; }
+  &--xxs   { padding: $s-5; }
   @include bp($lg) {
-    &--xxxxl { padding: $s10; }
-    &--xxxl  { padding: $s8; }
-    &--xxl   { padding: $s6; }
-    &--xl    { padding: $s4; }
-    &--lg    { padding: $s2; }
-    &--md    { padding: $s0; }
-    &--sm    { padding: $s-2; }
-    &--xs    { padding: $s-4; }
-    &--xxs   { padding: $s-6; }
+    &--xxxxl { padding: $s12; }
+    &--xxxl  { padding: $s10; }
+    &--xxl   { padding: $s8; }
+    &--xl    { padding: $s6; }
+    &--lg    { padding: $s4; }
+    &--md    { padding: $s2; }
+    &--sm    { padding: $s0; }
+    &--xs    { padding: $s-2; }
+    &--xxs   { padding: $s-4; }
   }
 }
 

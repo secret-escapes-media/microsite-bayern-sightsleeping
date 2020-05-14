@@ -10,9 +10,9 @@ sup {
 
 // standard inline link style
 a[href]:not([class]) {
-  color: $orange;
+  color: $primary;
   @include transition;
-  &:hover { color: $orange-darker; }
+  &:hover { color: $primary-dark; }
 }
 
 .link {
@@ -32,4 +32,51 @@ hr {
   height: 1px;
   background-color: $grey-lightest;
   margin: $s1 0;
+}
+
+
+// theme
+.theme {
+  &--light {
+    color: $white;
+    & .h, &.h { color: $white; }
+  }
+  &--dark {
+    color: $grey-dark;
+    & .h, &.h { color: $grey-darker; }
+  }
+}
+
+.text {
+  // styles
+  &--italic       { font-style: italic; }
+  &--light        { font-weight: 300; }
+  &--normal       { font-weight: 400; }
+  &--bold         { font-weight: 500; }
+  &--bolder       { font-weight: 600; }
+  &--boldest      { font-weight: 700; }
+  &--upper        { text-transform: uppercase; }
+
+  // kerning
+  &--wide        { letter-spacing: 0.05em; }
+  &--wider       { letter-spacing: 0.1em; }
+  &--widest      { letter-spacing: 0.15em; }
+
+  // alignment
+  &--left   { text-align: left; }
+  &--right  { text-align: right; }
+  &--center { text-align: center; }
+  @include bp($lg) {
+    &--bp-left   { text-align: left; }
+    &--bp-right  { text-align: right; }
+    &--bp-center { text-align: center; }
+  }
+
+  // mini - that trendy wide, allcaps, bold title
+  &--mini {
+    font-size: 0.9em;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
 }

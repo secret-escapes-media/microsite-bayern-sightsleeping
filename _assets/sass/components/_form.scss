@@ -1,225 +1,252 @@
-////////////////////////////////////////////////////////////////////////////////
-// Boilerform
-////////////////////////////////////////////////////////////////////////////////
 
-.boilerform .c-input-field, .boilerform .c-select-field__menu {
-  background: $white;
-  border: 1px solid $grey-light;
-  padding: 11px 15px 10px 15px;
-  padding: $s-1 $s-2;
-  border-radius: 3px;
-  font-size: 17px;
-}
-.boilerform .c-check-field__input {
-  display: block;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(1px);
-  white-space: nowrap;
-  position: absolute;
-}
-.boilerform {
-  font-size: 16px;
-  border-color: $grey-light;
-}
-.boilerform, .boilerform * {
-  box-sizing: border-box;
-}
-.boilerform [class*="-field"] {
-  margin: 0;
-  display: inline-block;
-  vertical-align: middle;
-  white-space: normal;
-  line-height: 1;
-  font-family: $sans;
-  width: 100%;
-  color: $grey-dark;
-}
-.boilerform [class*="decor"] {
-  line-height: 0;
-}
-.boilerform ::-webkit-search-decoration {
-  display: none;
-}
-.boilerform input::-webkit-input-placeholder,
-.boilerform textarea::-webkit-input-placeholder,
-.boilerform select::-webkit-input-placeholder {
-  line-height: normal;
-}
-.boilerform input[type="search"] {
-  -webkit-appearance: textfield;
-}
-////////////////////////////////// BUTTON COMPONENT Base button styles and reset
-.boilerform .c-button {
-  display: inline-block;
-  border: none;
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  background: $orange;
-  color: $white;
-  padding: $s1 $s4;
-  font-family: $sans;
-  font-size: $s-1;
-  font-weight: 700;
-  letter-spacing: .2em;
-  line-height: 1.6;
-  border-radius: 3px;
-  cursor: pointer;
-  text-align: center;
-  text-transform: uppercase;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  @include transition;
-}
-.boilerform .c-button:hover,
-.boilerform .c-button:focus {
-  background: $orange-dark;
-}
-.boilerform .c-button:disabled {
-  opacity: .5;
-}
-///////////////////////////// CHECK FIELD COMPONENT Radio buttons and checkboxes
-.boilerform .c-check-field {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-}
-.boilerform .c-check-field__decor {
-  display: block;
-  width: 20px;
-  height: 20px;
-  flex-shrink: 0;
-  background: $grey-lightest;
-  border: 1px solid $grey-light;
-  border-radius: 3px;
-  position: relative;
-  cursor: pointer;
-}
-.boilerform .c-check-field__decor:after {
-  content: "";
-  speak: none;
-  display: block;
-  opacity: 0;
-  width: 70%;
-  height: 70%;
-  position: absolute;
-  top: 15%;
-  left: 15%;
-  background: $grey;
-  border-radius: 1px;
-}
-.boilerform .c-check-field__label {
-  padding: 3px 0 0 10px;
-  cursor: pointer;
-}
-.boilerform .c-check-field--radio .c-check-field__decor,
-.boilerform .c-check-field--radio .c-check-field__decor:after {
-  border-radius: 50%;
-}
-.boilerform .c-check-field__input:checked ~ [class*="decor"]:after {
-  opacity: 1;
-}
-.boilerform .c-check-field__input:focus ~ [class*="decor"] {
-  outline: 1px dotted $grey-darkest;
-  outline: 5px auto -webkit-focus-ring-color;
-}
-.boilerform .c-check-field + .c-check-field {
-  padding-top: 10px;
-}
-////////////////////// INPUT FIELD COMPONENT All input based form field elements
-.boilerform .c-input-field[type="number"] {
-  padding-right: 11px 15px 10px 15px / 2;
-}
-.boilerform .c-input-field--multiline {
-  vertical-align: top;
-  overflow: auto;
-  resize: none;
-  line-height: 1.6;
-}
-.boilerform .c-input-field--multiline:not([rows]) {
-  min-height: 200px;
-}
-.boilerform .c-input-field--date {
-  line-height: 1.6;
-}
-//////////////////////////////////////////// LABEL COMPONENT A simple form label
-.boilerform .c-label {
-  display: block;
-  font-family: $sans;
-  font-weight: 600;
-  font-size: 0.88rem;
-  width: 100%;
-}
-.boilerform .c-label[for] {
-  cursor: pointer;
-}
-.boilerform .c-label + [class*="field"] {
-  margin-top: 2px;
-}
-/////////////////////// SELECT FIELD Option driven fields such as <select> menus
-.boilerform .c-select-field {
-  display: inline-block;
-  position: relative;
-}
-.boilerform .c-select-field__menu {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  padding-right: $s5;
-  line-height: 1.4;
-}
-.boilerform .c-select-field__menu:-moz-focusring {
-  color: transparent;
-  text-shadow: 0 0 0 $grey-darkest;
-}
-.boilerform .c-select-field__menu::-ms-expand {
-  display: none;
-}
-
-.boilerform .c-select-field__decor {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  z-index: $z-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 9px;
-  margin-right: $s1;
-  pointer-events: none;
-  > img {
-    width: 9px;
-    height: 5px;
-  }
-}
-
-
-////////////////////////////////////////////////////////////////////////////////
-// Custom edits
-////////////////////////////////////////////////////////////////////////////////
-
-$error:   #ca0929;
-$errorbg: #feeaed;
 
 .form {
   position: relative;
   z-index: $z-content;
+  font-size: 16px;
+  border-color: $grey-light;
+  box-sizing: border-box;
+  & * { box-sizing: border-box; }
+
+  & [class*="decor"] {
+    line-height: 0;
+  }
+  & [class*="-field"] {
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+    line-height: 1;
+    font-family: $sans;
+    width: 100%;
+    color: $grey-dark;
+  }
+  & ::-webkit-search-decoration {
+    display: none;
+  }
+  & input::-webkit-input-placeholder,
+  & textarea::-webkit-input-placeholder,
+  & select::-webkit-input-placeholder {
+    line-height: normal;
+  }
+  & input[type="search"] {
+    -webkit-appearance: textfield;
+  }
+
+  // wrap for all form fields
   &__input {
-    border-radius: 3px;
-    @include transition;
     & + & { margin-top: $s2; }
     &.has-error {
-      padding-left: $s-3;
-      padding-right: $s-3;
-      padding-bottom: $s-9;
-      background-color: $errorbg;
-      color: $grey-dark;
+      padding: $s-9 $s-3;
+      background-color: $error-light;
+      color: $grey-darker;
+      border-radius: 3px;
     }
   }
+
+
+  ///////////////////////////// FORM FIELDS
+
+  & .input-field,
+  & .select-field__menu {
+    background: $white;
+    border: 1px solid $grey-light;
+    padding: 11px 15px 10px 15px;
+    padding: $s-1 $s-2;
+    border-radius: 3px;
+    font-size: 17px;
+    & + & { margin-top: $s2; }
+  }
+
+  & .check-field__input {
+    display: block;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(1px);
+    white-space: nowrap;
+    position: absolute;
+  }
+
+  ///////////////////////////// CHECK FIELD COMPONENT Radio buttons and checkboxes
+  & .check-field {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  & .check-field__decor {
+    display: block;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    background: $grey-lightest;
+    border: 1px solid $grey-light;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+  }
+  & .check-field__decor:after {
+    content: "";
+    speak: none;
+    display: block;
+    opacity: 0;
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    background: $grey;
+    border-radius: 1px;
+  }
+  & .check-field__label {
+    padding: 3px 0 0 10px;
+    cursor: pointer;
+  }
+  & .check-field--radio .check-field__decor,
+  & .check-field--radio .check-field__decor:after {
+    border-radius: 50%;
+  }
+  & .check-field__input:checked ~ [class*="decor"]:after {
+    opacity: 1;
+  }
+  & .check-field__input:focus ~ [class*="decor"] {
+    outline: 1px dotted $grey-darkest;
+    outline: 5px auto -webkit-focus-ring-color;
+  }
+  & .check-field + .check-field {
+    padding-top: 10px;
+  }
+  ////////////////////// INPUT FIELD COMPONENT All input based form field elements
+  & .input-field[type="number"] {
+    padding-right: 11px 15px 10px 15px / 2;
+  }
+  & .input-field--multiline {
+    vertical-align: top;
+    overflow: auto;
+    resize: none;
+    line-height: 1.6;
+  }
+  & .input-field--multiline:not([rows]) {
+    min-height: 200px;
+  }
+  & .input-field--date {
+    line-height: 1.6;
+  }
+  //////////////////////////////////////////// LABEL COMPONENT A simple form label
+  & .label {
+    display: block;
+    font-family: $sans;
+    font-weight: 600;
+    font-size: 0.88rem;
+    width: 100%;
+  }
+  & .label[for] {
+    cursor: pointer;
+  }
+  & .label + [class*="field"] {
+    margin-top: 2px;
+  }
+  & p.label{
+    display: inline-block;
+    &:after{ display: none; }
+  }
+
+  /////////////////////// SELECT FIELD Option driven fields such as <select> menus
+  & .select-field {
+    display: inline-block;
+    position: relative;
+    & option {}
+    & option:disabled { color: $grey-light; }
+  }
+  & .select-field__menu {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: $s5;
+    line-height: 1.4;
+  }
+  & .select-field__menu:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 $grey-darkest;
+  }
+  & .select-field__menu::-ms-expand {
+    display: none;
+  }
+
+  & .select-field__decor {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $z-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9px;
+    margin-right: $s1;
+    pointer-events: none;
+    > img {
+      width: 9px;
+      height: 5px;
+    }
+  }
+
+  .input-button {
+    display: inline-block;
+    padding: $s0;
+    font-weight: 400;
+    line-height: 1;
+    background: $white;
+    border: 1px solid $grey-light;
+    border-radius: 3px;
+    transition: all .15s ease;
+    cursor: pointer;
+    color: $grey-dark;
+    &__wrap {
+      display: flex;
+      align-items: center;
+    }
+    &__wrap-input { line-height: 0; }
+    &__wrap-text { line-height: 1.2; font-size: 17px; }
+    &:hover,
+    & input:focus {
+      background-color: $grey-lightest;
+      border-color: $grey;
+    }
+    &.is-selected {
+      background-color: $grey-lightest;
+      border-color: $grey;
+    }
+    input {
+      cursor: pointer;
+      margin: 0;
+      margin-right: $s-4;
+    }
+  }
+
+  .input-buttons {
+    $button-gutter: 6px;
+    margin: -($button-gutter / 2);
+    padding-top: 3px;
+    > .input-button { margin: ($button-gutter / 2); }
+  }
+
+  ////////////////////////////////// BUTTON COMPONENT reset button element
+  & .btn {
+    border: none;
+    margin: 0;
+    text-decoration: none;
+    font-family: $sans;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  & .btn:disabled {
+    opacity: .5;
+  }
+
+  ////////////////////////////////// MESSAGES
+
   &__messages {
     display: none;
     position: absolute;
@@ -249,10 +276,7 @@ $errorbg: #feeaed;
   }
 }
 
-.boilerform p.c-label{
-  display: inline-block;
-  &:after{ display: none; }
-}
+////////////////////////////////// VALIDATION
 
 .input {
   &__error-message {
@@ -274,45 +298,7 @@ $errorbg: #feeaed;
   &.is-visible { display: block; }
 }
 
-.input-button {
-  display: inline-block;
-  padding: $s0;
-  font-weight: 400;
-  line-height: 1;
-  background: $white;
-  border: 1px solid $grey-lighter;
-  border-radius: 3px;
-  transition: all .15s ease;
-  cursor: pointer;
-  color: $grey-dark;
-  &__wrap {
-    display: flex;
-    align-items: center;
-  }
-  &__wrap-input { line-height: 0; }
-  &__wrap-text { line-height: 1.2; font-size: 17px; }
-  &:hover,
-  & input:focus {
-    background-color: $grey-lightest;
-    border-color: $grey-light;
-  }
-  &.is-selected {
-    background-color: $grey-lightest;
-    border-color: $grey;
-  }
-  input {
-    cursor: pointer;
-    margin: 0;
-    margin-right: $s-4;
-  }
-}
-
-.input-buttons {
-  $button-gutter: 6px;
-  margin: -($button-gutter / 2);
-  padding-top: 3px;
-  > .input-button { margin: ($button-gutter / 2); }
-}
+////////////////////////////////// LOADING ICON
 
 .loading-icon {
   display: inline-block;

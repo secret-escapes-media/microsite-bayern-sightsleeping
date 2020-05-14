@@ -2,8 +2,42 @@
 
 .bg {
   &--white { background-color: $white; }
-  &--light { background-color: $grey-lightest; }
-  &--dark  { background-color: $grey-dark; }
+  &--black { background-color: $black; }
+
+  &--grey-lightest      { background-color: $grey-lightest; }
+  &--grey-lighter       { background-color: $grey-lighter; }
+  &--grey-light         { background-color: $grey-light; }
+  &--grey               { background-color: $grey; }
+  &--grey-dark          { background-color: $grey-dark; }
+  &--grey-darker        { background-color: $grey-darker; }
+  &--grey-darkest       { background-color: $grey-darkest; }
+
+  &--primary-lightest   { background-color: $primary-lightest; }
+  &--primary-lighter    { background-color: $primary-lighter; }
+  &--primary-light      { background-color: $primary-light; }
+  &--primary            { background-color: $primary; }
+  &--primary-dark       { background-color: $primary-dark; }
+  &--primary-darker     { background-color: $primary-darker; }
+  &--primary-darkest    { background-color: $primary-darkest; }
+
+  &--secondary-lightest { background-color: $secondary-lightest; }
+  &--secondary-lighter  { background-color: $secondary-lighter; }
+  &--secondary-light    { background-color: $secondary-light; }
+  &--secondary          { background-color: $secondary; }
+  &--secondary-dark     { background-color: $secondary-dark; }
+  &--secondary-darker   { background-color: $secondary-darker; }
+  &--secondary-darkest  { background-color: $secondary-darkest; }
+
+  &--success            { background-color: $success; }
+  &--success-light      { background-color: $success-light; }
+  &--success-medium     { background-color: $success-medium; }
+  &--success-dark       { background-color: $success-dark; }
+
+  &--error              { background-color: $error; }
+  &--error-light        { background-color: $error-light; }
+  &--error-medium       { background-color: $error-medium; }
+  &--error-dark         { background-color: $error-dark; }
+
   &--img   { @include background-attributes; }
   &__fixed {
     position: fixed;

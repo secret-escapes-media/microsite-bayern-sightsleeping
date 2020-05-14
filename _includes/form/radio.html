@@ -1,5 +1,5 @@
 {% assign this = include.data %}
-<p class="c-label">{{this.label}}{% unless this.required %}<span class="form--optional"> -&nbsp;optional</span>{% endunless %}</p>
+<p class="label">{{this.label}}{% unless this.required %}<span class="form--optional"> -&nbsp;optional</span>{% endunless %}</p>
 <div class="input-buttons">
   {% for option in this.options %}<label for="{{form.id}}-{{option.id}}" class="input-button js-input-button">
     <div class="input-button__wrap">
