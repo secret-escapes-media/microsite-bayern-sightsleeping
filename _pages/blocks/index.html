@@ -1,0 +1,110 @@
+---
+layout: default
+title: Block components
+
+brand-colors:
+  - group:
+      - name: bg--grey-lightest
+      - name: bg--grey-lighter
+      - name: bg--grey-light
+      - name: bg--grey
+      - name: bg--grey-dark
+      - name: bg--grey-darker
+      - name: bg--grey-darkest
+  - group:
+      - name: bg--primary-lightest
+      - name: bg--primary-lighter
+      - name: bg--primary-light
+      - name: bg--primary
+      - name: bg--primary-dark
+      - name: bg--primary-darker
+      - name: bg--primary-darkest
+  - group:
+      - name: bg--secondary-lightest
+      - name: bg--secondary-lighter
+      - name: bg--secondary-light
+      - name: bg--secondary
+      - name: bg--secondary-dark
+      - name: bg--secondary-darker
+      - name: bg--secondary-darkest
+
+utility-colors:
+  - group:
+      - name: bg--success-light
+      - name: bg--success
+      - name: bg--success-dark
+  - group:
+      - name: bg--error-light
+      - name: bg--error
+      - name: bg--error-dark
+
+form:
+  id: signup
+  post-url: "#getFormUrl"
+  fields:
+    - id: title
+      type: select
+      label: Title
+      options:
+        - id: mr
+          label: Mr
+        - id: ms
+          label: Ms
+        - id: miss
+          label: Miss
+        - id: mrs
+          label: Mrs
+        - id: dr
+          label: Dr
+    - id: name
+      type: text
+      label: Name
+      required: true
+    - id: email-address
+      type: email
+      label: Email address
+      required: true
+    - id: text-long
+      type: text-long
+      label: Long text
+      required: true
+    - id: checkbox
+      type: checkbox
+      label: I would like to receive inspiration, travel tips, news and offers. I agree to the use of my personal details for this purpose.
+      options:
+        - id: email
+          label: Email
+        - id: post
+          label: Post
+    - id: radio
+      type: radio
+      label: Are you a UK resident and over the age of 21?
+      options:
+        - id: yes
+          label: Yes
+        - id: no
+          label: No
+  submit: Submit now
+
+---
+
+{% include nav/header.html %}
+{% include nav/site.html %}
+
+<div class="bg--grey-lightest vpad--xxl">
+  <div class="container">
+
+    <div class="row">
+      <div class="col col--12 text--center">
+        <div class="h h--xxxl">Block components</div>
+      </div>
+    </div>
+
+    <div class="row">
+      {% include offer/all-offers.html %}
+    </div>
+
+  </div> <!-- /.container  -->
+</div> <!-- /.bg--grey-lightest  -->
+
+{% include nav/footer.html %}

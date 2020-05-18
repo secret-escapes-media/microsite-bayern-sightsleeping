@@ -1,0 +1,6 @@
+<div class="{{include.block}}">
+  {% for link in site.data.locale.[site.locale].core-nav %}
+  <a class="{{include.block}}-link" href="{{link.link}}">{{link.label}}</a>
+  {% endfor %}
+  <a class="{{include.block}}-link is-current" href="{{ site.baseurl }}">{{ site.title }}</a>
+</div>

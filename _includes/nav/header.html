@@ -1,0 +1,48 @@
+<header class="site-header">
+  <!-- The main site header to look like core SE site-->
+  <div class="site-header__wrap">
+    <div class="site-header__mobile-icon">
+      <!-- mobile menu icon -->
+      <div class="js-toggle-mobile-nav icon icon--menu"></div>
+    </div>
+
+    <div class="site-header__left">
+      <!-- SE logo  -->
+      {% include components/logo-se.html placement="header" %}
+      <!-- core nav list -->
+      {% include nav/nav-list.html block="nav__list" %}
+    </div>
+
+    <div class="site-header__right">
+      {% if site.partner %}
+      <div class="partnership">
+        <span class="partnership__text">In partnership with</span>
+        {% include components/logo-partner.html placement="header" %}
+      </div>
+      {% else %}
+        <a class="favourites" href="https://www.secretescapes.com/my-favourites">My favourites</a>
+      {% endif %}
+    </div>
+  </div>
+
+
+  <!-- off canvas mobile menu -->
+  <div class="mobile-nav is-closed">
+
+    <div class="mobile-nav__top mobile-nav__wrap">
+      <!-- close icon -->
+      <div class="js-toggle-mobile-nav icon icon--close"></div>
+    </div>
+
+    <div class="mobile-nav__middle mobile-nav__wrap">
+      <!-- core nav list -->
+      {% include nav/nav-list.html block="mobile-nav__list" %}
+    </div>
+
+    <div class="mobile-nav__bottom">
+      <!-- client logo bottom -->
+      {% include components/logo-partner.html placement="mobile-nav" %}
+    </div>
+
+  </div>
+</header>

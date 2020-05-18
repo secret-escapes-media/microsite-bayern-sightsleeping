@@ -1,0 +1,10 @@
+
+
+core-site: https://www.secretescapes.com/current-sales
+core-nav:
+  - link: https://www.secretescapes.com/current-sales
+    label: Current Sales
+  - link: https://www.secretescapes.com/spa
+    label: Spa
+  - link: https://www.secretescapes.com/vouchers-offer
+    label: Gift vouchers

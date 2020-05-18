@@ -30,19 +30,19 @@ $xl: 17px;
   -moz-appearance: none;
   @include transition;
   background-color: $primary;
-  @include gradient($primary,$primary-dark);
-  &:hover, &:focus, &:focus { background-color: $primary-dark; }
+  @include gradient($primary,darken($primary,10));
+  &:hover, &:focus, &:focus { background-color: darken($primary,10); }
 
   // Styles
   &--orange, &--primary {
     background-color: $primary;
-    @include gradient($primary,$primary-dark);
-    &:hover, &:focus { background-color: $primary-dark; }
+    @include gradient($primary,darken($primary,10));
+    &:hover, &:focus { background-color: darken($primary,10); }
   }
   &--secondary {
-    background-color: $secondary-dark;
-    @include gradient($secondary-dark,$secondary-darker);
-    &:hover, &:focus { background-color: $secondary-darker; }
+    background-color: $secondary-medium;
+    @include gradient($secondary-medium,darken($secondary-medium,8));
+    &:hover, &:focus { background-color: darken($secondary-medium,8); }
   }
   &--outline {
     color: $grey-darkest;

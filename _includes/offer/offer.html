@@ -2,16 +2,12 @@
 
   <a class="offer__link" href="{{offer.link}}"><span class="btn btn--orange">View Offer</span></a>
 
-  {% if offer.image %}
-    <div class="bg-img bg-img--3-2" style="background-image: url('{{offer.image}}')"></div>
-  {% else %}
-    <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/offers/{{offer.id}}.jpg')"></div>
-  {% endif %}
+  <div class="img img--16-9" style="background-image: url('{{offer.image}}')"></div>
 
   <div class="offer__content">
 
-    <h3 class="title title--xs">{{offer.title}}</h3>
-    <h4 class="offer__location">{{offer.location}}</h4>
+    <div class="offer__location">{{offer.location}}</div>
+    <h3 class="h h--xs">{{offer.title}}</h3>
     <div class="offer__description">{{offer.description}}</div>
 
     <div class="offer__bottom">
@@ -28,8 +24,8 @@
 
         <div class="offer__details">
           <div>From <span class="offer__price">£{{offer.price}}</span></div>
-          <div class="text--sm">{{offer.price-description}}</div>
-          <div class="js-offer-expires text--sm" data-expires="{{offer.expires}}"></div>
+          <div class="p--sm">{{offer.price-description}}</div>
+          <div class="js-offer-expires p--sm" data-expires="{{offer.expires}}"></div>
         </div>
 
       </div>

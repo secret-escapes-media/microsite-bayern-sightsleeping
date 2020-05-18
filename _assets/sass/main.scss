@@ -10,6 +10,7 @@
   'foundations/core',
   'foundations/scale',
   'foundations/fonts',
+  'foundations/form',
 
   // grid
   'grid/spacing',
@@ -18,10 +19,10 @@
   'grid/layouts/harvey',
 
   // navigation
-  'nav/core',
+  'nav/header',
   'nav/site',
-  'nav/site-group',
-  'nav/site-footer',
+  'nav/group',
+  'nav/footer',
 
   // page
   'page/footer',
@@ -38,13 +39,12 @@
   'components/img/content',
   'components/offer',
   'components/modal',
-  'components/form',
 
   // typography
   'typography/default',
   'typography/content',
-  'typography/text',
-  'typography/titles',
+  'typography/paragraph',
+  'typography/headings',
   'typography/spacing',
 
   // general
