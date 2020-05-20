@@ -1,4 +1,4 @@
-// Offer block styles
+// Sale block styles
 
 $circle-height: 3.4rem; // height for arrow and saved number
 $offer-max-width: 560px;
@@ -15,7 +15,7 @@ $offer-max-width: 560px;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: $z-content-upper;
+    z-index: $z-overlay;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,6 +30,27 @@ $offer-max-width: 560px;
       .touch & { opacity: 0; }
     }
   }
+  &__expires {
+    position: absolute;
+    z-index: $z-content-upper;
+    top: $s0; left: $s0;
+    font-weight: 600;
+    color: $white;
+    &:before {
+      content: "";
+      display: inline-block;
+      height: 15px;
+      width: 15px;
+      margin-right: .4em;
+      margin-bottom: .25em;
+      vertical-align: middle;
+      background-image: url( "../img/icons/clock.svg" );
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-size: contain;
+    }
+  }
   &__content {
     padding: $s2;
     border-left: 1px solid $grey-lighter;
@@ -38,25 +59,16 @@ $offer-max-width: 560px;
     background-color: $white;
   }
   &__location {
-    margin-top: 1em;
-    margin-left: 1.5em;
-    margin-bottom: 1em;
-    text-indent: -1.5em;
-    font-size: 0.75em;
-    line-height: 1.5;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    font-weight: 600;
-    color: $grey;
+    margin-bottom: .5em;
     &:before {
       content: "";
       display: inline-block;
-      height: 1.5em;
-      width: 1.05em;
-      margin-right: .5em;
-      margin-bottom: .2em;
+      height: 13px;
+      width: 9px;
+      margin-right: .4em;
+      margin-bottom: .25em;
       vertical-align: middle;
-      background-image: url( "../img/icons/map-pin.svg" );
+      background-image: url( "../img/icons/location.svg" );
       background-position: center;
       background-repeat: no-repeat;
       background-size: 100%;
@@ -80,74 +92,16 @@ $offer-max-width: 560px;
       margin-right: auto;
     }
   }
-  &__arrow {
-    display: none;
-    width: $circle-height;
-    height: $circle-height;
-    min-width: $circle-height;
-    min-height: $circle-height;
-    margin-left: $s-3;
-    border: 1px solid $primary;
-    border-radius: $circle-height;
-    background-repeat: no-repeat;
-    background-image: url('../img/icons/arrow-right-orange.svg');
-    background-size: auto ($circle-height/2.25);
-    background-position: 52% center;
-  }
-  &__saved {
-    display: inline-block;
-    text-align: center;
-    &-percent {
-      display: inline-block;
-      width: $circle-height;
-      height: $circle-height;
-      margin-left: $s-6;
-      text-align: center;
-      color: $white;
-      font-weight: 700;
-      letter-spacing: 0;
-      line-height: $circle-height;
-      background-color: $primary;
-      border-radius: $circle-height;
-    }
-  }
-  &__details {
-    display: inline-block;
-  }
-  &__separator {
-    display: inline-block;
-    align-self: stretch;
-    width: 1px;
-    max-width: 1px;
-    margin-left: $s0;
-    margin-right: $s0;
-    background-color: $grey-lighter;
-  }
-  &__price {
+  &__price,
+  &__discount {
     color: $primary;
-    font-size: $s3;
+    font-size: $s2;
     font-weight: 600;
     line-height: 1;
     letter-spacing: -.02em;
   }
-  @include bp($sm) {
-    &__arrow { display: block; }
-  }
   @include bp($md) {
     &__bottom-right { align-self: center; }
-    &__saved        { min-width: 130px; } // bit of a magic number, basically keeps the saved label & percent on the same line
-    &__saved-label  { display: inline-block; }
   }
-
-  // dark offer card styles
-   &#{&}--dark &__content {
-     border-left: 0;
-     border-right: 0;
-     border-bottom: 0;
-     background-color: lighten($grey-darkest,4);
-   }
-   &#{&}--dark &__separator           { background-color: $grey-dark; }
-   &#{&}--dark &__location            { color: $grey-lighter;}
-   &#{&}--dark &__content .title { color: $white;}
 
 }

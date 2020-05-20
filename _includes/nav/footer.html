@@ -1,12 +1,70 @@
+
+{% assign locale = site.data.locale.[site.locale] %}
+
 <footer class="site-footer">
   {% include nav/site.html theme="footer" %}
   <div class="site-footer__wrap">
-    <div>
-      {% include components/logo-se.html placement="footer" small='true' %}
-      {% include components/logo-partner.html placement="footer" small='true' %}
-    </div>
-    <div class="space--sm text--sm">
-      <p>© Copyright <span class="js-year">2018</span> Secret Escapes</p>
+
+    <div class="container">
+
+      {% if site.partner %}
+      <div class="row">
+        <div class="col col--6">
+          {% include components/logo-se.html placement="footer" %}
+        </div>
+        <div class="col col--6 text--right">
+          <span class="site-footer__partnership">{{locale.in-partnership}}</span>
+          {% include components/logo-partner.html placement="footer" %}
+        </div>
+      </div>
+      <hr>
+      {% endif %}
+
+      <!-- NAV -->
+      <div class="row">
+        <div class="col col--4">
+          <h5 class="h h--xxs">{{locale.footer.nav-col-1.title}}</h5>
+          <ul class="site-footer__links">
+            {% for item in locale.footer.nav-col-1.links %}
+            <li><a href="{{item.link}}">{{item.label}}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="col col--4">
+          <h5 class="h h--xxs">{{locale.footer.nav-col-2.title}}</h5>
+          <ul class="site-footer__links">
+            {% for item in locale.footer.nav-col-2.links %}
+            <li><a href="{{item.link}}">{{item.label}}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="col col--4">
+          <ul class="site-footer__social">
+            {% for item in locale.social %}
+            <li class="site-footer__social-icon">
+              <div class="img img--1-1" style="background-image: url({{site.img}}/icons/s-{{item.id}}.svg);">
+              <a href="{{item.link}}" class="img__link"></a>
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+
+          <ul class="site-footer__links">
+            {% for item in locale.footer.nav-col-3.links %}
+            <li><a href="{{item.link}}">{{item.label}}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="row">
+        <div class="col col--12 text--center">
+          <p class="text--sm">© Copyright <span class="js-year">2018</span> Secret Escapes</p>
+        </div>
+      </div>
+
     </div>
   </div>
 </footer>

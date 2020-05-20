@@ -1,23 +1,38 @@
 // main footer for the microsite
 
 .site-footer {
-
-  &__wrap {
-    @include page-padding;
-    padding-top: $s8;
-    padding-bottom: $s8;
-    color: $grey-lighter;
-    font-weight: 400;
-    text-align: center;
-    background-color: $grey-darkest;
-  }
-
-  // spacing for multiple logos in site footer
-  .logo { margin: $s-2; }
-
-  // white background for footer. Transparent colours will appear as block colours
   position: relative;
   background-color: $white;
-  //////////////////////////////////////////////////////////////////////////////
+
+  &__wrap {
+    padding-top: $s6;
+    padding-bottom: $s6;
+    color: $grey-lightest;
+    font-weight: 400;
+    font-size: 90%;
+    background-color: $grey-darkest;
+    & a[href]:not([class]) { color: $grey-lightest; }
+    & hr {
+      background-color: $grey-dark;
+    }
+  }
+
+  &__partnership { margin-right: $s0;}
+
+  &__links {
+    & li {
+      margin: 0; list-style: none;
+      line-height: 16px;
+    }
+  }
+  &__social {
+    padding-top: 0 !important;
+    &-icon {
+      margin: 0; list-style: none;
+      width: 40px;
+      display: inline-block;
+      & + & { margin-left: $s0; }
+    }
+  }
 
 }

@@ -1,91 +1,6 @@
 ---
 layout: default
 title: Block components
-
-brand-colors:
-  - group:
-      - name: bg--grey-lightest
-      - name: bg--grey-lighter
-      - name: bg--grey-light
-      - name: bg--grey
-      - name: bg--grey-dark
-      - name: bg--grey-darker
-      - name: bg--grey-darkest
-  - group:
-      - name: bg--primary-lightest
-      - name: bg--primary-lighter
-      - name: bg--primary-light
-      - name: bg--primary
-      - name: bg--primary-dark
-      - name: bg--primary-darker
-      - name: bg--primary-darkest
-  - group:
-      - name: bg--secondary-lightest
-      - name: bg--secondary-lighter
-      - name: bg--secondary-light
-      - name: bg--secondary
-      - name: bg--secondary-dark
-      - name: bg--secondary-darker
-      - name: bg--secondary-darkest
-
-utility-colors:
-  - group:
-      - name: bg--success-light
-      - name: bg--success
-      - name: bg--success-dark
-  - group:
-      - name: bg--error-light
-      - name: bg--error
-      - name: bg--error-dark
-
-form:
-  id: signup
-  post-url: "#getFormUrl"
-  fields:
-    - id: title
-      type: select
-      label: Title
-      options:
-        - id: mr
-          label: Mr
-        - id: ms
-          label: Ms
-        - id: miss
-          label: Miss
-        - id: mrs
-          label: Mrs
-        - id: dr
-          label: Dr
-    - id: name
-      type: text
-      label: Name
-      required: true
-    - id: email-address
-      type: email
-      label: Email address
-      required: true
-    - id: text-long
-      type: text-long
-      label: Long text
-      required: true
-    - id: checkbox
-      type: checkbox
-      label: I would like to receive inspiration, travel tips, news and offers. I agree to the use of my personal details for this purpose.
-      options:
-        - id: email
-          label: Email
-        - id: post
-          label: Post
-    - id: radio
-      type: radio
-      label: Are you a UK resident and over the age of 21?
-      options:
-        - id: yes
-          label: Yes
-        - id: no
-          label: No
-  submit: Submit now
-
 ---
 
 {% include nav/header.html %}
@@ -98,10 +13,151 @@ form:
       <div class="col col--12 text--center">
         <div class="h h--xxxl">Block components</div>
       </div>
-    </div>
 
-    <div class="row">
-      {% include offer/all-offers.html %}
+
+
+      <!-- Images -->
+      <div class="col col--12">
+        <div class="depth--sm rounded--sm bg--white">
+          <div class="boxpad--md bg--grey-darkest theme--light text--center">
+            <div class="h h--md">Images</div>
+          </div>
+
+          <div class="boxpad--xxl">
+            <div class="row">
+
+              <!-- Content blocks -->
+              <div class="col col--4">
+                <div class="h h--sm">Image components</div>
+                <p>Images are loaded into pages as responsive div elements, with the file set as the background image attribute. This allows us to change the ratio of the image depending on screen size/device.</p>
+                <p>Use class: .img to apply styling and the modifier classes to set image ratio.</p>
+              </div>
+              <div class="col col--8">
+                <div class="row">
+                  <div class="col col--6">
+                    <div class="img img--4-1 bg--secondary-lighter"></div>
+                    <div class="vpad--xxs text--mini"> .img--4-1 </div>
+
+                    <div class="img img--3-1 bg--secondary-lighter"></div>
+                    <div class="vpad--xxs text--mini"> .img--3-1 </div>
+
+                    <div class="img img--21-9 bg--secondary-lighter"></div>
+                    <div class="vpad--xxs text--mini"> .img--21-9 </div>
+
+                    <div class="img img--2-1 bg--secondary-lighter"></div>
+                    <div class="vpad--xxs text--mini"> .img--2-1 </div>
+
+                    <div class="img img--16-9 bg--secondary-lighter"></div>
+                    <div class="vpad--xxs text--mini"> .img--16-9 </div>
+
+                    <div class="img img--4-3 bg--secondary-lighter"></div>
+                    <div class="vpad--xxs text--mini"> .img--4-3 </div>
+                  </div>
+                  <div class="col col--6">
+                    <div class="img img--1-1 bg--secondary-lighter"></div>
+                    <div class="vpad--xxs text--mini"> .img--1-1 </div>
+
+                    <div class="img img--2-3 bg--secondary-lighter"></div>
+                    <div class="vpad--xxs text--mini"> .img--2-3 </div>
+
+                    <div class="img img--3-4 bg--secondary-lighter"></div>
+                    <div class="vpad--xxs text--mini"> .img--3-4 </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Offers -->
+      <div class="col col--12">
+        <div class="depth--sm rounded--sm bg--white">
+          <div class="boxpad--md bg--grey-darkest theme--light text--center">
+            <div class="h h--md">Offers</div>
+          </div>
+
+          <div class="boxpad--xxl">
+            <div class="row">
+
+              <!-- Content blocks -->
+              <div class="col col--4">
+                <div class="h h--sm">Default offer card</div>
+                <p>These large offer cards should be shown in a two-column layout, with a max-width of 600px</p>
+              </div>
+              <div class="col col--8">
+                {% for offer in site.data.offers %}
+                {% if forloop.first %}
+                  {% include offer/offer.html %}
+                {% endif %}
+                {% endfor%}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- POIs -->
+      <div class="col col--12">
+        <div class="depth--sm rounded--sm bg--white">
+          <div class="boxpad--md bg--grey-darkest theme--light text--center">
+            <div class="h h--md">POIs</div>
+          </div>
+
+          <div class="boxpad--xxl">
+            <div class="row">
+
+              <!-- Content blocks -->
+              <div class="col col--4">
+                <div class="h h--sm">Content blocks</div>
+                <p>The preferred way to display POIs is in box components. This way all content is presented and we can create thematic groupings of POIs for an interesting design rhythm to the page</p>
+              </div>
+              <div class="col col--8">
+
+                <div class="bg--white rounded--sm depth--sm width--lg">
+                  <div class="img img--16-9" style="background-image: url({{site.img}}/img.jpg);">
+                    <a href="javascript:void(0);" class="img__link"></a>
+                  </div>
+                  <div class="boxpad--md">
+                    <div class="h h--sm">POI title</div>
+                    <p>Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vestibulum id ligula porta felis euismod semper.</p>
+                    <p><a href="#" class="text--bold text--link">Read more</a></p>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Popups -->
+              <div class="col col--4">
+                <div class="h h--sm">Popups</div>
+                <p>POIs with either a large amount of content, or if there are many to be shown in a small space can be presented as popup modals.</p>
+              </div>
+              <div class="col col--8">
+
+                <div class="bg--white rounded--sm depth--sm depth--sm-hover width--md">
+                  <div class="img img--3-2" style="background-image: url({{site.img}}/img.jpg);">
+                    <a href="javascript:void(0);" class="img__link js-open-modal" data-modal-id="poi"></a>
+                    <div class="img__content">
+                      <div class="boxpad--sm text--light">
+                        <div class="h h--sm">POI title</div>
+                        <hr class="hr--center">
+                        <p class="p--xl text--bold">Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                      </div>
+                    </div>
+                    <div class="img__overlay"></div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
   </div> <!-- /.container  -->

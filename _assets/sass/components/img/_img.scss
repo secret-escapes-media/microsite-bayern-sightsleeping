@@ -1,7 +1,6 @@
 // using background images for easy cropping and aspect ratio chaning
 
 @mixin ratios() {
-  &1-2:before    { padding-top: 200%; }
   &2-3:before    { padding-top: 150%; }
   &3-4:before    { padding-top: 133.333333333334%; }
   &1-1:before    { padding-top: 100%; }

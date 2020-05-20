@@ -16,7 +16,7 @@
     <div class="site-header__right">
       {% if site.partner %}
       <div class="partnership">
-        <span class="partnership__text">In partnership with</span>
+        <span class="partnership__text">{{site.data.locale.[site.locale].in-partnership}}</span>
         {% include components/logo-partner.html placement="header" %}
       </div>
       {% else %}

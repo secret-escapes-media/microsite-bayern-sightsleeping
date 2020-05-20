@@ -1,36 +1,34 @@
-<div class="offer">
+<div class="offer depth--sm depth--sm-hover rounded--sm">
 
   <a class="offer__link" href="{{offer.link}}"><span class="btn btn--orange">View Offer</span></a>
 
-  <div class="img img--16-9" style="background-image: url('{{offer.image}}')"></div>
+  <div class="img img--16-9" style="background-image: url('{{offer.image}}')">
 
-  <div class="offer__content">
+    <div class="offer__expires js-offer-expires p--sm" data-expires="{{offer.expires}}"></div>
+  </div>
+
+  <div class="boxpad--md">
 
     <div class="offer__location">{{offer.location}}</div>
-    <h3 class="h h--xs">{{offer.title}}</h3>
+    <h3 class="h h--xxs">{{offer.title}}</h3>
+    <div class="space--xxs"></div>
     <div class="offer__description">{{offer.description}}</div>
 
     <div class="offer__bottom">
 
       <div class="offer__bottom-left">
 
-        {% if offer.saved %}
-          <div class="offer__saved">
-            <div class="offer__saved-label">Save up to&nbsp;</div>
-            <div class="offer__saved-percent">{{offer.saved}}%</div>
-          </div>
-          <div class="offer__separator"></div>
-        {% endif %}
-
         <div class="offer__details">
-          <div>From <span class="offer__price">£{{offer.price}}</span></div>
-          <div class="p--sm">{{offer.price-description}}</div>
-          <div class="js-offer-expires p--sm" data-expires="{{offer.expires}}"></div>
+          <p>
+            From
+            <span class="offer__price">£{{offer.price}}</span>
+            {{offer.price-description}}
+          </p>
         </div>
 
       </div>
       <div class="offer__bottom-right">
-        <div class="offer__arrow"></div>
+        <div class="offer__discount">-{{offer.saved}}%</div>
       </div>
 
     </div>

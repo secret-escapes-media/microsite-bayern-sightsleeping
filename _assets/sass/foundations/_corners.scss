@@ -1,0 +1,10 @@
+
+// rounded corners
+@mixin rounded($rounded) { border-radius: $rounded; overflow: hidden; }
+.rounded {
+  @include rounded(3px);
+  &--xs { @include rounded(2px); }
+  &--sm { @include rounded(3px); }
+  &--md { @include rounded(4px); }
+  &--lg { @include rounded(5px); }
+}

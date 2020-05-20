@@ -1,0 +1,65 @@
+
+in-partnership: In Zusammenarbeit mit
+
+core-site: https://www.secretescapes.de/aktuelle-angebote
+core-nav:
+  - link: https://www.secretescapes.de/aktuelle-angebote
+    label: Aktuelle Angebote
+  - link: https://www.secretescapes.de/reisekategorien/filter
+    label: Reisekategorien
+  - link: https://www.secretescapes.de/geschenkgutscheine
+    label: Gutscheine
+
+social:
+  - link: http://www.facebook.com/SecretEscapes.de
+    id: facebook
+  - link: https://www.instagram.com/secretescapesde/
+    id: instagram
+  - link: http://www.twitter.com/SecretEscapesDE
+    id: twitter
+
+footer:
+  nav-col-1:
+    title: Secret Escapes
+    links:
+      - link: https://www.secretescapes.de/ueber-uns
+        label: Über uns
+      - link: https://www.secretescapes.de/kontakt-und-impressum
+        label: Kontakt &amp; Impressum
+      - link: http://careers.secretescapes.de/
+        label: Offene Stellen
+      - link: https://www.secretescapes.de/faq
+        label: FAQ
+      - link: https://www.secretescapes.de/werdensiepartner
+        label: Werden Sie Partner
+      - link: https://www.secretescapes.de/datenschutzerklaerung
+        label: Datenschutzhinweise
+      - link: https://www.secretescapes.de/geschenkgutscheine
+        label: Gutscheine
+  nav-col-2:
+    title: Kollektionen
+    links:
+      - link: https://www.secretescapes.de/strandurlaub/filter
+        label: Strandurlaub
+      - link: https://www.secretescapes.de/boutiquehotels/filter
+        label: Boutiquehotels
+      - link: https://www.secretescapes.de/landurlaub/filter
+        label: Landhaus-Luxus & Natur
+      - link: https://www.secretescapes.de/wellnessauszeit/filter
+        label: Wellness-Auszeit
+      - link: https://www.secretescapes.de/gourmeturlaub/filter
+        label: Gourmeturlaub
+      - link: https://www.secretescapes.de/alpenauszeit/filter
+        label: Alpenauszeit
+      - link: https://www.secretescapes.de/adultsonly/filter
+        label: Kollektionen
+  nav-col-3:
+    title:
+    links:
+      - link: https://www.secretescapes.de/zahlungsinformationen
+        label: Zahlungsinformationen
+      - link: https://www.secretescapes.de/agb
+        label: AGB
+
+
+

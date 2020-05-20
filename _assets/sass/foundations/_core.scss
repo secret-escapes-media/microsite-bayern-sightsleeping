@@ -52,22 +52,3 @@ $transition-time: .25s;
 // general shadow - .shadow { @include shadow; }
 @mixin shadow() { box-shadow: 0px 8px 44px 0px rgba($black, .2); }
 
-// depth - subtle shadowing
-@mixin depth($depth) { box-shadow: 0px $depth $depth*2 0px rgba($black, .2); }
-.depth {
-  @include depth(1px);
-  &--xs { @include depth(1px); }
-  &--sm { @include depth(2px); }
-  &--md { @include depth(4px); }
-  &--lg { @include depth(8px); }
-}
-
-// rounded corners
-@mixin rounded($rounded) { border-radius: $rounded; overflow: hidden; }
-.rounded {
-  @include rounded(3px);
-  &--xs { @include rounded(2px); }
-  &--sm { @include rounded(3px); }
-  &--md { @include rounded(4px); }
-  &--lg { @include rounded(5px); }
-}

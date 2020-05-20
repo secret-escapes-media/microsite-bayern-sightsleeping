@@ -15,11 +15,6 @@ a[href]:not([class]) {
   &:hover { color: $primary-dark; }
 }
 
-.link {
-  &:hover { text-decoration: underline; }
-  &--underlined { text-decoration: underline; }
-}
-
 li {
   list-style-position:
   outside; margin-left: $s1;
@@ -27,13 +22,17 @@ li {
 ul li   { list-style-type: disc; }
 ol li   { list-style-type: decimal; }
 
-hr {
+hr, .hr {
   border: 0;
   height: 1px;
   background-color: $grey-lightest;
   margin: $s1 0;
 }
-
+.hr {
+  &--center { width: 80px; margin-left: auto; margin-right: auto; }
+  &--left   { width: 80px; margin-left: auto; }
+  &--right  { width: 80px; margin-right: auto; }
+}
 
 // theme
 .theme {
@@ -52,9 +51,10 @@ hr {
   &--italic       { font-style: italic; }
   &--light        { font-weight: 300; }
   &--normal       { font-weight: 400; }
-  &--bold         { font-weight: 500; }
-  &--bolder       { font-weight: 600; }
-  &--boldest      { font-weight: 700; }
+  &--medium       { font-weight: 500; }
+  &--bold         { font-weight: 600; }
+  &--bolder       { font-weight: 700; }
+  &--boldest      { font-weight: 900; }
   &--upper        { text-transform: uppercase; }
 
   // kerning
@@ -78,5 +78,12 @@ hr {
     letter-spacing: 0.05em;
     font-weight: 600;
     text-transform: uppercase;
+  }
+
+  &--link {
+    font-weight: 600;
+    color: $primary;
+    &:hover { text-decoration: underline; }
+    &--underlined { text-decoration: underline; }
   }
 }

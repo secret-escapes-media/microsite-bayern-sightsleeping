@@ -1,0 +1,29 @@
+
+// depth - subtle shadowing
+@mixin depth($depth) { box-shadow: 0px $depth $depth*2 0px rgba($black, .2); }
+.depth {
+  @include transition;
+  @include depth(1px);
+  &-hover:hover { @include depth(2px); }
+  &--xs {
+    @include transition;
+    @include depth(1px);
+    &-hover:hover { @include depth(2px); }
+  }
+  &--sm {
+    @include transition;
+    @include depth(2px);
+    &-hover:hover { @include depth(4px); }
+  }
+  &--md {
+    @include transition;
+    @include depth(4px);
+    &-hover:hover { @include depth(8px); }
+  }
+  &--lg {
+    @include transition;
+    @include depth(8px);
+    &-hover:hover { @include depth(12px); }
+  }
+}
+
