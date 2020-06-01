@@ -3,22 +3,22 @@
 @mixin gradient($color1, $color2) { background: linear-gradient(180deg, $color1 12.52%, $color2 87.48%); }
 
 // sizes
-$xs: 13px;
-$sm: 14px;
-$md: 15px;
-$lg: 16px;
-$xl: 17px;
+$scale-xs: 13px;
+$scale-sm: 14px;
+$scale-md: 15px;
+$scale-lg: 16px;
+$scale-xl: 17px;
 
 .btn {
   position: relative;
   display: inline-block;
   margin: 0;
-  padding: $md*1.25 $md*2.5;
+  padding: $scale-md*1.25 $scale-md*2.5;
   color: $white;
   font-family: $sans;
   font-weight: 600;
-  font-size: $md;
-  line-height: $md;
+  font-size: $scale-md;
+  line-height: $scale-md;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
@@ -28,26 +28,24 @@ $xl: 17px;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  @include transition;
   background-color: $primary;
   @include gradient($primary,darken($primary,10));
-  &:hover, &:focus, &:focus { background-color: darken($primary,10); }
+  &:hover, &:focus { background: darken($primary,10);}
 
   // Styles
   &--orange, &--primary {
     background-color: $primary;
     @include gradient($primary,darken($primary,10));
-    &:hover, &:focus { background-color: darken($primary,10); }
+    &:hover, &:focus { background: darken($primary,10);}
   }
   &--secondary {
     background-color: $secondary-medium;
     @include gradient($secondary-medium,darken($secondary-medium,8));
-    &:hover, &:focus { background-color: darken($secondary-medium,8); }
+    &:hover, &:focus { background: darken($secondary-medium,8);}
   }
   &--outline {
     color: $grey-darkest;
     background: transparent;
-    @include transition;
     &:before {
       // button border within original padding
       content: '';
@@ -60,7 +58,7 @@ $xl: 17px;
       border-style: solid;
       border-radius: inherit;
       border-color: $primary;
-      @include transition;
+
     }
     &:hover, &:focus {
       color: $white;
@@ -70,8 +68,8 @@ $xl: 17px;
   }
 
   // Scale
-  &--xs { padding: $xs*1.25 $xs*2.5; font-size: $xs; }
-  &--sm { padding: $sm*1.25 $sm*2.5; font-size: $sm; }
-  &--lg { padding: $lg*1.25 $lg*2.5; font-size: $lg; }
-  &--xl { padding: $xl*1.25 $xl*2.5; font-size: $xl; }
+  &--xs { padding: $scale-xs*1.25 $scale-xs*2.5; font-size: $scale-xs; }
+  &--sm { padding: $scale-sm*1.25 $scale-sm*2.5; font-size: $scale-sm; }
+  &--lg { padding: $scale-lg*1.25 $scale-lg*2.5; font-size: $scale-lg; }
+  &--xl { padding: $scale-xl*1.25 $scale-xl*2.5; font-size: $scale-xl; }
 }

@@ -17,7 +17,16 @@
     }
   }
 
-  &__partnership { margin-right: $s0;}
+  &__partnership {
+    &-text {
+      display: none;
+      margin-right: $s0;
+    }
+    @include bp($lg) {
+      text-align: right;
+      &-text { display: inline-block; }
+    }
+  }
 
   &__links {
     & li {
