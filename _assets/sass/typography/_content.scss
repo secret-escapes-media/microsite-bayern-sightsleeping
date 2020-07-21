@@ -30,8 +30,8 @@ hr, .hr {
 }
 .hr {
   &--center { width: 80px; margin-left: auto; margin-right: auto; }
-  &--left   { width: 80px; margin-left: auto; }
-  &--right  { width: 80px; margin-right: auto; }
+  &--left   { width: 80px; margin-right: auto; }
+  &--right  { width: 80px; margin-left: auto; }
 }
 
 // theme

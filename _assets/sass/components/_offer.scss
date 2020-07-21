@@ -59,6 +59,7 @@ $offer-max-width: 560px;
     background-color: $white;
   }
   &__location {
+    margin-top: .5em;
     margin-bottom: .5em;
     &:before {
       content: "";
@@ -104,4 +105,24 @@ $offer-max-width: 560px;
     &__bottom-right { align-self: center; }
   }
 
+}
+
+
+.offers-loading {
+  height: $s6;
+  width: $s6;
+  position: relative;
+  text-indent: -9999px;
+  margin: auto;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../img/icons/loading.svg');
+  transform-origin: center;
+  animation: spin 2s infinite linear;
+  @keyframes spin {
+    from {transform:rotate(360deg);}
+    to {transform:rotate(0deg);}
+  }
 }

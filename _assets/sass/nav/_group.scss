@@ -24,6 +24,7 @@ $group-nav-color:  $black;
     display: flex;
     flex-grow: 1;
     flex-basis: 0;
+    @include background-attributes;
   }
   &__link {
     display: flex;
@@ -39,7 +40,7 @@ $group-nav-color:  $black;
     letter-spacing: .15em;
     color: $white;
     @include transition;
-    &.is-current      { background-color: rgba($group-nav-color,.66); }
-    .no-touch &:hover { background-color: rgba($group-nav-color,1); }
+    &.is-current      { background-color: rgba($group-nav-color,0.33); }
+    .no-touch &:hover { background-color: rgba($group-nav-color,0.67); }
   }
 }
