@@ -1,24 +1,27 @@
 
-in-partnership: In Zusammenarbeit mit
+
 
 core-site: https://www.secretescapes.de/aktuelle-angebote
-core-nav:
-  - link: https://www.secretescapes.de/aktuelle-angebote
-    label: Aktuelle Angebote
-  - link: https://www.secretescapes.de/reisekategorien/filter
-    label: Reisekategorien
-  - link: https://www.secretescapes.de/geschenkgutscheine
-    label: Gutscheine
 
-social:
-  - link: http://www.facebook.com/SecretEscapes.de
-    id: facebook
-  - link: https://www.instagram.com/secretescapesde/
-    id: instagram
-  - link: http://www.twitter.com/SecretEscapesDE
-    id: twitter
+header:
+  in-partnership: In Zusammenarbeit mit
+  core-nav:
+    - link: https://www.secretescapes.de/aktuelle-angebote
+      label: Aktuelle Angebote
+    - link: https://www.secretescapes.de/reisekategorien/filter
+      label: Reisekategorien
+    - link: https://www.secretescapes.de/geschenkgutscheine
+      label: Gutscheine
 
 footer:
+  in-partnership: In Zusammenarbeit mit
+  social:
+    - link: http://www.facebook.com/SecretEscapes.de
+      id: facebook
+    - link: https://www.instagram.com/secretescapesde/
+      id: instagram
+    - link: http://www.twitter.com/SecretEscapesDE
+      id: twitter
   nav-col-1:
     title: Secret Escapes
     links:

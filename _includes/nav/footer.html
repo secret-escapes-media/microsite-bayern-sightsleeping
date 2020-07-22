@@ -13,7 +13,7 @@
           {% include components/logo-se.html placement="footer" %}
         </div>
         <div class="col col--6 site-footer__partnership">
-          <span class="site-footer__partnership-text">{{locale.in-partnership}}</span>
+          <span class="site-footer__partnership-text">{{locale.footer.in-partnership}}</span>
           {% include components/logo-partner.html placement="footer" %}
         </div>
       </div>
@@ -40,7 +40,7 @@
         </div>
         <div class="col col--4">
           <ul class="site-footer__social">
-            {% for item in locale.social %}
+            {% for item in locale.footer.social %}
             <li class="site-footer__social-icon">
               <div class="img img--1-1" style="background-image: url({{site.img}}/icons/s-{{item.id}}.svg);">
               <a href="{{item.link}}" class="img__link"></a>

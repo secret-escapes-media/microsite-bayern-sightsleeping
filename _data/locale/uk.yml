@@ -1,24 +1,27 @@
 
-in-partnership: In partnership with
+
 
 core-site: https://www.secretescapes.com/current-sales
-core-nav:
-  - link: https://www.secretescapes.com/current-sales
-    label: Current Sales
-  - link: https://www.secretescapes.com/spa
-    label: Spa
-  - link: https://www.secretescapes.com/vouchers-offer
-    label: Gift vouchers
 
-social:
-  - link: http://www.facebook.com/SecretEscapes
-    id: facebook
-  - link: https://www.instagram.com/secretescapes/
-    id: instagram
-  - link: http://www.twitter.com/secret_escapes
-    id: twitter
+header:
+  in-partnership: In partnership with
+  core-nav:
+    - link: https://www.secretescapes.com/current-sales
+      label: Current Sales
+    - link: https://www.secretescapes.com/spa
+      label: Spa
+    - link: https://www.secretescapes.com/vouchers-offer
+      label: Gift vouchers
 
 footer:
+  in-partnership: In partnership with
+  social:
+    - link: http://www.facebook.com/SecretEscapes
+      id: facebook
+    - link: https://www.instagram.com/secretescapes/
+      id: instagram
+    - link: http://www.twitter.com/secret_escapes
+      id: twitter
   nav-col-1:
     title: Secret Escapes
     links:
