@@ -25,8 +25,9 @@ ol li   { list-style-type: decimal; }
 hr, .hr {
   border: 0;
   height: 1px;
-  background-color: $grey-lightest;
   margin: $s1 0;
+  background-color: rgba($black,0.2);
+  .theme--dark { background-color: rgba($white,0.2); }
 }
 .hr {
   &--center { width: 80px; margin-left: auto; margin-right: auto; }
@@ -37,12 +38,14 @@ hr, .hr {
 // theme
 .theme {
   &--light {
-    color: $white;
-    & .h, &.h { color: $white; }
-  }
-  &--dark {
+    // white background, dark text
     color: $grey-dark;
     & .h, &.h { color: $grey-darker; }
+  }
+  &--dark {
+    // dark background, white text
+    color: $white;
+    & .h, &.h { color: $white; }
   }
 }
 
@@ -72,8 +75,7 @@ hr, .hr {
     &--bp-center { text-align: center; }
   }
 
-  // mini - that trendy wide, allcaps, bold title
-  &--mini {
+  &--smallcaps {
     font-size: 0.9em;
     letter-spacing: 0.05em;
     font-weight: 600;
