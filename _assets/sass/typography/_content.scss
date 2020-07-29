@@ -27,7 +27,8 @@ hr, .hr {
   height: 1px;
   margin: $s1 0;
   background-color: rgba($black,0.2);
-  .theme--dark { background-color: rgba($white,0.2); }
+  &.theme--dark,
+  .theme--dark & { background-color: rgba($white,0.2); }
 }
 .hr {
   &--center { width: 80px; margin-left: auto; margin-right: auto; }
