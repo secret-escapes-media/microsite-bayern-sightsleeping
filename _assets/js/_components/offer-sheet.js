@@ -47,17 +47,30 @@ $(offerSections).each(function(){
         var saleEndDate           = this[7];
         var saleURL               = this[9];
         var saleImage             = this[10];
+        var saleTags              = this[11];
 
         var htmlCol          = '<div class="col"></div>';
         var htmlOffer        = '<div class="offer depth--sm depth--sm-hover rounded--sm"></div>';
         var htmlLink         = '<a class="offer__link" href="'+saleURL+'"><span class="btn btn--orange">View Offer</span></a>';
-        var htmlImage        = '<div class="img img--16-9" style="background-image: url('+saleImage+')"><div class="offer__expires js-offer-expires p--sm" data-expires="'+saleEndDate+'"></div></div>';
+        var htmlImage        = '<div class="img img--16-9" style="background-image: url('+saleImage+')"></div>';
+        var htmlCountdown    = '<div class="offer__expires js-offer-expires p--sm" data-expires="'+saleEndDate+'" style="display:none;"></div>';
+        var htmlTags         = '<div class="offer__tags"></div>';
         var htmlContentWrap  = '<div class="boxpad--md"></div>';
         var htmlLocation     = '<h4 class="offer__location">'+saleLocation+'</h4>';
         var htmlTitle        = '<h3 class="h h--xxs">'+saleTitle+'</h3>';
         var htmlDescription  = '<div class="offer__description">'+saleDescription+'</div>';
         var htmlBottom       = '<div class="offer__bottom"></div>';
         var htmlBottomLeft   = '<div class="offer__bottom-left"><div class="offer__details">From <span class="offer__price">'+salePrice+'</span> '+salePriceDescription+'</div></div>';
+
+        if(saleTags.indexOf("refundable") >= 0){
+          htmlTags = $(htmlTags).append("<div class='offer__tag offer__tag-refundable'>Refundable</div>");
+        }
+        if(saleTags.indexOf("customisable") >= 0){
+          htmlTags = $(htmlTags).append("<div class='offer__tag offer__tag-customisable'>Customisable</div>");
+        }
+        if (saleTags.indexOf("flights") >= 0){
+          htmlTags = $(htmlTags).append("<div class='offer__tag offer__tag-flights'>Flights</div>");
+        }
 
         if(saleDiscount > 0){
           var htmlBottomRight  = '<div class="offer__bottom-right"><div class="offer__discount">-'+saleDiscount+'%</div></div>';
@@ -66,8 +79,9 @@ $(offerSections).each(function(){
         }
 
         var bottom = $(htmlBottom).append(htmlBottomLeft).append(htmlBottomRight);
+        var image = $(htmlImage).append(htmlCountdown).append(htmlTags);
         var content = $(htmlContentWrap).append(htmlLocation).append(htmlTitle).append(htmlDescription).append(bottom);
-        var inner = $(htmlOffer).append(htmlLink).append(htmlImage).append(content);
+        var inner = $(htmlOffer).append(htmlLink).append(image).append(content);
         var offer = $(htmlCol).append(inner);
 
         $(offerSection).prepend(offer);
