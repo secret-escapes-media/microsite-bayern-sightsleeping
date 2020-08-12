@@ -57,7 +57,7 @@ $(offerSections).each(function(){
         var htmlTags         = '<div class="offer__tags"></div>';
         var htmlContentWrap  = '<div class="boxpad--md"></div>';
         var htmlLocation     = '<h4 class="offer__location">'+saleLocation+'</h4>';
-        var htmlTitle        = '<h3 class="h h--xxs">'+saleTitle+'</h3>';
+        var htmlTitle        = '<h3 class="offer__title">'+saleTitle+'</h3>';
         var htmlDescription  = '<div class="offer__description">'+saleDescription+'</div>';
         var htmlBottom       = '<div class="offer__bottom"></div>';
         var htmlBottomLeft   = '<div class="offer__bottom-left"><div class="offer__details">From <span class="offer__price">'+salePrice+'</span> '+salePriceDescription+'</div></div>';

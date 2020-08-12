@@ -52,10 +52,20 @@ $offer-max-width: 560px;
       background-size: contain;
     }
   }
+  &__title {
+    font-size: $s1;
+    font-family: $serif;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: $s-4;
+    @include bp($lg){
+      font-size: $s2;
+    }
+  }
   &__tags {
     position: absolute;
     z-index: $z-content-upper;
-    bottom: $s0; left: $s0;
+    bottom: $s-2; left: $s-2;
     display: flex;
   }
   &__tag {
@@ -108,8 +118,7 @@ $offer-max-width: 560px;
     background-color: $white;
   }
   &__location {
-    margin-top: .5em;
-    margin-bottom: .5em;
+    margin-bottom: $s-4;
     &:before {
       content: "";
       display: inline-block;
@@ -129,7 +138,7 @@ $offer-max-width: 560px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: $s0;
+    padding-top: $s-4;
     &-right {
       margin-left: auto;
       align-self: flex-end;
