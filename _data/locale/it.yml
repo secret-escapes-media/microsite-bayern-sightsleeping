@@ -1,0 +1,20 @@
+
+
+
+core-site: https://it.secretescapes.com/
+in-partnership: In partnership with
+
+header:
+  core-nav:
+    - link: https://it.secretescapes.com/offerte-in-corso
+      label: Offerte in corso
+    - link: https://it.secretescapes.com/come-funziona
+      label: Come funziona
+    - link: https://it.secretescapes.com/magazine-it/
+      label: Magazine
+    - link: https://it.secretescapes.com/offerta-voucher
+      label: Buoni regalo
+  favourites:
+    link: https://it.secretescapes.com/preferiti
+    label: I miei preferiti
+

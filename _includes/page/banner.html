@@ -1,5 +1,8 @@
 <div class="banner">
-  <div class="site-header__offset"></div>
+  <div class="banner__nav banner__nav--top">
+    {% include nav/site.html %}
+  </div>
+  <div class="site-nav__offset"></div>
   <div class="banner__bg" style="background-image: url('{{site.img}}/{{page.id}}/banner.jpg')"></div>
   <div class="banner__wrap">
     {% if page.banner.content %}

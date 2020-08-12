@@ -1,3 +1,6 @@
+
+{% assign locale = site.data.locale.[site.locale] %}
+
 <header class="site-header">
   <!-- The main site header to look like core SE site-->
   <div class="site-header__wrap">
@@ -16,11 +19,11 @@
     <div class="site-header__right">
       {% if site.partner %}
       <div class="partnership">
-        <span class="partnership__text">{{site.data.locale.[site.locale].header.in-partnership}}</span>
+        <span class="partnership__text">{{locale.in-partnership}}</span>
         {% include components/logo-partner.html placement="header" %}
       </div>
       {% else %}
-        <a class="favourites" href="https://www.secretescapes.com/my-favourites">My favourites</a>
+        <a class="favourites" href="{{locale.header.favourites.link}}">{{locale.header.favourites.label}}</a>
       {% endif %}
     </div>
   </div>

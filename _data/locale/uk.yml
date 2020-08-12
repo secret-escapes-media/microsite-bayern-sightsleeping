@@ -2,9 +2,9 @@
 
 
 core-site: https://www.secretescapes.com/current-sales
+in-partnership: In partnership with
 
 header:
-  in-partnership: In partnership with
   core-nav:
     - link: https://www.secretescapes.com/current-sales
       label: Current Sales
@@ -12,9 +12,11 @@ header:
       label: Spa
     - link: https://www.secretescapes.com/vouchers-offer
       label: Gift vouchers
+  favourites:
+    link: https://www.secretescapes.com/my-favourites
+    label: My favourites
 
 footer:
-  in-partnership: In partnership with
   social:
     - link: http://www.facebook.com/SecretEscapes
       id: facebook

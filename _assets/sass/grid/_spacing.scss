@@ -107,9 +107,3 @@
     &--xxs   { padding: $s-4; }
   }
 }
-
-// spacing for the main content blocks on the site
-.section-spacing {
-  .bob + .bob { padding-top: $s8; }
-  .container + .container { padding-top: $s11; }
-}

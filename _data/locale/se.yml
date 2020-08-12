@@ -1,0 +1,20 @@
+
+
+
+core-site: https://www.secretescapes.se/
+in-partnership: In partnership with
+
+header:
+  core-nav:
+    - link: https://www.secretescapes.se/aktuella-kampanjer
+      label: Aktuella kampanjer
+    - link: https://www.secretescapes.se/how-it-works
+      label: Så funkar det
+    - link: https://www.secretescapes.se/presentkort-offer
+      label: Presentkort
+    - link: https://www.secretescapes.se/magazine-se/
+      label: Magasin
+  favourites:
+    link: https://www.secretescapes.se/dina-favoriter
+    label: Dina favoriter
+

@@ -8,6 +8,7 @@
   margin-left: auto;
   margin-right: auto;
   @include page-padding;
+  & + & { padding-top: $s11; }
 
   // widths
   &--100 { max-width: 100%; }

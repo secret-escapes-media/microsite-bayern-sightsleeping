@@ -1,0 +1,13 @@
+
+
+
+core-site: https://no.secretescapes.com/
+in-partnership: In partnership with
+
+header:
+  core-nav:
+    - link: https://nl.secretescapes.com/aanbiedingen
+      text: Actuele aanbiedingen
+  favourites:
+    link: https://nl.secretescapes.com/mijn-favorieten
+    label: Mijn favorieten

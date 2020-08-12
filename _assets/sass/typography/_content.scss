@@ -39,12 +39,12 @@ hr, .hr {
 // theme
 .theme {
   &--light {
-    // white background, dark text
+    // light background, dark text
     color: $grey-dark;
     & .h, &.h { color: $grey-darker; }
   }
   &--dark {
-    // dark background, white text
+    // dark background, light text
     color: $white;
     & .h, &.h { color: $white; }
   }

@@ -1,0 +1,17 @@
+
+
+
+core-site: https://no.secretescapes.com/
+in-partnership: In partnership with
+
+header:
+  core-nav:
+    - link: https://no.secretescapes.com/aktuelle-tilbud
+      label: Aktuelle tilbud
+    - link: https://no.secretescapes.com/how-it-works
+      label: Slik funker det
+    - link: https://no.secretescapes.com/drmmehotell/filter
+      label: WOW-faktor
+  favourites:
+    link: https://no.secretescapes.com/mine-favoritter
+    label: Mine favoritter

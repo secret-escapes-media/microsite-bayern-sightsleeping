@@ -12,6 +12,8 @@
     &--swap { flex-direction: row-reverse; }
   }
 
+  & + & { padding-top: $s8; }
+
   // gutter sizes
   $mobile-gutter:  $s2;
   $desktop-gutter: $s4;
