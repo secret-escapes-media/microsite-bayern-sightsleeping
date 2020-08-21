@@ -8,6 +8,8 @@ header:
   core-nav:
     - link: https://www.secretescapes.com/current-sales
       label: Current Sales
+    - link: https://www.secretescapes.com/refundable/filter
+      label: Refundable
     - link: https://www.secretescapes.com/spa
       label: Spa
     - link: https://www.secretescapes.com/vouchers-offer

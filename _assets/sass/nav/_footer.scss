@@ -12,3 +12,9 @@ $footer-nav-color: $grey;
     .no-touch &:hover { background-color: rgba($footer-nav-color,1); }
   }
 }
+
+.site-footer {
+  &__links {
+    padding-top: $s-2;
+  }
+}

@@ -2,7 +2,7 @@
 
 .h {
   // custom content headline
-  font-family: $serif;
+  font-family: $display;
   font-weight: 700;
   line-height: 1.2;
   &--xxxl   { font-size: $s8; }
@@ -25,6 +25,9 @@
     &--xxs    { font-size: $s2; }
     &--xxxs   { font-size: $s1; }
   }
+  // brand override
+  &--core,
+  &--serif { font-family: $serif; }
 }
 
 .h--sub {
@@ -43,7 +46,7 @@
 
 .h--banner {
   // custom banner headline
-  font-family: $serif;
+  font-family: $display;
   line-height: 1.1;
   font-weight: 700;
   font-size: $s5;
