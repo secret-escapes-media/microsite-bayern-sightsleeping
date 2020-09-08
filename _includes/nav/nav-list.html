@@ -2,5 +2,7 @@
   {% for link in site.data.locale.[site.locale].header.core-nav %}
   <a class="{{include.block}}-link" href="{{link.link}}">{{link.label}}</a>
   {% endfor %}
+  {% if site.partner %}
   <a class="{{include.block}}-link is-current" href="{{ site.baseurl }}">{{ site.title }}</a>
+  {% endif %}
 </div>

@@ -12,10 +12,10 @@ description: >
 
 # file paths
 url:     "http://mp.secretescapes.com" # the base hostname & protocol for your site
-baseurl: "/template" # the subpath of your site, e.g. /blog/
-img:     "/template/_assets/img"
-css:     "/template/_assets/css"
-js:      "/template/_assets/js"
+baseurl: "/_templates/site" # the subpath of your site, e.g. /blog/
+img:     "/_templates/site/_assets/img"
+css:     "/_templates/site/_assets/css"
+js:      "/_templates/site/_assets/js"
 
 # Build settings
 markdown: kramdown

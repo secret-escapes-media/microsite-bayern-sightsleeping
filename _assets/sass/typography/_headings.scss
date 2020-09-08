@@ -2,7 +2,7 @@
 
 .h {
   // custom content headline
-  font-family: $display;
+  font-family: $serif;
   font-weight: 700;
   line-height: 1.2;
   &--xxxl   { font-size: $s8; }
@@ -46,7 +46,7 @@
 
 .h--banner {
   // custom banner headline
-  font-family: $display;
+  font-family: $serif;
   line-height: 1.1;
   font-weight: 700;
   font-size: $s5;

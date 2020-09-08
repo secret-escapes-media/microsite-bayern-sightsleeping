@@ -27,7 +27,7 @@ function browserSyncServe() {
     server: {
       baseDir: '_site/',
       routes: {
-        '/template': '_site/'
+        '/_templates/site': '_site/'
       }
     }
   });
