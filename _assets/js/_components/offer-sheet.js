@@ -60,7 +60,7 @@ $(offerSections).each(function(){
         var htmlTitle        = '<h3 class="offer__title">'+saleTitle+'</h3>';
         var htmlDescription  = '<div class="offer__description">'+saleDescription+'</div>';
         var htmlBottom       = '<div class="offer__bottom"></div>';
-        var htmlBottomLeft   = '<div class="offer__bottom-left"><div class="offer__details">From <span class="offer__price">'+salePrice+'</span> '+salePriceDescription+'</div></div>';
+        var htmlBottomLeft   = '<div class="offer__bottom-left"><div class="offer__details">From <span class="offer__price">£'+salePrice+'</span> '+salePriceDescription+'</div></div>';
 
         if(saleTags.indexOf("refundable") >= 0){
           htmlTags = $(htmlTags).append("<div class='offer__tag offer__tag-refundable'>Refundable</div>");
