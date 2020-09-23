@@ -11,7 +11,7 @@ description: >
 
 
 # file paths
-url:     "http://mp.secretescapes.com" # the base hostname & protocol for your site
+url:     "https://mp.secretescapes.com" # the base hostname & protocol for your site
 baseurl: "/_templates/site" # the subpath of your site, e.g. /blog/
 img:     "/_templates/site/_assets/img"
 css:     "/_templates/site/_assets/css"
