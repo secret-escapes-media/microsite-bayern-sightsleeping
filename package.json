@@ -1,16 +1,18 @@
 {
   "scripts": {
-    "start": "gulp"
+    "init": "npm install --no-audit && gulp",
+    "dev": "gulp",
+    "generate": "gulp compile"
   },
   "dependencies": {
-    "browser-sync": "^2.26.5",
+    "browser-sync": "^2.26.14",
     "del": "^3.0.0",
     "gulp": "^4.0.1",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-cssmin": "^0.2.0",
     "gulp-htmlmin": "^4.0.0",
-    "gulp-image": "^4.4.1",
+    "gulp-image": "^6.2.1",
     "gulp-sass": "^4.0.2",
     "gulp-sequence": "^1.0.0",
     "gulp-sourcemaps": "^2.6.4",
